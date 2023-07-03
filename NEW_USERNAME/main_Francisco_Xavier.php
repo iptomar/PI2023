@@ -1,3 +1,7 @@
+<header>
+    <link rel="stylesheet" href="css.css">
+</header>
+
 <?php
 // Specify the path to your CSV file
 $csvFile = 'logIPRP.csv';
@@ -13,6 +17,17 @@ if ($fileHandle === false) {
 // Output the header row (optional)
 $header = fgetcsv($fileHandle);
 
+// Start the table
+echo '<table>';
+echo '<thead>';
+echo '<tr>';
+echo '<th>Date</th>';
+echo '<th>Email</th>';
+echo '<th>Name</th>';
+echo '</tr>';
+echo '</thead>';
+echo '<tbody>';
+
 // Process and output the remaining rows
 while (($row = fgetcsv($fileHandle)) !== false) {
     $lineValues = explode(';', $row[0]);
@@ -20,16 +35,20 @@ while (($row = fgetcsv($fileHandle)) !== false) {
     $emailName = $lineValues[4];
     $explodedEmailName = explode(' ', $emailName);
     $email = $explodedEmailName[0];
-    $name = trim($explodedEmailName[1]);
+    $name = (count($explodedEmailName) >= 2) ? $explodedEmailName[1] : "No name";
 
-    // Output the extracted data
-    echo "Date: $date<br>";
-    echo "Email: $email<br>";
-    echo "Name: $name<br>";
-    echo "<br>";
+    // Output a table row for each user
+    echo '<tr>';
+    echo '<td>' . $date . '</td>';
+    echo '<td>' . $email . '</td>';
+    echo '<td>' . $name . '</td>';
+    echo '</tr>';
 }
+
+// Close the table
+echo '</tbody>';
+echo '</table>';
 
 // Close the file handle
 fclose($fileHandle);
 ?>
-
