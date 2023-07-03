@@ -1,65 +1,35 @@
-<html>
-<head>
-    <title>Algorithms</title>
-</head>
-<body>
-    <div id="cabeca">
-        <h1>Algorithms</h1>
-        <p>Data Explorer</p>
-    </div>
+<?php
+// Specify the path to your CSV file
+$csvFile = 'logIPRP.csv';
 
-    <div id="corpo">
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-            <?php
-            // Specify the path to your CSV file
-                $csvFile = 'logIPRP.csv';
+// Open the CSV file
+$fileHandle = fopen($csvFile, 'r');
 
-                // Open the CSV file
-                $fileHandle = fopen($csvFile, 'r');
+// Check if the file opened successfully
+if ($fileHandle === false) {
+    die("Failed to open the CSV file.");
+}
 
-                // Check if the file opened successfully
-                if ($fileHandle === false) {
-                    die("Failed to open the CSV file.");
-                }
+// Output the header row (optional)
+$header = fgetcsv($fileHandle);
 
-                // Read the header row
-                $header = fgetcsv($fileHandle);
+// Process and output the remaining rows
+while (($row = fgetcsv($fileHandle)) !== false) {
+    $lineValues = explode(';', $row[0]);
+    $date = $lineValues[1];
+    $emailName = $lineValues[4];
+    $explodedEmailName = explode(' ', $emailName);
+    $email = $explodedEmailName[0];
+    $name = trim($explodedEmailName[1]);
 
-                // Array to store filtered rows
-                $filteredRows = array();
+    // Output the extracted data
+    echo "Date: $date<br>";
+    echo "Email: $email<br>";
+    echo "Name: $name<br>";
+    echo "<br>";
+}
 
-                // Filter rows based on a condition
-                while (($row = fgetcsv($fileHandle)) !== false) {
-                    // Check if the row meets the filtering condition
-                        // Explode the filtered row
-                        $csvValues = explode(';', $row[0]);
-                        
-                        // Add the exploded values to the filtered rows array
-                        $filteredRows[] = $csvValues;
-                }
+// Close the file handle
+fclose($fileHandle);
+?>
 
-                // Close the file handle
-                fclose($fileHandle);
-
-                // Display the exploded values
-                foreach ($filteredRows as $csvValues) {
-                    foreach ($csvValues as $value) {
-                        echo $value . "<br>";
-                    }
-                    echo "<br>";
-                }
-            ?>
-
-            </tbody>
-        </table>
-    </div>
-</body>
-</html>
