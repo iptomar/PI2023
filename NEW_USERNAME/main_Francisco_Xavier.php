@@ -20,7 +20,7 @@
             <tbody>
             <?php
             // Specify the path to your CSV file
-                $csvFile = '../logIPRP.csv';
+                $csvFile = 'logIPRP.csv';
 
                 // Open the CSV file
                 $fileHandle = fopen($csvFile, 'r');
