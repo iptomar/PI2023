@@ -18,9 +18,9 @@
                 </tr>
             </thead>
             <tbody>
-                <?php
-                // Specify the path to your CSV file
-                $csvFile = 'PI/PI2023/logIPRP.csv';
+            <?php
+            // Specify the path to your CSV file
+                $csvFile = '../logIPRP.csv';
 
                 // Open the CSV file
                 $fileHandle = fopen($csvFile, 'r');
@@ -33,16 +33,31 @@
                 // Read the header row
                 $header = fgetcsv($fileHandle);
 
-                // Read the remaining rows and display them
+                // Array to store filtered rows
+                $filteredRows = array();
+
+                // Filter rows based on a condition
                 while (($row = fgetcsv($fileHandle)) !== false) {
-                    echo '<tr>';
-                    echo '<td>' . $row[0] . '</td>'; // Name column
-                    echo '</tr>';
+                    // Check if the row meets the filtering condition
+                        // Explode the filtered row
+                        $csvValues = explode(';', $row[0]);
+                        
+                        // Add the exploded values to the filtered rows array
+                        $filteredRows[] = $csvValues;
                 }
 
                 // Close the file handle
                 fclose($fileHandle);
-                ?>
+
+                // Display the exploded values
+                foreach ($filteredRows as $csvValues) {
+                    foreach ($csvValues as $value) {
+                        echo $value . "<br>";
+                    }
+                    echo "<br>";
+                }
+            ?>
+
             </tbody>
         </table>
     </div>
