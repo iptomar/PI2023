@@ -1,4 +1,1 @@
-<?php
-
-    echo "teste";
-?>
+Recriação do diretório (houve problemas)
