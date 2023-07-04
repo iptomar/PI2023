@@ -61,16 +61,44 @@
       }
   }
   //Area Reservada para transcrever os dados de cada linha para dentro do objeto
-  $l1 = array();
-  array_push($l1,'Mushrooms');
-  array_push($l1,3);
+  
+$data->lines = array();
 
+foreach ($filteredData as $row) {
+    $line = new stdClass();
+    $line->cells = array();
 
+    $cell1 = new stdClass();
+    $cell1->value = $row[0];
 
+    $cell2 = new stdClass();
+    $cell2->value = $row[1];
 
+    $cell3 = new stdClass();
+    $cell3->value = $row[2];
 
-  $data->lines = array();
+    $cell4 = new stdClass();
+    $cell4->value = $row[3];
 
+    $cell5 = new stdClass();
+    $cell5->value = $row[4];
 
-  echo json_encode($data);
- ?>
+    $cell6 = new stdClass();
+    $cell6->value = $row[5];
+
+    $cell7 = new stdClass();
+    $cell7->value = $row[6];
+
+    array_push($line->cells, $cell1);
+    array_push($line->cells, $cell2);
+    array_push($line->cells, $cell3);
+    array_push($line->cells, $cell4);
+    array_push($line->cells, $cell5);
+    array_push($line->cells, $cell6);
+    array_push($line->cells, $cell7);
+
+    array_push($data->lines, $line);
+}
+
+echo json_encode($data);
+?>
