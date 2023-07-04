@@ -15,22 +15,22 @@
           google.charts.setOnLoadCallback(function(){ drawBarColors(chartData) });;
         }
       };
-      xmlhttp.open("GET", "readFile.php", true);
+      xmlhttp.open("GET", "getDataSend.php", true);
       xmlhttp.send();
 
       function drawBarColors(chartData) {
             var data = google.visualization.arrayToDataTable(chartData.data);
 
             var options = {
-              title: "Volume of Sendings per day",
+              title: chartData.title,
               chartArea: {width: '50%'},
               colors: ['#b0120a', '#ffab91'],
               hAxis: {
-                title: 'Days',
+                title: 'Sendings',
                 minValue: 0
               },
               vAxis: {
-                title: 'Sendings'
+                title: 'Days'
               }
             };
             var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
