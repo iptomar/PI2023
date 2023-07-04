@@ -11,11 +11,12 @@ xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           chartData = JSON.parse(this.responseText);
+          console.log(chartData);
            // Set a callback to run when the Google Visualization API is loaded.
            google.charts.setOnLoadCallback(function(){ drawBarColors(chartData) });;
         }
       };
-      xmlhttp.open("GET", "readAmostra.php", true);
+      xmlhttp.open("GET", "readFile.php", true);
       xmlhttp.send();
 
 function drawBarColors(chartData) {
@@ -26,11 +27,11 @@ function drawBarColors(chartData) {
         chartArea: {width: '50%'},
         colors: ['#b0120a', '#ffab91'],
         hAxis: {
-          title: 'Total Population',
+          title: 'Numero total de Logout por ano',
           minValue: 0
         },
         vAxis: {
-          title: 'City'
+          title: 'Numero de Logouts'
         }
       };
       var chart = new google.visualization.BarChart(document.getElementById('chart_div'));

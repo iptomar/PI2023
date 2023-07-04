@@ -1,7 +1,14 @@
 <?php
 $myfile = fopen("logout_amostra.csv", "r");
+//recebe toda a informação do ficheiro
 $data = array();
-$alturas = array();
+
+$alturas = new stdClass();
+$alturas->title = 'Logouts';
+$alturas->data = array();
+
+// Adiciona o cabeçalho das colunas
+array_push($alturas->data, ['Ano', 'Valor1', 'Valor2']);
 
 while (($line = fgets($myfile)) !== false) {
     // Separa o conteúdo quando encontra o caractere ";"
@@ -10,12 +17,21 @@ while (($line = fgets($myfile)) !== false) {
     
     // Extrai a altura separando o conteúdo quando encontra o caractere "-"
     $datas = explode("-", $fields[1]);
-    $altura = $datas[0];
-    array_push($alturas, $altura);
+    $altura = array();
+    array_push($altura, intval($datas[0]));
+    array_push($altura, count($datas));
+    array_push($altura, 1);
+
+    array_push($alturas->data, $altura);
 }
 
 fclose($myfile);
 
+echo json_encode($alturas);
+
+
+
+/*
 // Exibir os dados e alturas
 print_r($data);
 echo"<br><br><br>";
@@ -27,5 +43,5 @@ for($i = 0; $i < count($alturas); $i++){
     print_r($alturas[$i]);
     echo"<br>";
 }
-
+*/
 ?>
