@@ -17,36 +17,36 @@ ID;DATA/HORA;IP;COMANDO;EMAIL;SERVICO;DADOS
 612;2022-09-23 10:01:44.805;89.214.127.92;NEW_USERNAME        ;aluno24721@ipt.pt Tiago Dias  ;connected[1];Algorithmi 22.09
 613;2022-09-23 10:01:44.919;89.214.127.92;NEW_USERNAME        ;aluno24721@ipt.pt Tiago Dias  ;processed[1];
 614;2022-09-23 10:01:44.919;89.214.127.92;NEW_USERNAME        ;aluno24721@ipt.pt Tiago Dias  ;service done![1];null
-616;2022-09-23 10:02:02.853;194.210.113.133;NEW_USERNAME        ;aluno24878@ipt.pt Gon̤alo Dani;connected[1];Algorithmi 22.09
-617;2022-09-23 10:02:02.954;194.210.113.133;NEW_USERNAME        ;aluno24878@ipt.pt Gon̤alo Dani;processed[1];
-618;2022-09-23 10:02:02.955;194.210.113.133;NEW_USERNAME        ;aluno24878@ipt.pt Gon̤alo Dani;service done![1];null
-620;2022-09-23 10:02:04.681;194.210.112.10;NEW_USERNAME        ;aluno24868@ipt.pt Andr̩ Lopes ;connected[1];Algorithmi 22.09
-621;2022-09-23 10:02:05.967;194.210.112.10;NEW_USERNAME        ;aluno24868@ipt.pt Andr̩ Lopes ;processed[1];
-622;2022-09-23 10:02:05.967;194.210.112.10;NEW_USERNAME        ;aluno24868@ipt.pt Andr̩ Lopes ;service done![1];aluno24868@ipt.pt - LEI_2022
+616;2022-09-23 10:02:02.853;194.210.113.133;NEW_USERNAME        ;aluno24878@ipt.pt Gon̤calo Dani;connected[1];Algorithmi 22.09
+617;2022-09-23 10:02:02.954;194.210.113.133;NEW_USERNAME        ;aluno24878@ipt.pt Gon̤calo Dani;processed[1];
+618;2022-09-23 10:02:02.955;194.210.113.133;NEW_USERNAME        ;aluno24878@ipt.pt Gon̤calo Dani;service done![1];null
+620;2022-09-23 10:02:04.681;194.210.112.10;NEW_USERNAME        ;aluno24868@ipt.pt Andr̩e Lopes ;connected[1];Algorithmi 22.09
+621;2022-09-23 10:02:05.967;194.210.112.10;NEW_USERNAME        ;aluno24868@ipt.pt Andr̩e Lopes ;processed[1];
+622;2022-09-23 10:02:05.967;194.210.112.10;NEW_USERNAME        ;aluno24868@ipt.pt Andr̩e Lopes ;service done![1];aluno24868@ipt.pt - LEI_2022
 624;2022-09-23 10:02:06.726;194.210.240.193;NEW_USERNAME        ;manso@ipt.pt Antonio Manso    ;connected[1];Algorithmi 22.09
 625;2022-09-23 10:02:06.727;194.210.240.193;NEW_USERNAME        ;manso@ipt.pt Antonio Manso    ;processed[1];
 626;2022-09-23 10:02:06.727;194.210.240.193;NEW_USERNAME        ;manso@ipt.pt Antonio Manso    ;service done![1];null
 628;2022-09-23 10:02:07.629;194.210.240.94;NEW_USERNAME        ;aluno24850@ipt.pt Francisco Lo;connected[1];Algorithmi 22.09
 629;2022-09-23 10:02:08.984;194.210.240.94;NEW_USERNAME        ;aluno24850@ipt.pt Francisco Lo;processed[1];
 630;2022-09-23 10:02:08.984;194.210.240.94;NEW_USERNAME        ;aluno24850@ipt.pt Francisco Lo;service done![1];aluno24850@ipt.pt - LEI_2022
-632;2022-09-23 10:02:18.044;194.210.112.194;NEW_USERNAME        ;aluno24705@ipt.pt R̼ben Filipe;connected[1];Algorithmi 22.09
-633;2022-09-23 10:02:19.643;194.210.112.194;NEW_USERNAME        ;aluno24705@ipt.pt R̼ben Filipe;processed[1];
-634;2022-09-23 10:02:19.643;194.210.112.194;NEW_USERNAME        ;aluno24705@ipt.pt R̼ben Filipe;service done![1];aluno24705@ipt.pt - LEI_2022
-656;2022-09-23 10:02:58.863;194.210.240.246;NEW_USERNAME        ;aluno24728@ipt.pt Jọo Victor ;connected[1];Algorithmi 22.09
-657;2022-09-23 10:03:00.157;194.210.240.246;NEW_USERNAME        ;aluno24728@ipt.pt Jọo Victor ;processed[1];
-658;2022-09-23 10:03:00.157;194.210.240.246;NEW_USERNAME        ;aluno24728@ipt.pt Jọo Victor ;service done![1];aluno24728@ipt.pt - LEI_2022
+632;2022-09-23 10:02:18.044;194.210.112.194;NEW_USERNAME        ;aluno24705@ipt.pt R̼uben Filipe;connected[1];Algorithmi 22.09
+633;2022-09-23 10:02:19.643;194.210.112.194;NEW_USERNAME        ;aluno24705@ipt.pt R̼uben Filipe;processed[1];
+634;2022-09-23 10:02:19.643;194.210.112.194;NEW_USERNAME        ;aluno24705@ipt.pt R̼uben Filipe;service done![1];aluno24705@ipt.pt - LEI_2022
+656;2022-09-23 10:02:58.863;194.210.240.246;NEW_USERNAME        ;aluno24728@ipt.pt Jọao Victor ;connected[1];Algorithmi 22.09
+657;2022-09-23 10:03:00.157;194.210.240.246;NEW_USERNAME        ;aluno24728@ipt.pt Jọao Victor ;processed[1];
+658;2022-09-23 10:03:00.157;194.210.240.246;NEW_USERNAME        ;aluno24728@ipt.pt Jọao Victor ;service done![1];aluno24728@ipt.pt - LEI_2022
 664;2022-09-23 10:03:01.820;194.210.113.253;NEW_USERNAME        ;aluno24993@ipt.pt Diogo Filipe;connected[1];Algorithmi 22.09
 669;2022-09-23 10:03:03.150;194.210.113.253;NEW_USERNAME        ;aluno24993@ipt.pt Diogo Filipe;processed[1];
 670;2022-09-23 10:03:03.151;194.210.113.253;NEW_USERNAME        ;aluno24993@ipt.pt Diogo Filipe;service done![1];aluno24993@ipt.pt - LEI_2022
-676;2022-09-23 10:03:12.051;46.50.2.47;NEW_USERNAME        ;aluno22895@ipt.pt Maria Beatri;connected[1];Algorithmi 22.09
-677;2022-09-23 10:03:13.556;46.50.2.47;NEW_USERNAME        ;aluno22895@ipt.pt Maria Beatri;processed[1];
-678;2022-09-23 10:03:13.557;46.50.2.47;NEW_USERNAME        ;aluno22895@ipt.pt Maria Beatri;service done![1];aluno22895@ipt.pt - LEI_2022
-688;2022-09-23 10:04:10.954;89.214.152.65;NEW_USERNAME        ;aluno24729@ipt.pt Jọo Joaquim;connected[1];Algorithmi 22.09
-689;2022-09-23 10:04:12.302;89.214.152.65;NEW_USERNAME        ;aluno24729@ipt.pt Jọo Joaquim;processed[1];
-690;2022-09-23 10:04:12.302;89.214.152.65;NEW_USERNAME        ;aluno24729@ipt.pt Jọo Joaquim;service done![1];aluno24729@ipt.pt - LEI_2022
-809;2022-09-23 10:13:15.798;89.214.152.65;NEW_USERNAME        ;aluno24851@ipt.pt Rodrigo Cali;connected[1];Algorithmi 22.09
-810;2022-09-23 10:13:17.368;89.214.152.65;NEW_USERNAME        ;aluno24851@ipt.pt Rodrigo Cali;processed[1];
-811;2022-09-23 10:13:17.369;89.214.152.65;NEW_USERNAME        ;aluno24851@ipt.pt Rodrigo Cali;service done![1];aluno24851@ipt.pt - LEI_2022
+676;2022-09-23 10:03:12.051;46.50.2.47;NEW_USERNAME        ;aluno22895@ipt.pt Maria Beatriz;connected[1];Algorithmi 22.09
+677;2022-09-23 10:03:13.556;46.50.2.47;NEW_USERNAME        ;aluno22895@ipt.pt Maria Beatriz;processed[1];
+678;2022-09-23 10:03:13.557;46.50.2.47;NEW_USERNAME        ;aluno22895@ipt.pt Maria Beatriz;service done![1];aluno22895@ipt.pt - LEI_2022
+688;2022-09-23 10:04:10.954;89.214.152.65;NEW_USERNAME        ;aluno24729@ipt.pt Jọao Joaquim;connected[1];Algorithmi 22.09
+689;2022-09-23 10:04:12.302;89.214.152.65;NEW_USERNAME        ;aluno24729@ipt.pt Jọao Joaquim;processed[1];
+690;2022-09-23 10:04:12.302;89.214.152.65;NEW_USERNAME        ;aluno24729@ipt.pt Jọao Joaquim;service done![1];aluno24729@ipt.pt - LEI_2022
+809;2022-09-23 10:13:15.798;89.214.152.65;NEW_USERNAME        ;aluno24851@ipt.pt Rodrigo Calisto;connected[1];Algorithmi 22.09
+810;2022-09-23 10:13:17.368;89.214.152.65;NEW_USERNAME        ;aluno24851@ipt.pt Rodrigo Calisto;processed[1];
+811;2022-09-23 10:13:17.369;89.214.152.65;NEW_USERNAME        ;aluno24851@ipt.pt Rodrigo Calisto;service done![1];aluno24851@ipt.pt - LEI_2022
 849;2022-09-23 10:15:33.891;193.137.5.231;NEW_USERNAME        ;aluno24879@ipt.pt Afonso Matia;connected[1];Algorithmi 22.09
 850;2022-09-23 10:15:35.355;193.137.5.231;NEW_USERNAME        ;aluno24879@ipt.pt Afonso Matia;processed[1];
 851;2022-09-23 10:15:35.356;193.137.5.231;NEW_USERNAME        ;aluno24879@ipt.pt Afonso Matia;service done![1];aluno24879@ipt.pt - LEI_2022
@@ -56,21 +56,21 @@ ID;DATA/HORA;IP;COMANDO;EMAIL;SERVICO;DADOS
 905;2022-09-23 10:16:58.943;193.137.5.231;NEW_USERNAME        ;aluno24855@ipt.pt Afonso Costa;connected[1];Algorithmi 22.09
 906;2022-09-23 10:17:00.502;193.137.5.231;NEW_USERNAME        ;aluno24855@ipt.pt Afonso Costa;processed[1];
 907;2022-09-23 10:17:00.502;193.137.5.231;NEW_USERNAME        ;aluno24855@ipt.pt Afonso Costa;service done![1];aluno24855@ipt.pt - LEI_2022
-909;2022-09-23 10:17:13.663;194.210.240.214;NEW_USERNAME        ;kevinsantosalmada@gmail.com Ke;connected[2];Algorithmi 22.09
-910;2022-09-23 10:17:14.812;194.210.240.214;NEW_USERNAME        ;kevinsantosalmada@gmail.com Ke;processed[2];
-911;2022-09-23 10:17:14.812;194.210.240.214;NEW_USERNAME        ;kevinsantosalmada@gmail.com Ke;service done![2];kevinsantosalmada@gmail.com - LEI_2022
+909;2022-09-23 10:17:13.663;194.210.240.214;NEW_USERNAME        ;kevinsantosalmada@gmail.com Kevin;connected[2];Algorithmi 22.09
+910;2022-09-23 10:17:14.812;194.210.240.214;NEW_USERNAME        ;kevinsantosalmada@gmail.com Kevin;processed[2];
+911;2022-09-23 10:17:14.812;194.210.240.214;NEW_USERNAME        ;kevinsantosalmada@gmail.com Kevin;service done![2];kevinsantosalmada@gmail.com - LEI_2022
 977;2022-09-23 10:20:50.188;213.55.225.209;NEW_USERNAME        ;aluno24639@ipt.pt Cristiane Ma;connected[2];Algorithmi 22.09
 978;2022-09-23 10:20:51.603;213.55.225.209;NEW_USERNAME        ;aluno24639@ipt.pt Cristiane Ma;processed[2];
 979;2022-09-23 10:20:51.604;213.55.225.209;NEW_USERNAME        ;aluno24639@ipt.pt Cristiane Ma;service done![2];aluno24639@ipt.pt - LEI_2022
-1006;2022-09-23 10:22:47.845;193.137.5.231;NEW_USERNAME        ;aluno24853@ipt.pt Andr̩ Vieira;connected[1];Algorithmi 22.09
-1007;2022-09-23 10:22:49.158;193.137.5.231;NEW_USERNAME        ;aluno24853@ipt.pt Andr̩ Vieira;processed[1];
-1008;2022-09-23 10:22:49.159;193.137.5.231;NEW_USERNAME        ;aluno24853@ipt.pt Andr̩ Vieira;service done![1];aluno24853@ipt.pt - LEI_2022
+1006;2022-09-23 10:22:47.845;193.137.5.231;NEW_USERNAME        ;aluno24853@ipt.pt Andr̩e Vieira;connected[1];Algorithmi 22.09
+1007;2022-09-23 10:22:49.158;193.137.5.231;NEW_USERNAME        ;aluno24853@ipt.pt Andr̩e Vieira;processed[1];
+1008;2022-09-23 10:22:49.159;193.137.5.231;NEW_USERNAME        ;aluno24853@ipt.pt Andr̩e Vieira;service done![1];aluno24853@ipt.pt - LEI_2022
 1022;2022-09-23 10:23:27.819;194.210.240.214;NEW_USERNAME        ;aluno23491@ipt.pt Kevin Jorge ;connected[1];Algorithmi 22.09
 1023;2022-09-23 10:23:29.178;194.210.240.214;NEW_USERNAME        ;aluno23491@ipt.pt Kevin Jorge ;processed[2];
 1024;2022-09-23 10:23:29.179;194.210.240.214;NEW_USERNAME        ;aluno23491@ipt.pt Kevin Jorge ;service done![2];aluno23491@ipt.pt - LEI_2022
-1134;2022-09-23 10:27:47.204;194.210.241.64;NEW_USERNAME        ;aluno24514@ipt.pt Gon̤alves   ;connected[1];Algorithmi 22.09
-1135;2022-09-23 10:27:48.488;194.210.241.64;NEW_USERNAME        ;aluno24514@ipt.pt Gon̤alves   ;processed[1];
-1136;2022-09-23 10:27:48.489;194.210.241.64;NEW_USERNAME        ;aluno24514@ipt.pt Gon̤alves   ;service done![1];aluno24514@ipt.pt - LEI_2022
+1134;2022-09-23 10:27:47.204;194.210.241.64;NEW_USERNAME        ;aluno24514@ipt.pt Gon̤calves   ;connected[1];Algorithmi 22.09
+1135;2022-09-23 10:27:48.488;194.210.241.64;NEW_USERNAME        ;aluno24514@ipt.pt Gon̤calves   ;processed[1];
+1136;2022-09-23 10:27:48.489;194.210.241.64;NEW_USERNAME        ;aluno24514@ipt.pt Gon̤calves   ;service done![1];aluno24514@ipt.pt - LEI_2022
 1210;2022-09-23 10:32:12.907;193.137.5.231;NEW_USERNAME        ;aluno24851@ipt.pt Rodrigo Cali;connected[1];Algorithmi 22.09
 1211;2022-09-23 10:32:12.908;193.137.5.231;NEW_USERNAME        ;aluno24851@ipt.pt Rodrigo Cali;processed[1];
 1212;2022-09-23 10:32:12.908;193.137.5.231;NEW_USERNAME        ;aluno24851@ipt.pt Rodrigo Cali;service done![1];null
