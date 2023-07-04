@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consulta de Logouts</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Consulta de Logouts</h1>
+  <form id="dateForm">
+    <label for="date">Escolha uma data:</label>
+    <input type="date" id="date" required>
+    <input type="button" value="Consultar" onclick="consultarLogouts()">
+  </form>
+  <div id="result"></div>
+  <script>
+    function formatarData(data) {
+      var d = new Date(data);
+      var ano = d.getFullYear();
+      var mes = ('0' + (d.getMonth() + 1)).slice(-2);
+      var dia = ('0' + d.getDate()).slice(-2);
+      return ano + '-' + mes + '-' + dia;
+    }
+
+    function consultarLogouts() {
+      var date = document.getElementById("date").value;
+      var formattedDate = formatarData(date);
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "consulta.php?date=" + formattedDate, true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          document.getElementById("result").innerHTML = xhr.responseText;
+        }
+      };
+      xhr.send();
+    }
+  </script>
+</body>
+</html>

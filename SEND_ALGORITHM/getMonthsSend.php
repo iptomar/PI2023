@@ -11,38 +11,39 @@
     array_push($data->data, $label);
 
     $file = fopen("filtroSend.csv", "r");
-    $days = array();
+    $months = array();
     while(!feof($file)) {
         $line = fgets($file); 
         $row = explode("-", $line);
-        array_push($days, $row);
+        if(count($row) >= 1)
+            array_push($months, $row[1]);
     }
 
     fclose($file);
 
     //remove o zero causado pela quebra de linha 
-    array_pop($days);
+    array_pop($months);
 
     // Array para armazenar os contadores
     $counters = [];
 
     // Itera sobre a lista de datas
-    foreach ($days as $day) {
+    foreach ($months as $month) {
         // Verifica se a data já existe no array de contadores
-        if (isset($counters[$day])) {
+        if (isset($counters[$month])) {
             // Incrementa o contador do nome existente
-            $counters[$day]++;
+            $counters[$month]++;
         } else {
             // Cria um novo contador para a data
-            $counters[$day] = 1;
+            $counters[$month] = 1;
         }
     }
 
 
     //
     $l = array();
-    foreach($counters as $days => $sendings){
-        array_push($l, $days);
+    foreach($counters as $months => $sendings){
+        array_push($l, $months);
         array_push($l, $sendings);
         array_push($data->data, $l);
         $l = [];
