@@ -29,9 +29,17 @@ foreach ($data as $row) {
             border: 1px solid black;
             padding: 5px;
         }
+        #registros{
+
+        }
     </style>
 </head>
 <body>
+  <header>
+    <button><label> Apresentar Tabela com todos os registros de LOGOUT</label></button>
+    <button><label> Apresentar Tabela com todos os registros de LOGOUT</label></button>
+  </header>
+  <div id='registros'>
     <table>
         <thead>
             <tr>
@@ -58,5 +66,7 @@ foreach ($data as $row) {
             <?php endforeach; ?>
         </tbody>
     </table>
+  </div>
+  <div id= 'selecionados'></div>
 </body>
 </html>
