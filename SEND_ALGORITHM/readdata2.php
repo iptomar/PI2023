@@ -5,7 +5,8 @@ $filteredData = [];
 if ($open !== false){
 
 	while (($commado = fgetcsv($open, 0, ';'))!== false){		
-		if (strcmp($commado[3], 'SEND_ALGORITHM      ') ==false){
+				if (strcmp($commado[3], 'SEND_ALGORITHM      ') ==false && (strcmp($commado[5], 'service done![1]')>=0)){
+
 			$filteredData[]=$commado;
 		}
 	}
