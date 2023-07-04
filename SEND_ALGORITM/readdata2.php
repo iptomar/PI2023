@@ -1,5 +1,5 @@
 <?php
-$open = fopen("amostra.csv", "r");
+$open = fopen("..\logIPRP.csv", "r");
 $filteredData = [];
  
 if ($open !== false){
@@ -23,8 +23,12 @@ $open2 = fopen("writetest.txt", "w");
 $fsize=filesize("writetest.txt");
 // if ($fsize ==0){
 	foreach($filteredData as $row){
-		//$substri= substr($row[1],0, 10);
-		fwrite($open2, (substr($row[1],0, 4))."; ".(substr($row[1], 5, 2)). "; ".(substr($row[1],8, 2))."; \n");
+		$substri= substr($row[1],0, 10);
+		fwrite($open2, $substri."; \n");
 	// }
 }
+	fclose($open2);
 ?>
+<?php
+
+?> 
