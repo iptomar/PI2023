@@ -8,7 +8,7 @@ $alturas->title = 'Logouts';
 $alturas->data = array();
 
 // Adiciona o cabeçalho das colunas
-array_push($alturas->data, ['Ano', 'Valor1', 'Valor2']);
+array_push($alturas->data, ['Ano', 'Atual', 'Antigo']);
 
 while (($line = fgets($myfile)) !== false) {
     // Separa o conteúdo quando encontra o caractere ";"
@@ -18,12 +18,14 @@ while (($line = fgets($myfile)) !== false) {
     // Extrai a altura separando o conteúdo quando encontra o caractere "-"
     $datas = explode("-", $fields[1]);
     $altura = array();
-    array_push($altura, intval($datas[0]));
-    array_push($altura, count($datas));
+    array_push($altura, intval($datas[1]));
+    
     array_push($altura, 1);
+    array_push($altura, 20);
 
     array_push($alturas->data, $altura);
 }
+
 
 fclose($myfile);
 
