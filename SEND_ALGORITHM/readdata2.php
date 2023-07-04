@@ -19,8 +19,8 @@ foreach ($filteredData as $row)
 	echo $column ;
 	echo "</br>";
 }
-$open2 = fopen("writetest.txt", "w");
-$fsize=filesize("writetest.txt");
+$open2 = fopen("filtroSend.txt", "w");
+$fsize=filesize("filtroSend.txt");
 // if ($fsize ==0){
 	foreach($filteredData as $row){
 		$substri= substr($row[1],0, 10);
