@@ -1,0 +1,1185 @@
+1;2022-09-22 12:31:58.457;algorithmi.ipt.pt : 10027; running;;;
+2;2022-09-22 12:33:28.402;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+3;2022-09-22 12:33:29.025;188.83.116.246;NEW_USERNAME        ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+4;2022-09-22 12:33:32.339;188.83.116.246;NEW_USERNAME        ;user1@ipt.pt User1 AM    ;processed[1];
+5;2022-09-22 12:33:32.360;188.83.116.246;NEW_USERNAME        ;user1@ipt.pt User1 AM    ;service done![1];Sarnadas@ipt.pt - LEI_2022
+6;2022-09-22 12:34:52.255;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+7;2022-09-22 12:34:52.418;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+8;2022-09-22 12:34:53.144;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+9;2022-09-22 12:34:53.147;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor - João Sarnadas
+10;2022-09-22 12:35:02.962;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+11;2022-09-22 12:35:02.999;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+12;2022-09-22 12:35:03.480;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;processed[1];
+13;2022-09-22 12:35:03.489;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;service done![1];time : 12:35:03.479 LEI_2020 # Ficha01_007.prog # 3.0 (100 %) 22-09-2022 12:35:05
+14;2022-09-22 12:35:05.438;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+15;2022-09-22 12:35:05.451;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+16;2022-09-22 12:35:05.454;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;processed[1];
+17;2022-09-22 12:35:05.457;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;service done![1];time : 12:35:05.450 LEI_2020 # Ficha01_007.prog # 2.88 (96 %) 22-09-2022 12:35:07
+18;2022-09-22 12:35:09.055;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+19;2022-09-22 12:35:09.133;188.83.116.246;SEND_ALGORITHM      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+20;2022-09-24 12:35:09.775;188.83.116.246;SEND_ALGORITHM      ;user1@ipt.pt User1 AM    ;processed[1];
+21;2022-09-24 12:35:09.787;188.83.116.246;SEND_ALGORITHM      ;user1@ipt.pt User1 AM    ;service done![1];Algorithmi 22.09 Processing Exercisecode.zip[ 62259 bytes] [LEI_2022 João Sarnadas
+22;2022-09-22 12:35:58.974;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+23;2022-09-22 12:35:59.024;188.83.116.246;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+24;2022-09-22 12:36:00.352;188.83.116.246;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;processed[1];
+25;2022-09-22 12:36:00.355;188.83.116.246;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;service done![1];Sarnadas@ipt.pt - João Sarnadas
+26;2022-09-22 12:36:12.400;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+27;2022-09-22 12:36:12.463;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+28;2022-09-22 12:36:12.474;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;processed[1];
+29;2022-09-22 12:36:12.477;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt - João Sarnadas
+30;2022-09-22 12:36:22.197;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+31;2022-09-22 12:36:22.210;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.07
+32;2022-09-22 12:36:22.221;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+33;2022-09-22 12:36:22.224;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[20-07-2022 15:55:07] Portugal # Oracle Corporation 18.0.1.1+2-6 # Windows 10 10.0 amd64  # IPT 
+34;2022-09-22 12:36:28.722;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+35;2022-09-22 12:36:28.831;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.07
+36;2022-09-22 12:36:28.846;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+37;2022-09-22 12:36:28.848;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor - João Sarnadas
+38;2022-09-22 12:37:15.828;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+39;2022-09-22 12:37:15.852;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.07
+40;2022-09-22 12:37:15.865;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;processed[1];
+41;2022-09-22 12:37:15.867;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt - João Sarnadas
+42;2022-09-22 12:39:54.722;algorithmi.ipt.pt : 10027; running;;;
+43;2022-09-22 12:40:04.892;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+44;2022-09-22 12:40:05.538;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+45;2022-09-22 12:40:05.673;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+46;2022-09-22 12:40:05.687;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[20-07-2022 15:55:07] Portugal # Oracle Corporation 1.8.0_301-b09 # Windows 10 10.0 amd64  # IPT 
+47;2022-09-22 12:40:09.062;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+48;2022-09-22 12:40:09.136;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+49;2022-09-22 12:40:09.894;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+50;2022-09-22 12:40:09.903;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor - João Sarnadas
+51;2022-09-22 12:40:21.604;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+52;2022-09-22 12:40:21.636;188.83.116.246;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+53;2022-09-22 12:40:23.181;188.83.116.246;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;processed[1];
+54;2022-09-22 12:40:23.185;188.83.116.246;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;service done![1];Update user Sarnadas@ipt.pt - João Sarnadas
+55;2022-09-22 12:49:39.053;algorithmi.ipt.pt : 10027; running;;;
+56;2022-09-22 12:49:54.710;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+57;2022-09-22 12:49:55.400;188.83.116.246;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+58;2022-09-22 12:49:57.618;188.83.116.246;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;processed[1];
+59;2022-09-22 12:49:57.638;188.83.116.246;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;service done![1];Update user Sarnadas@ipt.pt - João Sarnadas
+60;2022-09-22 12:50:50.687;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+61;2022-09-22 12:50:50.709;188.83.116.246;RECOVER_USERNAME    ;Anonymous User;connected[1];Algorithmi 22.09
+62;2022-09-22 12:50:52.155;188.83.116.246;RECOVER_USERNAME    ;Anonymous User;processed[1];
+63;2022-09-22 12:50:52.159;188.83.116.246;RECOVER_USERNAME    ;Anonymous User;service done![1];Sarnadas@ipt.pt - João Sarnadas
+64;2022-09-22 12:53:38.076;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+65;2022-09-22 12:53:38.194;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+66;2022-09-22 12:53:38.219;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;processed[1];
+67;2022-09-22 12:53:38.240;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;service done![1];time : 12:53:38.216 LEI_2020 # Ficha02_055.prog # 0.0 (0 %) 22-09-2022 12:53:40
+68;2022-09-22 12:53:45.189;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+69;2022-09-22 12:53:45.357;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+70;2022-09-22 12:53:45.360;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;processed[1];
+71;2022-09-22 12:53:45.364;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;service done![1];time : 12:53:45.356 LEI_2020 # Ficha02_055.prog # 0.0 (0 %) 22-09-2022 12:53:47
+72;2022-09-22 12:54:39.722;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+73;2022-09-22 12:54:39.981;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+74;2022-09-22 12:54:39.984;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;processed[1];
+75;2022-09-22 12:54:39.987;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;service done![1];time : 12:54:39.980 LEI_2020 # Ficha02_038.prog # 0.0 (0 %) 22-09-2022 12:54:41
+76;2022-09-22 12:54:56.895;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+77;2022-09-22 12:54:56.919;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+78;2022-09-22 12:54:56.922;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;processed[1];
+79;2022-09-22 12:54:56.925;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;service done![1];time : 12:54:56.908 LEI_2020 # Ficha02_038.prog # 0.0 (0 %) 22-09-2022 12:54:59
+80;2022-09-22 12:55:03.679;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+81;2022-09-22 12:55:03.704;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+82;2022-09-22 12:55:03.707;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;processed[1];
+83;2022-09-22 12:55:03.709;188.83.116.246;SERVER_TIME         ;user1@ipt.pt User1 AM    ;service done![1];time : 12:55:03.693 LEI_2020 # Ficha02_004.prog # 0.0 (100 %) 22-09-2022 12:55:05
+84;2022-09-22 12:55:07.874;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+85;2022-09-22 12:55:07.967;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+86;2022-09-22 12:55:07.993;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;processed[1];
+87;2022-09-22 12:55:07.997;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt - João Sarnadas
+88;2022-09-22 13:00:04.369;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+89;2022-09-22 13:00:04.404;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+90;2022-09-22 13:00:04.407;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+91;2022-09-22 13:00:04.409;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[20-07-2022 15:55:07] Portugal # Oracle Corporation 1.8.0_301-b09 # Windows 10 10.0 amd64  # IPT 
+92;2022-09-22 13:00:15.601;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+93;2022-09-22 13:00:15.662;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+94;2022-09-22 13:00:15.696;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+95;2022-09-22 13:00:15.699;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor programação - João Sarnadas
+96;2022-09-22 13:04:40.614;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+97;2022-09-22 13:04:40.940;188.83.116.246;SEND_EXERCISES      ;Anonymous User;connected[1];Algorithmi 22.09
+98;2022-09-22 13:04:42.609;188.83.116.246;SEND_EXERCISES      ;Anonymous User;processed[1];
+99;2022-09-22 13:04:42.611;188.83.116.246;SEND_EXERCISES      ;Anonymous User;service done![1];188.83.116.246Workshets Ficha01
+100;2022-09-22 13:07:19.371;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+101;2022-09-22 13:07:19.596;188.83.116.246;SEND_EXERCISES      ;Anonymous User;connected[1];Algorithmi 22.09
+102;2022-09-22 13:07:20.979;188.83.116.246;SEND_EXERCISES      ;Anonymous User;processed[1];
+103;2022-09-22 13:07:20.980;188.83.116.246;SEND_EXERCISES      ;Anonymous User;service done![1];188.83.116.246Workshets Ficha01
+104;2022-09-22 13:08:22.299;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+105;2022-09-22 13:08:22.347;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+106;2022-09-22 13:08:22.372;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;processed[1];
+107;2022-09-22 13:08:22.374;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt - João Sarnadas
+108;2022-09-22 13:08:35.768;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+109;2022-09-22 13:08:35.794;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+110;2022-09-22 13:08:35.796;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+111;2022-09-22 13:08:35.798;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[20-07-2022 15:55:07] Portugal # Oracle Corporation 1.8.0_301-b09 # Windows 10 10.0 amd64  # IPT 
+112;2022-09-22 13:08:56.239;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+113;2022-09-22 13:08:56.300;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+114;2022-09-22 13:08:56.335;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+115;2022-09-22 13:08:56.336;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor programação - João Sarnadas
+116;2022-09-22 13:09:04.476;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+117;2022-09-22 13:09:04.536;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+118;2022-09-22 13:09:04.696;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;processed[1];
+119;2022-09-22 13:09:04.758;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;service done![1];user1@ipt.pt User1 AM update Ficha01
+120;2022-09-22 13:09:26.010;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+121;2022-09-22 13:09:26.116;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+122;2022-09-22 13:09:26.265;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;processed[1];
+123;2022-09-22 13:09:26.324;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;service done![1];user1@ipt.pt User1 AM update Ficha01
+124;2022-09-22 13:15:39.939;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+125;2022-09-22 13:15:39.980;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.07
+126;2022-09-22 13:15:39.981;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+127;2022-09-22 13:15:39.983;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[20-07-2022 15:55:07] Portugal # Oracle Corporation 1.8.0_301-b09 # Windows 10 10.0 amd64  # IPT 
+128;2022-09-22 13:15:49.413;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+129;2022-09-22 13:15:49.487;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.07
+130;2022-09-22 13:15:49.530;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+131;2022-09-22 13:15:49.532;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor programação - João Sarnadas
+132;2022-09-22 13:15:59.355;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+133;2022-09-22 13:15:59.420;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.07
+134;2022-09-22 13:15:59.555;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;processed[1];
+135;2022-09-22 13:15:59.613;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;service done![1];user1@ipt.pt User1 AM update Ficha01
+136;2022-09-22 13:16:36.718;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+137;2022-09-22 13:16:36.757;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.07
+138;2022-09-22 13:16:36.758;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+139;2022-09-22 13:16:36.760;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[20-07-2022 15:55:07] Portugal # Oracle Corporation 1.8.0_301-b09 # Windows 10 10.0 amd64  # IPT 
+140;2022-09-22 13:16:40.309;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+141;2022-09-22 13:16:40.347;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.07
+142;2022-09-22 13:16:40.405;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+143;2022-09-22 13:16:40.407;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor programação - João Sarnadas
+144;2022-09-22 13:16:58.251;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+145;2022-09-22 13:16:58.292;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.07
+146;2022-09-22 13:16:58.433;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;processed[1];
+147;2022-09-22 13:16:58.492;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;service done![1];user1@ipt.pt User1 AM update Ficha01
+148;2022-09-22 13:24:59.688;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+149;2022-09-22 13:24:59.731;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.07
+150;2022-09-22 13:24:59.733;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+151;2022-09-22 13:24:59.736;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[20-07-2022 15:55:07] Portugal # Oracle Corporation 1.8.0_301-b09 # Windows 10 10.0 amd64  # IPT 
+152;2022-09-22 13:25:05.844;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+153;2022-09-22 13:25:05.885;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.07
+154;2022-09-22 13:25:05.943;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+155;2022-09-22 13:25:05.945;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor programação - João Sarnadas
+156;2022-09-22 13:30:53.200;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+157;2022-09-22 13:30:53.241;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+158;2022-09-22 13:30:53.242;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+159;2022-09-22 13:30:53.244;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[20-07-2022 15:55:07] Portugal # Oracle Corporation 1.8.0_301-b09 # Windows 10 10.0 amd64  # IPT 
+160;2022-09-22 13:30:57.100;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+161;2022-09-22 13:30:57.142;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+162;2022-09-22 13:30:57.145;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+163;2022-09-22 13:30:57.146;188.83.116.246;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor programação - João Sarnadas
+164;2022-09-22 13:31:03.205;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+165;2022-09-22 13:31:03.295;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+166;2022-09-22 13:31:03.450;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;processed[1];
+167;2022-09-22 13:31:03.515;188.83.116.246;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;service done![1];user1@ipt.pt User1 AM update Ficha01
+168;2022-09-22 13:31:18.481;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+169;2022-09-22 13:31:18.520;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+170;2022-09-22 13:31:18.521;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;processed[1];
+171;2022-09-22 13:31:18.523;188.83.116.246;LOGOUT              ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt - João Sarnadas
+172;2022-09-22 13:31:26.213;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+173;2022-09-22 13:31:27.441;188.83.116.246;UPDATE_CORE         ;Anonymous User;connected[1];Algorithmi 22.09
+174;2022-09-22 13:31:29.674;188.83.116.246;UPDATE_CORE         ;Anonymous User;processed[1];
+175;2022-09-22 13:31:29.675;188.83.116.246;UPDATE_CORE         ;Anonymous User;service done![1]; Version 22/09/2022 13:31:26 upadated
+176;2022-09-22 13:31:48.608;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+177;2022-09-22 13:31:48.670;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+178;2022-09-22 13:31:48.672;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+179;2022-09-22 13:31:48.713;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_301-b09 # Windows 10 10.0 amd64  # IPT 
+180;2022-09-22 13:31:48.754;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+181;2022-09-22 13:31:48.755;188.83.116.246;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+182;2022-09-22 13:31:48.756;188.83.116.246;GET_UPDATER         ;Anonymous User;processed[1];
+183;2022-09-22 13:31:48.757;188.83.116.246;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+184;2022-09-22 13:31:48.813;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+185;2022-09-22 13:31:48.814;188.83.116.246;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+186;2022-09-22 13:31:48.814;188.83.116.246;GET_NEW_VERSION     ;Anonymous User;processed[1];
+187;2022-09-22 13:31:48.977;188.83.116.246;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 10 4 procs 15,9 / 4,5 gb
+188;2022-09-22 13:32:00.427;188.83.116.246;connecting [1];bl18-116-246.dsl.telepac.pt;;
+189;2022-09-22 13:32:00.466;188.83.116.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+190;2022-09-22 13:32:00.467;188.83.116.246;CORE_VERSION        ;Anonymous User;processed[1];
+191;2022-09-22 13:32:00.467;188.83.116.246;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_301-b09 # Windows 10 10.0 amd64  # IPT 
+192;2022-09-22 16:08:26.832;194.210.112.25;connecting [1];194.210.112.25;;
+193;2022-09-22 16:08:26.907;194.210.112.25;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.05
+194;2022-09-22 16:08:26.908;194.210.112.25;CORE_VERSION        ;Anonymous User;processed[1];
+195;2022-09-22 16:08:26.909;194.210.112.25;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 11 10.0 x86  # Utilizador 
+196;2022-09-22 16:08:26.910;194.210.112.25;connecting [1];194.210.112.25;;
+197;2022-09-22 16:08:26.969;194.210.112.25;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.05
+198;2022-09-22 16:08:26.970;194.210.112.25;GET_UPDATER         ;Anonymous User;processed[1];
+199;2022-09-22 16:08:26.971;194.210.112.25;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+200;2022-09-22 16:08:26.972;194.210.112.25;connecting [1];194.210.112.25;;
+201;2022-09-22 16:08:26.972;194.210.112.25;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.05
+202;2022-09-22 16:08:26.973;194.210.112.25;GET_NEW_VERSION     ;Anonymous User;processed[1];
+203;2022-09-22 16:08:27.523;194.210.112.25;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 11 12 procs 7,9 / 3,1 gb
+204;2022-09-22 16:08:39.828;194.210.112.25;connecting [1];194.210.112.25;;
+205;2022-09-22 16:08:39.868;194.210.112.25;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+206;2022-09-22 16:08:39.868;194.210.112.25;CORE_VERSION        ;Anonymous User;processed[1];
+207;2022-09-22 16:08:39.869;194.210.112.25;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 11 10.0 x86  # Utilizador 
+208;2022-09-22 16:08:50.887;194.210.112.25;connecting [1];194.210.112.25;;
+209;2022-09-22 16:08:50.933;194.210.112.25;LOGIN_USERNAME      ;user23784@ipt.pt Filipe Migue;connected[1];Algorithmi 22.09
+210;2022-09-22 16:08:50.937;194.210.112.25;LOGIN_USERNAME      ;user23784@ipt.pt Filipe Migue;processed[1];
+211;2022-09-22 16:08:50.938;194.210.112.25;LOGIN_USERNAME      ;user23784@ipt.pt Filipe Migue;service done![1];TPSI_2021 user23784@ipt.pt ver[ Algorithmi 21.11] HaRd - Filipe Miguel Chambel Besteiro
+212;2022-09-22 16:09:29.052;194.210.112.25;connecting [1];194.210.112.25;;
+213;2022-09-22 16:09:29.096;194.210.112.25;LOGOUT              ;user23784@ipt.pt Filipe Migue;connected[1];Algorithmi 22.09
+214;2022-09-22 16:09:29.097;194.210.112.25;LOGOUT              ;user23784@ipt.pt Filipe Migue;processed[1];
+215;2022-09-22 16:09:29.098;194.210.112.25;LOGOUT              ;user23784@ipt.pt Filipe Migue;service done![1];TPSI_2021 user23784@ipt.pt - Filipe Miguel Chambel Besteiro
+216;2022-09-22 16:12:03.312;194.210.241.139;connecting [1];194.210.241.139;;
+217;2022-09-22 16:12:03.363;194.210.241.139;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.07
+218;2022-09-22 16:12:03.364;194.210.241.139;CORE_VERSION        ;Anonymous User;processed[1];
+219;2022-09-22 16:12:03.365;194.210.241.139;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_51-b16 # Windows 8.1 6.3 amd64  # Rafael 
+220;2022-09-22 16:12:03.802;194.210.241.139;connecting [1];194.210.241.139;;
+221;2022-09-22 16:12:03.848;194.210.241.139;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.07
+222;2022-09-22 16:12:03.849;194.210.241.139;GET_UPDATER         ;Anonymous User;processed[1];
+223;2022-09-22 16:12:03.850;194.210.241.139;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+224;2022-09-22 16:12:03.906;194.210.241.139;connecting [1];194.210.241.139;;
+225;2022-09-22 16:12:03.907;194.210.241.139;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.07
+226;2022-09-22 16:12:03.908;194.210.241.139;GET_NEW_VERSION     ;Anonymous User;processed[1];
+227;2022-09-22 16:12:04.575;194.210.241.139;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 8.1 12 procs 15,9 / 10,8 gb
+228;2022-09-22 16:20:10.236;149.90.138.127;connecting [1];127.138.90.149.rev.vodafone.pt;;
+229;2022-09-22 16:20:10.290;149.90.138.127;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.07
+230;2022-09-22 16:20:10.291;149.90.138.127;CORE_VERSION        ;Anonymous User;processed[1];
+231;2022-09-22 16:20:10.291;149.90.138.127;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 18.0.2.1+1-1 # Windows 10 10.0 amd64  # user 
+232;2022-09-22 16:20:10.311;149.90.138.127;connecting [1];127.138.90.149.rev.vodafone.pt;;
+233;2022-09-22 16:20:10.358;149.90.138.127;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.07
+234;2022-09-22 16:20:10.359;149.90.138.127;GET_UPDATER         ;Anonymous User;processed[1];
+235;2022-09-22 16:20:10.360;149.90.138.127;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+236;2022-09-22 16:20:10.429;149.90.138.127;connecting [1];127.138.90.149.rev.vodafone.pt;;
+237;2022-09-22 16:20:10.504;149.90.138.127;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.07
+238;2022-09-22 16:20:10.505;149.90.138.127;GET_NEW_VERSION     ;Anonymous User;processed[1];
+239;2022-09-22 16:20:11.085;149.90.138.127;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 10 4 procs 7,7 / 3,2 gb
+240;2022-09-22 16:20:24.415;149.90.138.127;connecting [1];127.138.90.149.rev.vodafone.pt;;
+241;2022-09-22 16:20:24.468;149.90.138.127;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+242;2022-09-22 16:20:24.469;149.90.138.127;CORE_VERSION        ;Anonymous User;processed[1];
+243;2022-09-22 16:20:24.470;149.90.138.127;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 18.0.2.1+1-1 # Windows 10 10.0 amd64  # user 
+244;2022-09-22 17:11:48.501;194.210.241.216;connecting [1];194.210.241.216;;
+245;2022-09-22 17:11:48.561;194.210.241.216;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+246;2022-09-22 17:11:48.562;194.210.241.216;CORE_VERSION        ;Anonymous User;processed[1];
+247;2022-09-22 17:11:48.562;194.210.241.216;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_333-b02 # Windows 11 10.0 amd64  # Sarnadas 
+248;2022-09-22 17:37:13.070;194.210.240.249;connecting [1];194.210.240.249;;
+249;2022-09-22 17:37:13.130;194.210.240.249;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+250;2022-09-22 17:37:13.131;194.210.240.249;CORE_VERSION        ;Anonymous User;processed[1];
+251;2022-09-22 17:37:13.132;194.210.240.249;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 10 10.0 x86  # migue 
+252;2022-09-22 17:37:35.182;194.210.240.249;connecting [1];194.210.240.249;;
+253;2022-09-22 17:37:35.297;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+254;2022-09-22 17:37:35.356;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;processed[1];
+255;2022-09-22 17:37:35.357;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+256;2022-09-22 17:37:36.019;194.210.240.249;connecting [1];194.210.240.249;;
+257;2022-09-22 17:37:36.422;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+258;2022-09-22 17:37:36.478;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;processed[1];
+259;2022-09-22 17:37:36.479;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+260;2022-09-22 17:37:36.740;194.210.240.249;connecting [1];194.210.240.249;;
+261;2022-09-22 17:37:36.795;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+262;2022-09-22 17:37:36.797;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;processed[1];
+263;2022-09-22 17:37:36.798;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+264;2022-09-22 17:37:37.514;194.210.240.249;connecting [1];194.210.240.249;;
+265;2022-09-22 17:37:37.570;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+266;2022-09-22 17:37:37.571;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;processed[1];
+267;2022-09-22 17:37:37.572;194.210.240.249;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+268;2022-09-22 17:46:22.569;149.90.138.127;connecting [1];127.138.90.149.rev.vodafone.pt;;
+269;2022-09-22 17:46:22.631;149.90.138.127;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+270;2022-09-22 17:46:22.632;149.90.138.127;CORE_VERSION        ;Anonymous User;processed[1];
+271;2022-09-22 17:46:22.633;149.90.138.127;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 18.0.2.1+1-1 # Windows 10 10.0 amd64  # user 
+272;2022-09-22 17:56:34.289;194.210.112.143;connecting [1];194.210.112.143;;
+273;2022-09-22 17:56:34.345;194.210.112.143;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+274;2022-09-22 17:56:34.345;194.210.112.143;CORE_VERSION        ;Anonymous User;processed[1];
+275;2022-09-22 17:56:34.345;194.210.112.143;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 10 10.0 x86  # migue 
+276;2022-09-22 17:57:49.212;194.210.112.143;connecting [1];194.210.112.143;;
+277;2022-09-22 17:57:49.534;194.210.112.143;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+278;2022-09-22 17:57:49.537;194.210.112.143;CORE_VERSION        ;Anonymous User;processed[1];
+279;2022-09-22 17:57:49.594;194.210.112.143;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 10 10.0 x86  # migue 
+280;2022-09-22 17:58:05.294;2.83.174.134;connecting [1];2.83.174.134;;
+281;2022-09-22 17:58:05.347;2.83.174.134;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+282;2022-09-22 17:58:05.348;2.83.174.134;CORE_VERSION        ;Anonymous User;processed[1];
+283;2022-09-22 17:58:05.349;2.83.174.134;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_261-b12 # Windows 10 10.0 x86  # Marcio 
+284;2022-09-22 17:58:12.063;194.210.112.143;connecting [1];194.210.112.143;;
+285;2022-09-22 17:58:12.274;194.210.112.143;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+286;2022-09-22 17:58:12.358;194.210.112.143;LOGIN_USERNAME      ;Anonymous User;processed[1];
+287;2022-09-22 17:58:12.359;194.210.112.143;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+288;2022-09-22 17:58:18.434;2.83.174.134;connecting [1];bl22-174-134.dsl.telepac.pt;;
+289;2022-09-22 17:58:18.494;2.83.174.134;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+290;2022-09-22 17:58:18.495;2.83.174.134;CORE_VERSION        ;Anonymous User;processed[1];
+291;2022-09-22 17:58:18.495;2.83.174.134;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_261-b12 # Windows 10 10.0 x86  # Marcio 
+292;2022-09-22 17:58:18.496;2.83.174.134;connecting [1];bl22-174-134.dsl.telepac.pt;;
+293;2022-09-22 17:58:18.515;2.83.174.134;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+294;2022-09-22 17:58:18.516;2.83.174.134;GET_UPDATER         ;Anonymous User;processed[1];
+295;2022-09-22 17:58:18.517;2.83.174.134;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+296;2022-09-22 17:59:24.530;2.83.174.134;connecting [1];bl22-174-134.dsl.telepac.pt;;
+297;2022-09-22 17:59:24.584;2.83.174.134;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+298;2022-09-22 17:59:24.585;2.83.174.134;CORE_VERSION        ;Anonymous User;processed[1];
+299;2022-09-22 17:59:24.586;2.83.174.134;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_261-b12 # Windows 10 10.0 x86  # Marcio 
+300;2022-09-22 18:00:23.528;2.83.174.134;connecting [1];bl22-174-134.dsl.telepac.pt;;
+301;2022-09-22 18:00:23.725;2.83.174.134;NEW_USERNAME        ;user12@ipt.pt User12 MF;connected[1];Algorithmi 22.09
+302;2022-09-22 18:00:27.784;2.83.174.134;NEW_USERNAME        ;user12@ipt.pt User12 MF;processed[1];
+303;2022-09-22 18:00:27.785;2.83.174.134;NEW_USERNAME        ;user12@ipt.pt User12 MF;service done![1];user24856@ipt.pt - LEI_2022
+304;2022-09-22 18:01:08.533;194.210.240.135;connecting [1];194.210.240.135;;
+305;2022-09-22 18:01:08.597;194.210.240.135;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+306;2022-09-22 18:01:08.598;194.210.240.135;CORE_VERSION        ;Anonymous User;processed[1];
+307;2022-09-22 18:01:08.598;194.210.240.135;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] United Kingdom # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # marti 
+308;2022-09-22 18:01:18.048;194.210.240.135;connecting [1];194.210.240.135;;
+309;2022-09-22 18:01:18.116;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+310;2022-09-22 18:01:18.135;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;processed[1];
+311;2022-09-22 18:01:18.136;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+312;2022-09-22 18:03:56.197;194.210.240.135;connecting [1];194.210.240.135;;
+313;2022-09-22 18:03:56.254;194.210.240.135;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+314;2022-09-22 18:03:56.255;194.210.240.135;CORE_VERSION        ;Anonymous User;processed[1];
+315;2022-09-22 18:03:56.256;194.210.240.135;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] United Kingdom # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # marti 
+316;2022-09-22 18:04:01.820;194.210.240.135;connecting [1];194.210.240.135;;
+317;2022-09-22 18:04:01.885;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+318;2022-09-22 18:04:01.887;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;processed[1];
+319;2022-09-22 18:04:01.887;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+320;2022-09-22 18:04:07.585;194.210.240.135;connecting [1];194.210.240.135;;
+321;2022-09-22 18:04:07.655;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+322;2022-09-22 18:04:07.735;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;processed[1];
+323;2022-09-22 18:04:07.736;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+324;2022-09-22 18:04:15.079;194.210.240.135;connecting [1];194.210.240.135;;
+325;2022-09-22 18:04:15.142;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+326;2022-09-22 18:04:15.225;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;processed[1];
+327;2022-09-22 18:04:15.226;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+328;2022-09-22 18:04:24.438;194.210.240.135;connecting [1];194.210.240.135;;
+329;2022-09-22 18:04:24.558;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+330;2022-09-22 18:04:24.625;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;processed[1];
+331;2022-09-22 18:04:24.626;194.210.240.135;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+332;2022-09-22 18:16:48.244;95.93.84.248;connecting [1];a95-93-84-248.cpe.netcabo.pt;;
+333;2022-09-22 18:16:48.312;95.93.84.248;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+334;2022-09-22 18:16:48.312;95.93.84.248;CORE_VERSION        ;Anonymous User;processed[1];
+335;2022-09-22 18:16:48.313;95.93.84.248;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Duarte 
+336;2022-09-22 18:33:35.156;195.74.76.222;connecting [1];r-222.76.74.195.ptr.avast.com;;
+337;2022-09-22 18:33:35.227;195.74.76.222;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+338;2022-09-22 18:33:35.228;195.74.76.222;CORE_VERSION        ;Anonymous User;processed[1];
+339;2022-09-22 18:33:35.228;195.74.76.222;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] United Kingdom # AdoptOpenJDK 1.8.0_212-b03 # Windows 7 6.1 x86  # John 
+340;2022-09-22 18:33:35.322;195.74.76.222;connecting [1];r-222.76.74.195.ptr.avast.com;;
+341;2022-09-22 18:33:35.519;195.74.76.222;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+342;2022-09-22 18:33:35.520;195.74.76.222;GET_UPDATER         ;Anonymous User;processed[1];
+343;2022-09-22 18:33:35.522;195.74.76.222;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] United Kingdom English
+344;2022-09-22 18:33:35.786;195.74.76.222;connecting [1];r-222.76.74.195.ptr.avast.com;;
+345;2022-09-22 18:33:35.984;195.74.76.222;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+346;2022-09-22 18:33:35.984;195.74.76.222;GET_NEW_VERSION     ;Anonymous User;processed[1];
+347;2022-09-22 18:33:37.392;195.74.76.222;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 7 2 procs 3.0 / 2.3 gb
+348;2022-09-22 18:52:39.421;95.93.85.127;connecting [1];a95-93-85-127.cpe.netcabo.pt;;
+349;2022-09-22 18:52:39.422;95.93.85.127;connecting [2];a95-93-85-127.cpe.netcabo.pt;;
+350;2022-09-22 18:52:39.980;95.93.85.127;CORE_VERSION        ;Anonymous User;connected[2];Algorithmi 21.11
+351;2022-09-22 18:52:39.983;95.93.85.127;CORE_VERSION        ;Anonymous User;processed[2];
+352;2022-09-22 18:52:40.052;95.93.85.127;CORE_VERSION        ;Anonymous User;service done![2];ver[22-09-2022 13:31:26] United Kingdom # Oracle Corporation 17.0.2+8-LTS-86 # Windows 10 10.0 amd64  # henry 
+353;2022-09-22 18:52:40.123;95.93.85.127;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 21.11
+354;2022-09-22 18:52:40.124;95.93.85.127;CORE_VERSION        ;Anonymous User;processed[1];
+355;2022-09-22 18:52:40.124;95.93.85.127;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] United Kingdom # Oracle Corporation 17.0.2+8-LTS-86 # Windows 10 10.0 amd64  # henry 
+356;2022-09-22 18:52:41.327;95.93.85.127;connecting [1];a95-93-85-127.cpe.netcabo.pt;;
+357;2022-09-22 18:52:41.397;95.93.85.127;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 21.11
+358;2022-09-22 18:52:41.398;95.93.85.127;GET_UPDATER         ;Anonymous User;processed[1];
+359;2022-09-22 18:52:41.399;95.93.85.127;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] United Kingdom English
+360;2022-09-22 18:52:41.484;95.93.85.127;connecting [1];a95-93-85-127.cpe.netcabo.pt;;
+361;2022-09-22 18:52:41.485;95.93.85.127;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 21.11
+362;2022-09-22 18:52:41.485;95.93.85.127;GET_UPDATER         ;Anonymous User;processed[1];
+363;2022-09-22 18:52:41.486;95.93.85.127;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] United Kingdom English
+364;2022-09-22 18:52:46.168;95.93.85.127;connecting [2];a95-93-85-127.cpe.netcabo.pt;;
+365;2022-09-22 18:52:46.168;95.93.85.127;connecting [2];a95-93-85-127.cpe.netcabo.pt;;
+366;2022-09-22 18:52:46.266;95.93.85.127;GET_NEW_VERSION     ;Anonymous User;connected[2];Algorithmi 21.11
+367;2022-09-22 18:52:46.266;95.93.85.127;GET_NEW_VERSION     ;Anonymous User;processed[2];
+368;2022-09-22 18:52:46.269;95.93.85.127;GET_NEW_VERSION     ;Anonymous User;connected[2];Algorithmi 21.11
+369;2022-09-22 18:52:46.270;95.93.85.127;GET_NEW_VERSION     ;Anonymous User;processed[2];
+370;2022-09-22 18:52:57.423;95.93.85.127;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 10 4 procs 3.9 / 0.8 gb
+371;2022-09-22 18:53:25.252;95.93.85.127;connecting [1];a95-93-85-127.cpe.netcabo.pt;;
+372;2022-09-22 18:53:25.324;95.93.85.127;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+373;2022-09-22 18:53:25.325;95.93.85.127;CORE_VERSION        ;Anonymous User;processed[1];
+374;2022-09-22 18:53:25.326;95.93.85.127;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] United Kingdom # Oracle Corporation 17.0.2+8-LTS-86 # Windows 10 10.0 amd64  # henry 
+375;2022-09-22 18:54:20.568;95.93.85.127;connecting [1];a95-93-85-127.cpe.netcabo.pt;;
+376;2022-09-22 18:54:20.643;95.93.85.127;LOGIN_USERNAME      ;user24173@ipt.pt Henrique Nas;connected[1];Algorithmi 22.09
+377;2022-09-22 18:54:20.663;95.93.85.127;LOGIN_USERNAME      ;user24173@ipt.pt Henrique Nas;processed[1];
+378;2022-09-22 18:54:20.664;95.93.85.127;LOGIN_USERNAME      ;user24173@ipt.pt Henrique Nas;service done![1];LEI_2021 user24173@ipt.pt ver[ Algorithmi 21.11] HenriqueNascimento - Henrique Nascimento
+379;2022-09-22 18:55:22.248;95.93.85.127;connecting [1];a95-93-85-127.cpe.netcabo.pt;;
+380;2022-09-22 19:04:01.658;89.154.6.149;connecting [1];a89-154-6-149.cpe.netcabo.pt;;
+381;2022-09-22 19:04:01.729;89.154.6.149;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+382;2022-09-22 19:04:01.729;89.154.6.149;CORE_VERSION        ;Anonymous User;processed[1];
+383;2022-09-22 19:04:01.730;89.154.6.149;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # LauraDanielLaranjeira 
+384;2022-09-22 19:04:22.726;89.154.6.149;connecting [1];a89-154-6-149.cpe.netcabo.pt;;
+385;2022-09-22 19:04:22.850;89.154.6.149;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+386;2022-09-22 19:04:22.853;89.154.6.149;CORE_VERSION        ;Anonymous User;processed[1];
+387;2022-09-22 19:04:22.918;89.154.6.149;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # LauraDanielLaranjeira 
+388;2022-09-22 19:13:48.011;138.0.73.145;connecting [2];138.0.73.145;;
+389;2022-09-22 19:13:48.012;138.0.73.145;connecting [2];138.0.73.145;;
+390;2022-09-22 19:13:48.840;138.0.73.145;CORE_VERSION        ;Anonymous User;connected[2];Algorithmi 22.05
+391;2022-09-22 19:13:48.845;138.0.73.145;CORE_VERSION        ;Anonymous User;processed[2];
+392;2022-09-22 19:13:48.943;138.0.73.145;CORE_VERSION        ;Anonymous User;service done![2];ver[22-09-2022 13:31:26] United Kingdom # Oracle Corporation 1.8.0_321-b07 # Windows 10 10.0 amd64  # CELIO 
+393;2022-09-22 19:13:48.946;138.0.73.145;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.05
+394;2022-09-22 19:13:48.947;138.0.73.145;CORE_VERSION        ;Anonymous User;processed[1];
+395;2022-09-22 19:13:48.947;138.0.73.145;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] United Kingdom # Oracle Corporation 1.8.0_321-b07 # Windows 10 10.0 amd64  # CELIO 
+396;2022-09-22 19:13:49.235;138.0.73.145;connecting [1];138.0.73.145;;
+397;2022-09-22 19:13:49.438;138.0.73.145;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.05
+398;2022-09-22 19:13:49.438;138.0.73.145;GET_UPDATER         ;Anonymous User;processed[1];
+399;2022-09-22 19:13:49.509;138.0.73.145;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] United Kingdom English
+400;2022-09-22 19:13:51.255;138.0.73.145;connecting [1];138.0.73.145;;
+401;2022-09-22 19:13:51.445;138.0.73.145;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.05
+402;2022-09-22 19:13:51.446;138.0.73.145;GET_NEW_VERSION     ;Anonymous User;processed[1];
+403;2022-09-22 19:13:52.381;138.0.73.145;connecting [2];138.0.73.145;;
+404;2022-09-22 19:13:52.569;138.0.73.145;GET_UPDATER         ;Anonymous User;connected[2];Algorithmi 22.05
+405;2022-09-22 19:13:52.569;138.0.73.145;GET_UPDATER         ;Anonymous User;processed[2];
+406;2022-09-22 19:13:52.640;138.0.73.145;GET_UPDATER         ;Anonymous User;service done![2];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] United Kingdom English
+407;2022-09-22 19:13:53.348;138.0.73.145;connecting [2];138.0.73.145;;
+408;2022-09-22 19:13:53.567;138.0.73.145;GET_NEW_VERSION     ;Anonymous User;connected[2];Algorithmi 22.05
+409;2022-09-22 19:13:53.568;138.0.73.145;GET_NEW_VERSION     ;Anonymous User;processed[2];
+410;2022-09-22 19:13:54.234;138.0.73.145;GET_NEW_VERSION     ;Anonymous User;service done![2];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 10 2 procs 3.8 / 0.8 gb
+411;2022-09-22 19:14:06.396;138.0.73.145;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 10 2 procs 3.8 / 0.8 gb
+412;2022-09-22 19:26:54.557;83.223.250.120;connecting [1];83.223.250.120;;
+413;2022-09-22 19:26:54.976;83.223.250.120;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+414;2022-09-22 19:26:54.979;83.223.250.120;CORE_VERSION        ;Anonymous User;processed[1];
+415;2022-09-22 19:26:55.052;83.223.250.120;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+416;2022-09-22 19:26:55.287;83.223.250.120;connecting [1];83.223.250.120;;
+417;2022-09-22 19:26:55.363;83.223.250.120;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+418;2022-09-22 19:26:55.364;83.223.250.120;GET_UPDATER         ;Anonymous User;processed[1];
+419;2022-09-22 19:26:55.364;83.223.250.120;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+420;2022-09-22 19:26:55.487;83.223.250.120;connecting [1];83.223.250.120;;
+421;2022-09-22 19:26:55.573;83.223.250.120;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+422;2022-09-22 19:26:55.574;83.223.250.120;GET_NEW_VERSION     ;Anonymous User;processed[1];
+423;2022-09-22 19:26:56.305;83.223.250.120;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Mac OS X 8 procs 16,0 / 0,8 gb
+424;2022-09-22 19:27:32.896;83.223.250.120;connecting [1];83.223.250.120;;
+425;2022-09-22 19:27:33.008;83.223.250.120;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+426;2022-09-22 19:27:33.096;83.223.250.120;CORE_VERSION        ;Anonymous User;processed[1];
+427;2022-09-22 19:27:33.097;83.223.250.120;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+428;2022-09-22 19:27:33.691;83.223.250.120;connecting [1];83.223.250.120;;
+429;2022-09-22 19:27:33.765;83.223.250.120;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+430;2022-09-22 19:27:33.765;83.223.250.120;GET_UPDATER         ;Anonymous User;processed[1];
+431;2022-09-22 19:27:33.766;83.223.250.120;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+432;2022-09-22 19:27:33.872;83.223.250.120;connecting [1];83.223.250.120;;
+433;2022-09-22 19:27:33.949;83.223.250.120;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+434;2022-09-22 19:27:33.949;83.223.250.120;GET_NEW_VERSION     ;Anonymous User;processed[1];
+435;2022-09-22 19:27:34.786;83.223.250.120;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Mac OS X 8 procs 16,0 / 0,9 gb
+436;2022-09-22 19:28:51.911;83.223.250.120;connecting [1];83.223.250.120;;
+437;2022-09-22 19:28:51.998;83.223.250.120;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+438;2022-09-22 19:28:51.998;83.223.250.120;CORE_VERSION        ;Anonymous User;processed[1];
+439;2022-09-22 19:28:51.999;83.223.250.120;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+440;2022-09-22 19:28:52.222;83.223.250.120;connecting [1];83.223.250.120;;
+441;2022-09-22 19:28:52.310;83.223.250.120;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+442;2022-09-22 19:28:52.311;83.223.250.120;GET_UPDATER         ;Anonymous User;processed[1];
+443;2022-09-22 19:28:52.311;83.223.250.120;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+444;2022-09-22 19:28:52.415;83.223.250.120;connecting [1];83.223.250.120;;
+445;2022-09-22 19:28:52.513;83.223.250.120;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+446;2022-09-22 19:28:52.514;83.223.250.120;GET_NEW_VERSION     ;Anonymous User;processed[1];
+447;2022-09-22 19:38:39.046;89.154.6.149;connecting [1];a89-154-6-149.cpe.netcabo.pt;;
+448;2022-09-22 19:38:39.142;89.154.6.149;NEW_USERNAME        ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+449;2022-09-22 19:38:41.127;89.154.6.149;NEW_USERNAME        ;user2GO@ipt.pt User2 GO;processed[1];
+450;2022-09-22 19:38:41.128;89.154.6.149;NEW_USERNAME        ;user2GO@ipt.pt User2 GO;service done![1];user24878@ipt.pt - LEI_2022
+451;2022-09-22 19:39:39.034;89.154.6.149;connecting [1];a89-154-6-149.cpe.netcabo.pt;;
+452;2022-09-22 19:39:39.118;89.154.6.149;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+453;2022-09-22 19:39:39.137;89.154.6.149;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;processed[1];
+454;2022-09-22 19:39:39.139;89.154.6.149;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;service done![1];LEI_2022 user24878@ipt.pt ver[ Algorithmi 21.11] user24878 - Alexandre Laranjeira
+455;2022-09-22 20:11:55.843;85.245.33.97;connecting [1];bl12-33-97.dsl.telepac.pt;;
+456;2022-09-22 20:11:55.945;85.245.33.97;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 21.11
+457;2022-09-22 20:11:55.946;85.245.33.97;CORE_VERSION        ;Anonymous User;processed[1];
+458;2022-09-22 20:11:55.946;85.245.33.97;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 11 10.0 x86  # Acer 
+459;2022-09-22 20:11:56.125;85.245.33.97;connecting [1];bl12-33-97.dsl.telepac.pt;;
+460;2022-09-22 20:11:56.290;85.245.33.97;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 21.11
+461;2022-09-22 20:11:56.291;85.245.33.97;GET_UPDATER         ;Anonymous User;processed[1];
+462;2022-09-22 20:11:56.381;85.245.33.97;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+463;2022-09-22 20:11:56.513;85.245.33.97;connecting [1];bl12-33-97.dsl.telepac.pt;;
+464;2022-09-22 20:11:56.673;85.245.33.97;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 21.11
+465;2022-09-22 20:11:56.673;85.245.33.97;GET_NEW_VERSION     ;Anonymous User;processed[1];
+466;2022-09-22 20:12:04.482;85.245.33.97;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 11 8 procs 11,8 / 4,7 gb
+467;2022-09-22 21:00:25.664;109.51.11.137;connecting [1];a109-51-11-137.cpe.netcabo.pt;;
+468;2022-09-22 21:00:25.768;109.51.11.137;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+469;2022-09-22 21:00:25.769;109.51.11.137;CORE_VERSION        ;Anonymous User;processed[1];
+470;2022-09-22 21:00:25.769;109.51.11.137;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 10 10.0 amd64  # Andreia 
+471;2022-09-22 21:07:55.822;109.51.11.137;connecting [1];a109-51-11-137.cpe.netcabo.pt;;
+472;2022-09-22 21:07:55.923;109.51.11.137;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+473;2022-09-22 21:07:55.924;109.51.11.137;CORE_VERSION        ;Anonymous User;processed[1];
+474;2022-09-22 21:07:55.924;109.51.11.137;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 10 10.0 amd64  # Andreia 
+475;2022-09-22 21:08:31.319;109.51.11.137;connecting [1];a109-51-11-137.cpe.netcabo.pt;;
+476;2022-09-22 21:08:31.406;109.51.11.137;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+477;2022-09-22 21:08:31.408;109.51.11.137;LOGIN_USERNAME      ;Anonymous User;processed[1];
+478;2022-09-22 21:08:31.408;109.51.11.137;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+479;2022-09-22 21:38:42.448;109.51.11.137;connecting [1];a109-51-11-137.cpe.netcabo.pt;;
+480;2022-09-22 21:38:42.553;109.51.11.137;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+481;2022-09-22 21:38:42.553;109.51.11.137;CORE_VERSION        ;Anonymous User;processed[1];
+482;2022-09-22 21:38:42.554;109.51.11.137;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 10 10.0 amd64  # Andreia 
+483;2022-09-22 22:16:05.663;94.61.61.122;connecting [1];122.61.61.94.rev.vodafone.pt;;
+484;2022-09-22 22:16:05.765;94.61.61.122;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+485;2022-09-22 22:16:05.766;94.61.61.122;CORE_VERSION        ;Anonymous User;processed[1];
+486;2022-09-22 22:16:05.766;94.61.61.122;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_51-b16 # Windows 8.1 6.3 amd64  # Andreia Calado 
+487;2022-09-22 22:16:05.767;94.61.61.122;connecting [1];122.61.61.94.rev.vodafone.pt;;
+488;2022-09-22 22:16:05.881;94.61.61.122;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+489;2022-09-22 22:16:05.881;94.61.61.122;GET_UPDATER         ;Anonymous User;processed[1];
+490;2022-09-22 22:16:05.882;94.61.61.122;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+491;2022-09-23 01:25:37.514;81.193.179.169;connecting [1];bl4-179-169.dsl.telepac.pt;;
+492;2022-09-23 01:25:37.620;81.193.179.169;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+493;2022-09-23 01:25:37.620;81.193.179.169;CORE_VERSION        ;Anonymous User;processed[1];
+494;2022-09-23 01:25:37.621;81.193.179.169;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 17.0.1+12-LTS-39 # Windows 10 10.0 amd64  # Marinho 
+495;2022-09-23 01:45:29.894;81.193.179.169;connecting [1];bl4-179-169.dsl.telepac.pt;;
+496;2022-09-23 01:45:30.000;81.193.179.169;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+497;2022-09-23 01:45:30.001;81.193.179.169;CORE_VERSION        ;Anonymous User;processed[1];
+498;2022-09-23 01:45:30.001;81.193.179.169;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 17.0.1+12-LTS-39 # Windows 10 10.0 amd64  # Marinho 
+499;2022-09-23 01:59:39.112;81.193.179.169;connecting [1];bl4-179-169.dsl.telepac.pt;;
+500;2022-09-23 01:59:39.240;81.193.179.169;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+501;2022-09-23 01:59:39.337;81.193.179.169;CORE_VERSION        ;Anonymous User;processed[1];
+502;2022-09-23 01:59:39.338;81.193.179.169;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 17.0.1+12-LTS-39 # Windows 10 10.0 amd64  # Marinho 
+503;2022-09-23 09:49:09.372;46.50.2.47;connecting [1];46.50.2.47;;
+504;2022-09-23 09:49:10.087;46.50.2.47;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+505;2022-09-23 09:49:10.187;46.50.2.47;CORE_VERSION        ;Anonymous User;processed[1];
+506;2022-09-23 09:49:10.188;46.50.2.47;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+507;2022-09-23 09:50:14.936;194.210.113.253;connecting [1];194.210.113.253;;
+508;2022-09-23 09:50:15.036;194.210.113.253;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+509;2022-09-23 09:50:15.036;194.210.113.253;CORE_VERSION        ;Anonymous User;processed[1];
+510;2022-09-23 09:50:15.037;194.210.113.253;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Duarte 
+511;2022-09-23 09:52:02.312;194.210.112.205;connecting [1];194.210.112.205;;
+512;2022-09-23 09:52:02.411;194.210.112.205;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+513;2022-09-23 09:52:02.412;194.210.112.205;CORE_VERSION        ;Anonymous User;processed[1];
+514;2022-09-23 09:52:02.412;194.210.112.205;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Nicolau 
+515;2022-09-23 09:52:04.271;194.210.112.205;connecting [1];194.210.112.205;;
+516;2022-09-23 09:52:04.596;194.210.112.205;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+517;2022-09-23 09:52:04.600;194.210.112.205;CORE_VERSION        ;Anonymous User;processed[1];
+518;2022-09-23 09:52:04.694;194.210.112.205;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Nicolau 
+519;2022-09-23 09:52:29.952;194.210.240.246;connecting [1];194.210.240.246;;
+520;2022-09-23 09:52:30.050;194.210.240.246;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+521;2022-09-23 09:52:30.051;194.210.240.246;CORE_VERSION        ;Anonymous User;processed[1];
+522;2022-09-23 09:52:30.051;194.210.240.246;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 11 10.0 amd64  # joaov 
+523;2022-09-23 09:53:25.879;194.210.112.194;connecting [1];194.210.112.194;;
+524;2022-09-23 09:53:25.980;194.210.112.194;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+525;2022-09-23 09:53:25.981;194.210.112.194;CORE_VERSION        ;Anonymous User;processed[1];
+526;2022-09-23 09:53:25.981;194.210.112.194;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] United Kingdom # Oracle Corporation 19+36-2238 # Windows 11 10.0 amd64  # ruben 
+527;2022-09-23 09:54:00.051;194.210.113.133;connecting [1];194.210.113.133;;
+528;2022-09-23 09:54:00.152;194.210.113.133;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+529;2022-09-23 09:54:00.153;194.210.113.133;CORE_VERSION        ;Anonymous User;processed[1];
+530;2022-09-23 09:54:00.153;194.210.113.133;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # LauraDanielLaranjeira 
+531;2022-09-23 09:54:20.015;89.214.127.92;connecting [1];89.214.127.92;;
+532;2022-09-23 09:54:20.116;89.214.127.92;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+533;2022-09-23 09:54:20.117;89.214.127.92;CORE_VERSION        ;Anonymous User;processed[1];
+534;2022-09-23 09:54:20.117;89.214.127.92;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 10 10.0 x86  # Timoneiro 
+535;2022-09-23 09:54:20.722;194.210.113.133;connecting [1];194.210.113.133;;
+536;2022-09-23 09:54:20.822;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+537;2022-09-23 09:54:20.824;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;processed[1];
+538;2022-09-23 09:54:20.824;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;service done![1];LEI_2022 user24878@ipt.pt ver[ Algorithmi 21.11] user24878 - Alexandre Laranjeira
+539;2022-09-23 09:54:26.296;194.210.113.133;connecting [1];194.210.113.133;;
+540;2022-09-23 09:54:26.385;194.210.113.133;LOGOUT              ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+541;2022-09-23 09:54:26.386;194.210.113.133;LOGOUT              ;user2GO@ipt.pt User2 GO;processed[1];
+542;2022-09-23 09:54:26.386;194.210.113.133;LOGOUT              ;user2GO@ipt.pt User2 GO;service done![1];LEI_2022 user24878@ipt.pt - Alexandre Laranjeira
+543;2022-09-23 09:54:35.084;194.210.113.133;connecting [1];194.210.113.133;;
+544;2022-09-23 09:54:35.175;194.210.113.133;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+545;2022-09-23 09:54:35.276;194.210.113.133;CORE_VERSION        ;Anonymous User;processed[1];
+546;2022-09-23 09:54:35.277;194.210.113.133;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # LauraDanielLaranjeira 
+547;2022-09-23 09:56:34.501;194.210.240.94;connecting [1];194.210.240.94;;
+548;2022-09-23 09:56:34.599;194.210.240.94;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+549;2022-09-23 09:56:34.600;194.210.240.94;CORE_VERSION        ;Anonymous User;processed[1];
+550;2022-09-23 09:56:34.600;194.210.240.94;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # turma 
+551;2022-09-23 09:57:50.439;194.210.240.193;connecting [1];194.210.240.193;;
+552;2022-09-23 09:57:50.545;194.210.240.193;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 21.11
+553;2022-09-23 09:57:50.546;194.210.240.193;CORE_VERSION        ;Anonymous User;processed[1];
+554;2022-09-23 09:57:50.546;194.210.240.193;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_333-b02 # Windows 11 10.0 amd64  # Sarnadas 
+555;2022-09-23 09:57:50.547;194.210.240.193;connecting [1];194.210.240.193;;
+556;2022-09-23 09:57:50.547;194.210.240.193;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 21.11
+557;2022-09-23 09:57:50.547;194.210.240.193;GET_UPDATER         ;Anonymous User;processed[1];
+558;2022-09-23 09:57:50.548;194.210.240.193;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+559;2022-09-23 09:57:50.548;194.210.240.193;connecting [1];194.210.240.193;;
+560;2022-09-23 09:57:50.549;194.210.240.193;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 21.11
+561;2022-09-23 09:57:50.549;194.210.240.193;GET_NEW_VERSION     ;Anonymous User;processed[1];
+562;2022-09-23 09:57:51.033;194.210.240.193;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 11 8 procs 15,6 / 8,4 gb
+563;2022-09-23 09:57:55.572;194.210.113.133;connecting [1];194.210.113.133;;
+564;2022-09-23 09:57:56.389;194.210.113.133;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+565;2022-09-23 09:57:56.393;194.210.113.133;CORE_VERSION        ;Anonymous User;processed[1];
+566;2022-09-23 09:57:56.482;194.210.113.133;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # LauraDanielLaranjeira 
+567;2022-09-23 09:58:04.771;194.210.112.205;connecting [1];194.210.112.205;;
+568;2022-09-23 09:58:04.869;194.210.112.205;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+569;2022-09-23 09:58:04.869;194.210.112.205;CORE_VERSION        ;Anonymous User;processed[1];
+570;2022-09-23 09:58:04.870;194.210.112.205;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Nicolau 
+571;2022-09-23 09:58:05.093;194.210.112.194;connecting [1];194.210.112.194;;
+572;2022-09-23 09:58:05.204;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+573;2022-09-23 09:58:05.208;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;processed[1];
+574;2022-09-23 09:58:05.209;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+575;2022-09-23 09:58:18.324;46.50.2.47;connecting [1];46.50.2.47;;
+576;2022-09-23 09:58:18.502;46.50.2.47;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+577;2022-09-23 09:58:18.506;46.50.2.47;CORE_VERSION        ;Anonymous User;processed[1];
+578;2022-09-23 09:58:18.597;46.50.2.47;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+579;2022-09-23 09:58:18.739;46.50.2.47;connecting [1];46.50.2.47;;
+580;2022-09-23 09:58:18.872;46.50.2.47;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+581;2022-09-23 09:58:18.873;46.50.2.47;GET_UPDATER         ;Anonymous User;processed[1];
+582;2022-09-23 09:58:18.968;46.50.2.47;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+583;2022-09-23 09:58:19.092;46.50.2.47;connecting [1];46.50.2.47;;
+584;2022-09-23 09:58:19.322;46.50.2.47;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+585;2022-09-23 09:58:19.322;46.50.2.47;GET_NEW_VERSION     ;Anonymous User;processed[1];
+586;2022-09-23 09:58:21.372;46.50.2.47;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Mac OS X 8 procs 16,0 / 1,2 gb
+587;2022-09-23 09:58:28.223;194.210.240.193;connecting [1];194.210.240.193;;
+588;2022-09-23 09:58:28.332;194.210.240.193;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+589;2022-09-23 09:58:28.332;194.210.240.193;CORE_VERSION        ;Anonymous User;processed[1];
+590;2022-09-23 09:58:28.333;194.210.240.193;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_333-b02 # Windows 11 10.0 amd64  # Sarnadas 
+591;2022-09-23 09:58:41.557;194.210.113.133;connecting [1];194.210.113.133;;
+592;2022-09-23 09:58:41.764;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+593;2022-09-23 09:58:41.864;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;processed[1];
+594;2022-09-23 09:58:41.864;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;service done![1];LEI_2022 user24878@ipt.pt ver[ Algorithmi 21.11] user24878 - Alexandre Laranjeira
+595;2022-09-23 09:59:30.378;194.210.113.133;connecting [1];194.210.113.133;;
+596;2022-09-23 09:59:30.494;194.210.113.133;LOGOUT              ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+597;2022-09-23 09:59:30.494;194.210.113.133;LOGOUT              ;user2GO@ipt.pt User2 GO;processed[1];
+598;2022-09-23 09:59:30.495;194.210.113.133;LOGOUT              ;user2GO@ipt.pt User2 GO;service done![1];LEI_2022 user24878@ipt.pt - Alexandre Laranjeira
+599;2022-09-23 09:59:34.100;89.214.152.65;connecting [1];89.214.152.65;;
+600;2022-09-23 09:59:34.270;89.214.152.65;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+601;2022-09-23 09:59:34.274;89.214.152.65;CORE_VERSION        ;Anonymous User;processed[1];
+602;2022-09-23 09:59:34.383;89.214.152.65;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 11 10.0 x86  # vjoaq 
+603;2022-09-23 10:00:10.799;89.214.127.92;connecting [1];89.214.127.92;;
+604;2022-09-23 10:00:10.973;89.214.127.92;NEW_USERNAME        ;user4@ipt.pt User4 TD  ;connected[1];Algorithmi 22.09
+605;2022-09-23 10:00:14.430;89.214.127.92;NEW_USERNAME        ;user4@ipt.pt User4 TD  ;processed[1];
+606;2022-09-23 10:00:14.430;89.214.127.92;NEW_USERNAME        ;user4@ipt.pt User4 TD  ;service done![1];user24721@ipt.pt - LEI_2022
+607;2022-09-23 10:01:36.354;194.210.112.205;connecting [1];194.210.112.205;;
+608;2022-09-23 10:01:36.465;194.210.112.205;NEW_USERNAME        ;user3@ipt.pt User3 NA;connected[1];Algorithmi 22.09
+609;2022-09-23 10:01:38.040;194.210.112.205;NEW_USERNAME        ;user3@ipt.pt User3 NA;processed[1];
+610;2022-09-23 10:01:38.041;194.210.112.205;NEW_USERNAME        ;user3@ipt.pt User3 NA;service done![1];user24848@ipt.pt - LEI_2022
+611;2022-09-23 10:01:44.258;89.214.127.92;connecting [1];89.214.127.92;;
+612;2022-09-23 10:01:44.805;89.214.127.92;NEW_USERNAME        ;user4@ipt.pt User4 TD  ;connected[1];Algorithmi 22.09
+613;2022-09-23 10:01:44.919;89.214.127.92;NEW_USERNAME        ;user4@ipt.pt User4 TD  ;processed[1];
+614;2022-09-23 10:01:44.919;89.214.127.92;NEW_USERNAME        ;user4@ipt.pt User4 TD  ;service done![1];null
+615;2022-09-23 10:02:02.683;194.210.113.133;connecting [1];194.210.113.133;;
+616;2022-09-23 10:02:02.853;194.210.113.133;NEW_USERNAME        ;user5@ipt.pt User5 GD;connected[1];Algorithmi 22.09
+617;2022-09-23 10:02:02.954;194.210.113.133;NEW_USERNAME        ;user5@ipt.pt User5 GD;processed[1];
+618;2022-09-23 10:02:02.955;194.210.113.133;NEW_USERNAME        ;user5@ipt.pt User5 GD;service done![1];null
+619;2022-09-23 10:02:04.567;194.210.112.10;connecting [1];194.210.112.10;;
+620;2022-09-23 10:02:04.681;194.210.112.10;NEW_USERNAME        ;user6@ipt.pt User6 AL ;connected[1];Algorithmi 22.09
+621;2022-09-23 10:02:05.967;194.210.112.10;NEW_USERNAME        ;user6@ipt.pt User6 AL ;processed[1];
+622;2022-09-23 10:02:05.967;194.210.112.10;NEW_USERNAME        ;user6@ipt.pt User6 AL ;service done![1];user24868@ipt.pt - LEI_2022
+623;2022-09-23 10:02:06.610;194.210.240.193;connecting [1];194.210.240.193;;
+624;2022-09-23 10:02:06.726;194.210.240.193;NEW_USERNAME        ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+625;2022-09-23 10:02:06.727;194.210.240.193;NEW_USERNAME        ;user1@ipt.pt User1 AM    ;processed[1];
+626;2022-09-23 10:02:06.727;194.210.240.193;NEW_USERNAME        ;user1@ipt.pt User1 AM    ;service done![1];null
+627;2022-09-23 10:02:07.521;194.210.240.94;connecting [1];194.210.240.94;;
+628;2022-09-23 10:02:07.629;194.210.240.94;NEW_USERNAME        ;user7@ipt.pt User7 FL;connected[1];Algorithmi 22.09
+629;2022-09-23 10:02:08.984;194.210.240.94;NEW_USERNAME        ;user7@ipt.pt User7 FL;processed[1];
+630;2022-09-23 10:02:08.984;194.210.240.94;NEW_USERNAME        ;user7@ipt.pt User7 FL;service done![1];user24850@ipt.pt - LEI_2022
+631;2022-09-23 10:02:17.936;194.210.112.194;connecting [1];194.210.112.194;;
+632;2022-09-23 10:02:18.044;194.210.112.194;NEW_USERNAME        ;user8@ipt.pt User8 RF;connected[1];Algorithmi 22.09
+633;2022-09-23 10:02:19.643;194.210.112.194;NEW_USERNAME        ;user8@ipt.pt User8 RF;processed[1];
+634;2022-09-23 10:02:19.643;194.210.112.194;NEW_USERNAME        ;user8@ipt.pt User8 RF;service done![1];user24705@ipt.pt - LEI_2022
+635;2022-09-23 10:02:27.874;194.210.240.94;connecting [1];194.210.240.94;;
+636;2022-09-23 10:02:27.988;194.210.240.94;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+637;2022-09-23 10:02:27.989;194.210.240.94;LOGIN_USERNAME      ;Anonymous User;processed[1];
+638;2022-09-23 10:02:27.990;194.210.240.94;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+639;2022-09-23 10:02:28.366;194.210.112.194;connecting [1];194.210.112.194;;
+640;2022-09-23 10:02:28.470;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+641;2022-09-23 10:02:28.471;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;processed[1];
+642;2022-09-23 10:02:28.471;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+643;2022-09-23 10:02:29.834;194.210.112.194;connecting [1];194.210.112.194;;
+644;2022-09-23 10:02:29.943;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+645;2022-09-23 10:02:29.944;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;processed[1];
+646;2022-09-23 10:02:29.944;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+647;2022-09-23 10:02:37.576;194.210.240.94;connecting [1];194.210.240.94;;
+648;2022-09-23 10:02:37.904;194.210.240.94;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+649;2022-09-23 10:02:38.026;194.210.240.94;LOGIN_USERNAME      ;Anonymous User;processed[1];
+650;2022-09-23 10:02:38.026;194.210.240.94;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+651;2022-09-23 10:02:38.563;194.210.113.133;connecting [1];194.210.113.133;;
+652;2022-09-23 10:02:38.672;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+653;2022-09-23 10:02:38.673;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;processed[1];
+654;2022-09-23 10:02:38.673;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;service done![1];LEI_2022 user24878@ipt.pt ver[ Algorithmi 21.11] user24878 - Alexandre Laranjeira
+655;2022-09-23 10:02:58.734;194.210.240.246;connecting [1];194.210.240.246;;
+656;2022-09-23 10:02:58.863;194.210.240.246;NEW_USERNAME        ;user9@ipt.pt User9 JV ;connected[1];Algorithmi 22.09
+657;2022-09-23 10:03:00.157;194.210.240.246;NEW_USERNAME        ;user9@ipt.pt User9 JV ;processed[1];
+658;2022-09-23 10:03:00.157;194.210.240.246;NEW_USERNAME        ;user9@ipt.pt User9 JV ;service done![1];user24728@ipt.pt - LEI_2022
+659;2022-09-23 10:03:01.467;194.210.112.194;connecting [1];194.210.112.194;;
+660;2022-09-23 10:03:01.589;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+661;2022-09-23 10:03:01.590;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;processed[1];
+662;2022-09-23 10:03:01.590;194.210.112.194;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+663;2022-09-23 10:03:01.591;194.210.113.253;connecting [1];194.210.113.253;;
+664;2022-09-23 10:03:01.820;194.210.113.253;NEW_USERNAME        ;user10@ipt.pt User10 DF;connected[1];Algorithmi 22.09
+665;2022-09-23 10:03:03.040;194.210.112.205;connecting [2];194.210.112.205;;
+666;2022-09-23 10:03:03.148;194.210.112.205;LOGIN_USERNAME      ;Anonymous User;connected[2];Algorithmi 22.09
+667;2022-09-23 10:03:03.150;194.210.112.205;LOGIN_USERNAME      ;Anonymous User;processed[2];
+668;2022-09-23 10:03:03.150;194.210.112.205;LOGIN_USERNAME      ;Anonymous User;service done![2];  ver[ Algorithmi 21.11]  - 
+669;2022-09-23 10:03:03.150;194.210.113.253;NEW_USERNAME        ;user10@ipt.pt User10 DF;processed[1];
+670;2022-09-23 10:03:03.151;194.210.113.253;NEW_USERNAME        ;user10@ipt.pt User10 DF;service done![1];user24993@ipt.pt - LEI_2022
+671;2022-09-23 10:03:06.386;194.210.113.133;connecting [1];194.210.113.133;;
+672;2022-09-23 10:03:06.704;194.210.113.133;UPDATE_USERNAME     ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+673;2022-09-23 10:03:08.036;194.210.113.133;UPDATE_USERNAME     ;user2GO@ipt.pt User2 GO;processed[1];
+674;2022-09-23 10:03:08.037;194.210.113.133;UPDATE_USERNAME     ;user2GO@ipt.pt User2 GO;service done![1];Update user user24878@ipt.pt - Alexandre Laranjeira
+675;2022-09-23 10:03:11.899;46.50.2.47;connecting [1];46.50.2.47;;
+676;2022-09-23 10:03:12.051;46.50.2.47;NEW_USERNAME        ;user22895@ipt.pt Maria Beatri;connected[1];Algorithmi 22.09
+677;2022-09-23 10:03:13.556;46.50.2.47;NEW_USERNAME        ;user22895@ipt.pt Maria Beatri;processed[1];
+678;2022-09-23 10:03:13.557;46.50.2.47;NEW_USERNAME        ;user22895@ipt.pt Maria Beatri;service done![1];user22895@ipt.pt - LEI_2022
+679;2022-09-23 10:03:28.336;194.210.240.246;connecting [1];194.210.240.246;;
+680;2022-09-23 10:03:28.460;194.210.240.246;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+681;2022-09-23 10:03:28.461;194.210.240.246;LOGIN_USERNAME      ;Anonymous User;processed[1];
+682;2022-09-23 10:03:28.462;194.210.240.246;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+683;2022-09-23 10:03:53.969;194.210.240.94;connecting [1];194.210.240.94;;
+684;2022-09-23 10:03:54.096;194.210.240.94;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+685;2022-09-23 10:03:54.097;194.210.240.94;LOGIN_USERNAME      ;Anonymous User;processed[1];
+686;2022-09-23 10:03:54.098;194.210.240.94;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+687;2022-09-23 10:04:10.642;89.214.152.65;connecting [1];89.214.152.65;;
+688;2022-09-23 10:04:10.954;89.214.152.65;NEW_USERNAME        ;user11@ipt.pt User11 JJ;connected[1];Algorithmi 22.09
+689;2022-09-23 10:04:12.302;89.214.152.65;NEW_USERNAME        ;user11@ipt.pt User11 JJ;processed[1];
+690;2022-09-23 10:04:12.302;89.214.152.65;NEW_USERNAME        ;user11@ipt.pt User11 JJ;service done![1];user24729@ipt.pt - LEI_2022
+691;2022-09-23 10:04:34.280;89.214.152.65;connecting [1];89.214.152.65;;
+692;2022-09-23 10:04:34.550;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+693;2022-09-23 10:04:34.677;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;processed[1];
+694;2022-09-23 10:04:34.677;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+695;2022-09-23 10:04:39.459;194.210.240.94;connecting [1];194.210.240.94;;
+696;2022-09-23 10:04:39.570;194.210.240.94;LOGIN_USERNAME      ;user7@ipt.pt User7 FL;connected[1];Algorithmi 22.09
+697;2022-09-23 10:04:39.571;194.210.240.94;LOGIN_USERNAME      ;user7@ipt.pt User7 FL;processed[1];
+698;2022-09-23 10:04:39.572;194.210.240.94;LOGIN_USERNAME      ;user7@ipt.pt User7 FL;service done![1];LEI_2022 user24850@ipt.pt ver[ Algorithmi 21.11] xico21 - Daniel Dourado Timoneiro
+699;2022-09-23 10:05:00.635;89.214.127.92;connecting [1];89.214.127.92;;
+700;2022-09-23 10:05:00.794;89.214.127.92;LOGIN_USERNAME      ;user4@ipt.pt User4 TD  ;connected[1];Algorithmi 22.09
+701;2022-09-23 10:05:00.911;89.214.127.92;LOGIN_USERNAME      ;user4@ipt.pt User4 TD  ;processed[1];
+702;2022-09-23 10:05:00.911;89.214.127.92;LOGIN_USERNAME      ;user4@ipt.pt User4 TD  ;service done![1];LEI_2022 user24721@ipt.pt ver[ Algorithmi 21.11] Salgueiro - Timoneiro Salgueiro
+703;2022-09-23 10:05:38.002;89.214.127.92;connecting [1];89.214.127.92;;
+704;2022-09-23 10:05:38.129;89.214.127.92;UPDATE_USERNAME     ;user4@ipt.pt User4 TD  ;connected[1];Algorithmi 22.09
+705;2022-09-23 10:05:39.574;89.214.127.92;UPDATE_USERNAME     ;user4@ipt.pt User4 TD  ;processed[1];
+706;2022-09-23 10:05:39.574;89.214.127.92;UPDATE_USERNAME     ;user4@ipt.pt User4 TD  ;service done![1];Update user user24721@ipt.pt - Timoneiro Salgueiro
+707;2022-09-23 10:06:34.759;194.210.113.253;connecting [1];194.210.113.253;;
+708;2022-09-23 10:06:34.893;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;connected[1];Algorithmi 22.09
+709;2022-09-23 10:06:34.894;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;processed[1];
+710;2022-09-23 10:06:34.894;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;service done![1];LEI_2022 user24993@ipt.pt ver[ Algorithmi 21.11] D.Pereira - Duarte Filipe Vinhas Reis Pereira
+711;2022-09-23 10:06:47.679;193.137.5.231;connecting [1];193.137.5.231;;
+712;2022-09-23 10:06:47.813;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+713;2022-09-23 10:06:47.814;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+714;2022-09-23 10:06:47.814;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+715;2022-09-23 10:07:07.573;194.210.113.133;connecting [1];194.210.113.133;;
+716;2022-09-23 10:07:07.696;194.210.113.133;LOGOUT              ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+717;2022-09-23 10:07:07.697;194.210.113.133;LOGOUT              ;user2GO@ipt.pt User2 GO;processed[1];
+718;2022-09-23 10:07:07.697;194.210.113.133;LOGOUT              ;user2GO@ipt.pt User2 GO;service done![1];LEI_2022 user24878@ipt.pt - Alexandre Laranjeira
+719;2022-09-23 10:08:10.014;194.210.112.10;connecting [1];194.210.112.10;;
+720;2022-09-23 10:08:10.147;194.210.112.10;LOGIN_USERNAME      ;user6@ipt.pt User6 AL ;connected[1];Algorithmi 22.09
+721;2022-09-23 10:08:10.148;194.210.112.10;LOGIN_USERNAME      ;user6@ipt.pt User6 AL ;processed[1];
+722;2022-09-23 10:08:10.149;194.210.112.10;LOGIN_USERNAME      ;user6@ipt.pt User6 AL ;service done![1];LEI_2022 user24868@ipt.pt ver[ Algorithmi 21.11] KatF4 - Andreia Lopez Ribeiro
+723;2022-09-23 10:08:44.095;194.210.113.133;connecting [2];194.210.113.133;;
+724;2022-09-23 10:08:44.222;193.137.5.231;connecting [1];193.137.5.231;;
+725;2022-09-23 10:08:44.222;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[2];Algorithmi 22.09
+726;2022-09-23 10:08:44.223;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[2];
+727;2022-09-23 10:08:44.223;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![2];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+728;2022-09-23 10:08:44.223;194.210.113.133;CORE_VERSION        ;Anonymous User;connected[2];Algorithmi 22.09
+729;2022-09-23 10:08:44.224;194.210.113.133;CORE_VERSION        ;Anonymous User;processed[1];
+730;2022-09-23 10:08:44.224;194.210.113.133;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # LauraDanielLaranjeira 
+731;2022-09-23 10:08:48.828;194.210.113.133;connecting [1];194.210.113.133;;
+732;2022-09-23 10:08:48.958;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+733;2022-09-23 10:08:48.959;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;processed[1];
+734;2022-09-23 10:08:48.960;194.210.113.133;LOGIN_USERNAME      ;user2GO@ipt.pt User2 GO;service done![1];LEI_2022 user24878@ipt.pt ver[ Algorithmi 21.11] Darkness008 - Alexandre Laranjeira
+735;2022-09-23 10:09:28.547;193.137.5.231;connecting [1];193.137.5.231;;
+736;2022-09-23 10:09:28.674;193.137.5.231;LOGIN_USERNAME      ;user12@ipt.pt User12 MF;connected[1];Algorithmi 22.09
+737;2022-09-23 10:09:28.676;193.137.5.231;LOGIN_USERNAME      ;user12@ipt.pt User12 MF;processed[1];
+738;2022-09-23 10:09:28.676;193.137.5.231;LOGIN_USERNAME      ;user12@ipt.pt User12 MF;service done![1];LEI_2022 user24856@ipt.pt ver[ Algorithmi 21.11] Marco Malho - Marco Filipe Galhardo Malho
+739;2022-09-23 10:10:07.364;193.137.5.231;connecting [1];193.137.5.231;;
+740;2022-09-23 10:10:53.649;194.210.240.193;connecting [1];194.210.240.193;;
+741;2022-09-23 10:10:53.776;194.210.240.193;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+742;2022-09-23 10:10:53.797;194.210.240.193;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;processed[1];
+743;2022-09-23 10:10:53.797;194.210.240.193;LOGIN_USERNAME      ;user1@ipt.pt User1 AM    ;service done![1];LEI_2022 Sarnadas@ipt.pt ver[ Algorithmi 21.11] professor programação - João Sarnadas
+744;2022-09-23 10:11:01.194;46.50.2.47;connecting [1];46.50.2.47;;
+745;2022-09-23 10:11:01.337;46.50.2.47;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+746;2022-09-23 10:11:01.338;46.50.2.47;LOGIN_USERNAME      ;Anonymous User;processed[1];
+747;2022-09-23 10:11:01.338;46.50.2.47;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+748;2022-09-23 10:11:18.410;193.137.5.231;connecting [1];193.137.5.231;;
+749;2022-09-23 10:11:18.555;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+750;2022-09-23 10:11:18.556;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+751;2022-09-23 10:11:18.556;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+752;2022-09-23 10:11:45.032;89.214.152.65;connecting [1];89.214.152.65;;
+753;2022-09-23 10:11:45.327;89.214.152.65;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+754;2022-09-23 10:11:45.332;89.214.152.65;CORE_VERSION        ;Anonymous User;processed[1];
+755;2022-09-23 10:11:45.453;89.214.152.65;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Rodrigo 
+756;2022-09-23 10:11:48.161;89.214.152.65;connecting [1];89.214.152.65;;
+757;2022-09-23 10:11:48.465;89.214.152.65;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+758;2022-09-23 10:11:48.471;89.214.152.65;CORE_VERSION        ;Anonymous User;processed[1];
+759;2022-09-23 10:11:48.604;89.214.152.65;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Rodrigo 
+760;2022-09-23 10:11:59.787;194.210.240.214;connecting [1];194.210.240.214;;
+761;2022-09-23 10:11:59.911;194.210.240.214;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+762;2022-09-23 10:11:59.911;194.210.240.214;CORE_VERSION        ;Anonymous User;processed[1];
+763;2022-09-23 10:11:59.912;194.210.240.214;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 11 10.0 amd64  # Liam 
+764;2022-09-23 10:12:04.374;193.137.5.231;connecting [1];193.137.5.231;;
+765;2022-09-23 10:12:04.501;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+766;2022-09-23 10:12:04.502;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+767;2022-09-23 10:12:04.502;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+768;2022-09-23 10:12:09.141;193.137.5.231;connecting [1];193.137.5.231;;
+769;2022-09-23 10:12:09.280;193.137.5.231;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+770;2022-09-23 10:12:09.281;193.137.5.231;GET_UPDATER         ;Anonymous User;processed[1];
+771;2022-09-23 10:12:09.281;193.137.5.231;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+772;2022-09-23 10:12:13.706;193.137.5.231;connecting [1];193.137.5.231;;
+773;2022-09-23 10:12:13.853;193.137.5.231;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+774;2022-09-23 10:12:13.854;193.137.5.231;GET_NEW_VERSION     ;Anonymous User;processed[1];
+775;2022-09-23 10:12:14.596;193.137.5.231;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Windows 10 6 procs 7,9 / 4,9 gb
+776;2022-09-23 10:12:15.388;194.210.240.193;connecting [1];194.210.240.193;;
+777;2022-09-23 10:12:15.635;194.210.240.193;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+778;2022-09-23 10:12:15.765;194.210.240.193;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;processed[1];
+779;2022-09-23 10:12:15.894;194.210.240.193;UPDATE_PROBLEM      ;user1@ipt.pt User1 AM    ;service done![1];user1@ipt.pt User1 AM update Ficha01
+780;2022-09-23 10:12:18.231;194.210.112.194;connecting [2];194.210.112.194;;
+781;2022-09-23 10:12:18.360;194.210.112.194;UPDATE_PROBLEM      ;user8@ipt.pt User8 RF;connected[2];Algorithmi 22.09
+782;2022-09-23 10:12:18.501;194.210.112.194;UPDATE_PROBLEM      ;user8@ipt.pt User8 RF;processed[2];
+783;2022-09-23 10:12:18.502;194.210.112.194;UPDATE_PROBLEM      ;user8@ipt.pt User8 RF;service done![2];user8@ipt.pt User8 RF Alcacer Salgueiro update Ficha01
+784;2022-09-23 10:12:21.595;193.137.5.231;connecting [1];193.137.5.231;;
+785;2022-09-23 10:12:21.721;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+786;2022-09-23 10:12:21.721;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+787;2022-09-23 10:12:21.722;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+788;2022-09-23 10:12:24.256;194.210.113.133;connecting [1];194.210.113.133;;
+789;2022-09-23 10:12:24.384;194.210.113.133;UPDATE_PROBLEM      ;user2GO@ipt.pt User2 GO;connected[1];Algorithmi 22.09
+790;2022-09-23 10:12:24.530;194.210.113.133;UPDATE_PROBLEM      ;user2GO@ipt.pt User2 GO;processed[1];
+791;2022-09-23 10:12:24.530;194.210.113.133;UPDATE_PROBLEM      ;user2GO@ipt.pt User2 GO;service done![1];user2GO@ipt.pt User2 GOeira update Ficha01
+792;2022-09-23 10:12:37.210;193.137.5.231;connecting [1];193.137.5.231;;
+793;2022-09-23 10:12:37.358;193.137.5.231;LOGIN_USERNAME      ;user12@ipt.pt User12 MF;connected[1];Algorithmi 22.09
+794;2022-09-23 10:12:37.359;193.137.5.231;LOGIN_USERNAME      ;user12@ipt.pt User12 MF;processed[1];
+795;2022-09-23 10:12:37.360;193.137.5.231;LOGIN_USERNAME      ;user12@ipt.pt User12 MF;service done![1];LEI_2022 user24856@ipt.pt ver[ Algorithmi 21.11] Marco Malho - Marco Filipe Galhardo Malho
+796;2022-09-23 10:12:55.281;193.137.5.231;connecting [1];193.137.5.231;;
+797;2022-09-23 10:12:55.429;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+798;2022-09-23 10:12:55.430;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+799;2022-09-23 10:12:55.430;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+800;2022-09-23 10:13:03.923;193.137.5.231;connecting [1];193.137.5.231;;
+801;2022-09-23 10:13:04.052;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+802;2022-09-23 10:13:04.052;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+803;2022-09-23 10:13:04.052;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+804;2022-09-23 10:13:13.829;89.214.152.65;connecting [2];89.214.152.65;;
+805;2022-09-23 10:13:14.287;193.137.5.231;connecting [1];193.137.5.231;;
+806;2022-09-23 10:13:14.438;193.137.5.231;LOGIN_USERNAME      ;user12@ipt.pt User12 MF;connected[2];Algorithmi 22.09
+807;2022-09-23 10:13:14.438;193.137.5.231;LOGIN_USERNAME      ;user12@ipt.pt User12 MF;processed[2];
+808;2022-09-23 10:13:14.439;193.137.5.231;LOGIN_USERNAME      ;user12@ipt.pt User12 MF;service done![2];LEI_2022 user24856@ipt.pt ver[ Algorithmi 21.11] Marco Malho - Marco Filipe Galhardo Malho
+809;2022-09-23 10:13:15.798;89.214.152.65;NEW_USERNAME        ;user24851@ipt.pt Rodrigo Cali;connected[1];Algorithmi 22.09
+810;2022-09-23 10:13:17.368;89.214.152.65;NEW_USERNAME        ;user24851@ipt.pt Rodrigo Cali;processed[1];
+811;2022-09-23 10:13:17.369;89.214.152.65;NEW_USERNAME        ;user24851@ipt.pt Rodrigo Cali;service done![1];user24851@ipt.pt - LEI_2022
+812;2022-09-23 10:13:26.027;89.214.152.65;connecting [1];89.214.152.65;;
+813;2022-09-23 10:13:27.324;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+814;2022-09-23 10:13:27.462;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;processed[1];
+815;2022-09-23 10:13:27.462;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+816;2022-09-23 10:13:36.634;194.210.112.10;connecting [1];194.210.112.10;;
+817;2022-09-23 10:13:36.785;194.210.112.10;UPDATE_PROBLEM      ;user6@ipt.pt User6 AL ;connected[1];Algorithmi 22.09
+818;2022-09-23 10:13:36.937;194.210.112.10;UPDATE_PROBLEM      ;user6@ipt.pt User6 AL ;processed[1];
+819;2022-09-23 10:13:36.938;194.210.112.10;UPDATE_PROBLEM      ;user6@ipt.pt User6 AL ;service done![1];user6@ipt.pt User6 AL Ribeiro update Ficha01
+820;2022-09-23 10:13:41.674;89.214.152.65;connecting [1];89.214.152.65;;
+821;2022-09-23 10:13:41.954;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+822;2022-09-23 10:13:42.089;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;processed[1];
+823;2022-09-23 10:13:42.090;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+824;2022-09-23 10:13:43.289;194.210.112.205;connecting [1];194.210.112.205;;
+825;2022-09-23 10:13:43.436;194.210.112.205;LOGIN_USERNAME      ;user3@ipt.pt User3 NA;connected[1];Algorithmi 22.09
+826;2022-09-23 10:13:43.437;194.210.112.205;LOGIN_USERNAME      ;user3@ipt.pt User3 NA;processed[1];
+827;2022-09-23 10:13:43.438;194.210.112.205;LOGIN_USERNAME      ;user3@ipt.pt User3 NA;service done![1];LEI_2022 user24848@ipt.pt ver[ Algorithmi 21.11] Nico - Nicolau Almas Reis Mino
+828;2022-09-23 10:13:49.096;193.137.5.231;connecting [1];193.137.5.231;;
+829;2022-09-23 10:13:49.252;193.137.5.231;UPDATE_USERNAME     ;user12@ipt.pt User12 MF;connected[2];Algorithmi 22.09
+830;2022-09-23 10:13:50.503;193.137.5.231;UPDATE_USERNAME     ;user12@ipt.pt User12 MF;processed[2];
+831;2022-09-23 10:13:50.504;193.137.5.231;UPDATE_USERNAME     ;user12@ipt.pt User12 MF;service done![2];Update user user24856@ipt.pt - Marco Filipe Galhardo Malho
+832;2022-09-23 10:13:51.614;193.137.5.231;connecting [2];193.137.5.231;;
+833;2022-09-23 10:13:51.752;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+834;2022-09-23 10:13:51.752;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+835;2022-09-23 10:13:51.753;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+836;2022-09-23 10:13:56.385;194.210.240.193;connecting [1];194.210.240.193;;
+837;2022-09-23 10:13:56.520;194.210.240.193;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;connected[1];Algorithmi 22.09
+838;2022-09-23 10:13:57.812;194.210.240.193;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;processed[1];
+839;2022-09-23 10:13:57.812;194.210.240.193;UPDATE_USERNAME     ;user1@ipt.pt User1 AM    ;service done![1];Update user Sarnadas@ipt.pt - João Sarnadas
+840;2022-09-23 10:14:28.004;89.214.152.65;connecting [1];89.214.152.65;;
+841;2022-09-23 10:14:28.171;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+842;2022-09-23 10:14:28.305;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;processed[1];
+843;2022-09-23 10:14:28.306;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+844;2022-09-23 10:14:42.097;89.214.152.65;connecting [1];89.214.152.65;;
+845;2022-09-23 10:14:42.256;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+846;2022-09-23 10:14:42.407;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;processed[1];
+847;2022-09-23 10:14:42.407;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+848;2022-09-23 10:15:33.728;193.137.5.231;connecting [1];193.137.5.231;;
+849;2022-09-23 10:15:33.891;193.137.5.231;NEW_USERNAME        ;user13@ipt.pt User13 AM;connected[1];Algorithmi 22.09
+850;2022-09-23 10:15:35.355;193.137.5.231;NEW_USERNAME        ;user13@ipt.pt User13 AM;processed[1];
+851;2022-09-23 10:15:35.356;193.137.5.231;NEW_USERNAME        ;user13@ipt.pt User13 AM;service done![1];user24879@ipt.pt - LEI_2022
+852;2022-09-23 10:15:53.505;193.137.5.231;connecting [1];193.137.5.231;;
+853;2022-09-23 10:15:53.665;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+854;2022-09-23 10:15:53.666;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+855;2022-09-23 10:15:53.667;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+856;2022-09-23 10:15:57.500;46.50.2.47;connecting [1];46.50.2.47;;
+857;2022-09-23 10:15:58.433;46.50.2.47;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+858;2022-09-23 10:15:58.439;46.50.2.47;CORE_VERSION        ;Anonymous User;processed[1];
+859;2022-09-23 10:15:58.582;46.50.2.47;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+860;2022-09-23 10:15:58.588;46.50.2.47;connecting [1];46.50.2.47;;
+861;2022-09-23 10:15:58.745;46.50.2.47;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+862;2022-09-23 10:15:58.746;46.50.2.47;GET_UPDATER         ;Anonymous User;processed[1];
+863;2022-09-23 10:15:58.746;46.50.2.47;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+864;2022-09-23 10:15:58.910;46.50.2.47;connecting [1];46.50.2.47;;
+865;2022-09-23 10:15:59.070;46.50.2.47;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+866;2022-09-23 10:15:59.070;46.50.2.47;GET_NEW_VERSION     ;Anonymous User;processed[1];
+867;2022-09-23 10:16:01.418;46.50.2.47;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Mac OS X 8 procs 16,0 / 0,9 gb
+868;2022-09-23 10:16:19.417;194.210.240.94;connecting [2];194.210.240.94;;
+869;2022-09-23 10:16:19.577;194.210.240.94;UPDATE_PROBLEM      ;user7@ipt.pt User7 FL;connected[2];Algorithmi 22.09
+870;2022-09-23 10:16:19.597;194.210.240.94;UPDATE_PROBLEM      ;user7@ipt.pt User7 FL;processed[2];
+871;2022-09-23 10:16:19.756;194.210.240.94;UPDATE_PROBLEM      ;user7@ipt.pt User7 FL;service done![2];user7@ipt.pt User7 FLuro Timoneiro update Ficha01
+872;2022-09-23 10:16:22.383;193.137.5.231;connecting [1];193.137.5.231;;
+873;2022-09-23 10:16:22.392;193.137.5.231;NEW_USERNAME        ;user18@ipt.pt User18 GA;connected[1];Algorithmi 22.09
+874;2022-09-23 10:16:24.148;193.137.5.231;NEW_USERNAME        ;user18@ipt.pt User18 GA;processed[1];
+875;2022-09-23 10:16:24.148;193.137.5.231;NEW_USERNAME        ;user18@ipt.pt User18 GA;service done![1];user24842@ipt.pt - LEI_2022
+876;2022-09-23 10:16:29.775;46.50.2.47;connecting [1];46.50.2.47;;
+877;2022-09-23 10:16:30.580;46.50.2.47;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+878;2022-09-23 10:16:30.586;46.50.2.47;CORE_VERSION        ;Anonymous User;processed[1];
+879;2022-09-23 10:16:30.726;46.50.2.47;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+880;2022-09-23 10:16:30.870;46.50.2.47;connecting [1];46.50.2.47;;
+881;2022-09-23 10:16:31.049;46.50.2.47;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+882;2022-09-23 10:16:31.049;46.50.2.47;GET_UPDATER         ;Anonymous User;processed[1];
+883;2022-09-23 10:16:31.049;46.50.2.47;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+884;2022-09-23 10:16:31.210;46.50.2.47;connecting [1];46.50.2.47;;
+885;2022-09-23 10:16:31.386;46.50.2.47;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+886;2022-09-23 10:16:31.386;46.50.2.47;GET_NEW_VERSION     ;Anonymous User;processed[1];
+887;2022-09-23 10:16:32.769;46.50.2.47;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Mac OS X 8 procs 16,0 / 0,8 gb
+888;2022-09-23 10:16:35.271;213.55.225.209;connecting [1];213.55.225.209;;
+889;2022-09-23 10:16:35.559;213.55.225.209;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+890;2022-09-23 10:16:35.565;213.55.225.209;CORE_VERSION        ;Anonymous User;processed[1];
+891;2022-09-23 10:16:35.724;213.55.225.209;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Mac OS X 12.5 x86_64  # Cristina 
+892;2022-09-23 10:16:35.906;213.55.225.209;connecting [1];213.55.225.209;;
+893;2022-09-23 10:16:36.116;213.55.225.209;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+894;2022-09-23 10:16:36.117;213.55.225.209;GET_UPDATER         ;Anonymous User;processed[1];
+895;2022-09-23 10:16:36.266;213.55.225.209;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+896;2022-09-23 10:16:36.750;213.55.225.209;connecting [1];213.55.225.209;;
+897;2022-09-23 10:16:37.124;213.55.225.209;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+898;2022-09-23 10:16:37.124;213.55.225.209;GET_NEW_VERSION     ;Anonymous User;processed[1];
+899;2022-09-23 10:16:39.651;213.55.225.209;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Mac OS X 8 procs 16,0 / 0,1 gb
+900;2022-09-23 10:16:52.926;194.210.112.205;connecting [1];194.210.112.205;;
+901;2022-09-23 10:16:53.076;194.210.112.205;UPDATE_PROBLEM      ;user3@ipt.pt User3 NA;connected[1];Algorithmi 22.09
+902;2022-09-23 10:16:53.238;194.210.112.205;UPDATE_PROBLEM      ;user3@ipt.pt User3 NA;processed[1];
+903;2022-09-23 10:16:53.238;194.210.112.205;UPDATE_PROBLEM      ;user3@ipt.pt User3 NA;service done![1];user3@ipt.pt User3 NAs Reis Mino update Ficha01
+904;2022-09-23 10:16:58.780;193.137.5.231;connecting [1];193.137.5.231;;
+905;2022-09-23 10:16:58.943;193.137.5.231;NEW_USERNAME        ;user14@ipt.pt User14 AC;connected[1];Algorithmi 22.09
+906;2022-09-23 10:17:00.502;193.137.5.231;NEW_USERNAME        ;user14@ipt.pt User14 AC;processed[1];
+907;2022-09-23 10:17:00.502;193.137.5.231;NEW_USERNAME        ;user14@ipt.pt User14 AC;service done![1];user24855@ipt.pt - LEI_2022
+908;2022-09-23 10:17:13.519;194.210.240.214;connecting [2];194.210.240.214;;
+909;2022-09-23 10:17:13.663;194.210.240.214;NEW_USERNAME        ;user15@ipt.pt User15 KE;connected[2];Algorithmi 22.09
+910;2022-09-23 10:17:14.812;194.210.240.214;NEW_USERNAME        ;user15@ipt.pt User15 KE;processed[2];
+911;2022-09-23 10:17:14.812;194.210.240.214;NEW_USERNAME        ;user15@ipt.pt User15 KE;service done![2];LiamSáSalgueiro@gmail.com - LEI_2022
+912;2022-09-23 10:17:17.815;193.137.5.231;connecting [1];193.137.5.231;;
+913;2022-09-23 10:17:17.965;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+914;2022-09-23 10:17:17.965;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+915;2022-09-23 10:17:17.966;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+916;2022-09-23 10:17:34.057;194.210.113.253;connecting [1];194.210.113.253;;
+917;2022-09-23 10:17:34.202;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;connected[1];Algorithmi 22.09
+918;2022-09-23 10:17:34.203;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;processed[1];
+919;2022-09-23 10:17:34.203;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;service done![1];LEI_2022 user24993@ipt.pt - Duarte Filipe Vinhas Reis Pereira
+920;2022-09-23 10:17:37.664;194.210.240.214;connecting [1];194.210.240.214;;
+921;2022-09-23 10:17:37.810;194.210.240.214;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+922;2022-09-23 10:17:37.811;194.210.240.214;LOGIN_USERNAME      ;Anonymous User;processed[1];
+923;2022-09-23 10:17:37.811;194.210.240.214;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+924;2022-09-23 10:17:44.651;194.210.113.253;connecting [1];194.210.113.253;;
+925;2022-09-23 10:17:44.982;194.210.113.253;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+926;2022-09-23 10:17:44.988;194.210.113.253;CORE_VERSION        ;Anonymous User;processed[1];
+927;2022-09-23 10:17:45.131;194.210.113.253;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Duarte 
+928;2022-09-23 10:17:55.506;194.210.113.253;connecting [1];194.210.113.253;;
+929;2022-09-23 10:17:55.659;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;connected[1];Algorithmi 22.09
+930;2022-09-23 10:17:55.660;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;processed[1];
+931;2022-09-23 10:17:55.660;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;service done![1];LEI_2022 user24993@ipt.pt ver[ Algorithmi 21.11] D.Pereira - Duarte Filipe Vinhas Reis Pereira
+932;2022-09-23 10:17:58.076;46.50.2.47;connecting [1];46.50.2.47;;
+933;2022-09-23 10:17:58.275;46.50.2.47;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+934;2022-09-23 10:17:58.275;46.50.2.47;CORE_VERSION        ;Anonymous User;processed[1];
+935;2022-09-23 10:17:58.282;46.50.2.47;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+936;2022-09-23 10:18:11.262;194.210.112.10;connecting [1];194.210.112.10;;
+937;2022-09-23 10:18:11.434;194.210.112.10;LOGOUT              ;user6@ipt.pt User6 AL ;connected[1];Algorithmi 22.09
+938;2022-09-23 10:18:11.435;194.210.112.10;LOGOUT              ;user6@ipt.pt User6 AL ;processed[1];
+939;2022-09-23 10:18:11.435;194.210.112.10;LOGOUT              ;user6@ipt.pt User6 AL ;service done![1];LEI_2022 user24868@ipt.pt - Andreia Lopez Ribeiro
+940;2022-09-23 10:18:24.707;193.137.5.231;connecting [1];193.137.5.231;;
+941;2022-09-23 10:18:24.882;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+942;2022-09-23 10:18:24.883;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+943;2022-09-23 10:18:24.884;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+944;2022-09-23 10:18:27.369;194.210.112.10;connecting [1];194.210.112.10;;
+945;2022-09-23 10:18:27.579;194.210.112.10;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+946;2022-09-23 10:18:27.585;194.210.112.10;CORE_VERSION        ;Anonymous User;processed[1];
+947;2022-09-23 10:18:27.740;194.210.112.10;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Windows 10 10.0 amd64  # Andreia 
+948;2022-09-23 10:18:34.436;194.210.112.10;connecting [1];194.210.112.10;;
+949;2022-09-23 10:18:34.586;194.210.112.10;LOGIN_USERNAME      ;user6@ipt.pt User6 AL ;connected[1];Algorithmi 22.09
+950;2022-09-23 10:18:34.587;194.210.112.10;LOGIN_USERNAME      ;user6@ipt.pt User6 AL ;processed[1];
+951;2022-09-23 10:18:34.587;194.210.112.10;LOGIN_USERNAME      ;user6@ipt.pt User6 AL ;service done![1];LEI_2022 user24868@ipt.pt ver[ Algorithmi 21.11] KatF4 - Andreia Lopez Ribeiro
+952;2022-09-23 10:18:41.198;194.210.240.214;connecting [1];194.210.240.214;;
+953;2022-09-23 10:18:41.442;194.210.240.214;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+954;2022-09-23 10:18:41.621;194.210.240.214;LOGIN_USERNAME      ;Anonymous User;processed[1];
+955;2022-09-23 10:18:41.621;194.210.240.214;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+956;2022-09-23 10:18:43.571;46.50.2.47;connecting [1];46.50.2.47;;
+957;2022-09-23 10:18:43.773;46.50.2.47;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+958;2022-09-23 10:18:43.934;46.50.2.47;CORE_VERSION        ;Anonymous User;processed[1];
+959;2022-09-23 10:18:43.934;46.50.2.47;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+960;2022-09-23 10:19:26.467;193.137.5.231;connecting [1];193.137.5.231;;
+961;2022-09-23 10:19:26.634;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+962;2022-09-23 10:19:26.635;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+963;2022-09-23 10:19:26.635;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+964;2022-09-23 10:20:20.878;194.210.240.246;connecting [1];194.210.240.246;;
+965;2022-09-23 10:20:21.045;194.210.240.246;LOGIN_USERNAME      ;user9@ipt.pt User9 JV ;connected[1];Algorithmi 22.09
+966;2022-09-23 10:20:21.046;194.210.240.246;LOGIN_USERNAME      ;user9@ipt.pt User9 JV ;processed[1];
+967;2022-09-23 10:20:21.047;194.210.240.246;LOGIN_USERNAME      ;user9@ipt.pt User9 JV ;service done![1];LEI_2022 user24728@ipt.pt ver[ Algorithmi 21.11] sirvictahh - João Víctor Sá Maia
+968;2022-09-23 10:20:34.778;194.210.240.214;connecting [1];194.210.240.214;;
+969;2022-09-23 10:20:34.959;194.210.240.214;LOGOUT              ;Anonymous User;connected[1];Algorithmi 22.09
+970;2022-09-23 10:20:34.960;194.210.240.214;LOGOUT              ;Anonymous User;processed[1];
+971;2022-09-23 10:20:34.960;194.210.240.214;LOGOUT              ;Anonymous User;service done![1];  - 
+972;2022-09-23 10:20:42.804;194.210.240.214;connecting [1];194.210.240.214;;
+973;2022-09-23 10:20:42.962;194.210.240.214;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+974;2022-09-23 10:20:42.963;194.210.240.214;LOGIN_USERNAME      ;Anonymous User;processed[1];
+975;2022-09-23 10:20:42.964;194.210.240.214;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+976;2022-09-23 10:20:49.770;213.55.225.209;connecting [2];213.55.225.209;;
+977;2022-09-23 10:20:50.188;213.55.225.209;NEW_USERNAME        ;user16@ipt.pt User16 CM;connected[2];Algorithmi 22.09
+978;2022-09-23 10:20:51.603;213.55.225.209;NEW_USERNAME        ;user16@ipt.pt User16 CM;processed[2];
+979;2022-09-23 10:20:51.604;213.55.225.209;NEW_USERNAME        ;user16@ipt.pt User16 CM;service done![2];user24639@ipt.pt - LEI_2022
+980;2022-09-23 10:20:52.733;193.137.5.231;connecting [1];193.137.5.231;;
+981;2022-09-23 10:20:52.893;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+982;2022-09-23 10:20:52.894;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+983;2022-09-23 10:20:52.894;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+984;2022-09-23 10:21:05.279;193.137.5.231;connecting [1];193.137.5.231;;
+985;2022-09-23 10:21:05.459;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+986;2022-09-23 10:21:05.460;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+987;2022-09-23 10:21:05.461;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+988;2022-09-23 10:21:36.329;213.55.225.209;connecting [1];213.55.225.209;;
+989;2022-09-23 10:21:36.776;213.55.225.209;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+990;2022-09-23 10:21:36.783;213.55.225.209;CORE_VERSION        ;Anonymous User;processed[1];
+991;2022-09-23 10:21:36.959;213.55.225.209;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Mac OS X 12.5 x86_64  # Cristina 
+992;2022-09-23 10:21:47.976;193.137.5.231;connecting [1];193.137.5.231;;
+993;2022-09-23 10:21:48.138;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+994;2022-09-23 10:21:48.139;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+995;2022-09-23 10:21:48.140;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+996;2022-09-23 10:21:52.746;193.137.5.231;connecting [1];193.137.5.231;;
+997;2022-09-23 10:21:52.929;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+998;2022-09-23 10:21:52.930;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+999;2022-09-23 10:21:52.930;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+1000;2022-09-23 10:22:02.884;algorithmi.ipt.pt : 10027; running;;;
+1001;2022-09-23 10:22:02.884;193.137.5.231;connecting [1];193.137.5.231;;
+1002;2022-09-23 10:22:02.885;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+1003;2022-09-23 10:22:02.887;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+1004;2022-09-23 10:22:02.888;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+1005;2022-09-23 10:22:47.835;193.137.5.231;connecting [1];193.137.5.231;;
+1006;2022-09-23 10:22:47.845;193.137.5.231;NEW_USERNAME        ;user24853@ipt.pt Andreia Verissimo;connected[1];Algorithmi 22.09
+1007;2022-09-23 10:22:49.158;193.137.5.231;NEW_USERNAME        ;user24853@ipt.pt Andreia Verissimo;processed[1];
+1008;2022-09-23 10:22:49.159;193.137.5.231;NEW_USERNAME        ;user24853@ipt.pt Andreia Verissimo;service done![1];user24853@ipt.pt - LEI_2022
+1009;2022-09-23 10:22:52.615;213.55.225.209;connecting [1];213.55.225.209;;
+1010;2022-09-23 10:22:53.055;213.55.225.209;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+1011;2022-09-23 10:22:53.056;213.55.225.209;CORE_VERSION        ;Anonymous User;processed[1];
+1012;2022-09-23 10:22:53.069;213.55.225.209;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Mac OS X 12.5 x86_64  # Cristina 
+1013;2022-09-23 10:22:53.535;213.55.225.209;connecting [1];213.55.225.209;;
+1014;2022-09-23 10:22:54.015;213.55.225.209;GET_UPDATER         ;Anonymous User;connected[1];Algorithmi 22.09
+1015;2022-09-23 10:22:54.016;213.55.225.209;GET_UPDATER         ;Anonymous User;processed[1];
+1016;2022-09-23 10:22:54.030;213.55.225.209;GET_UPDATER         ;Anonymous User;service done![1];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+1017;2022-09-23 10:22:54.536;213.55.225.209;connecting [1];213.55.225.209;;
+1018;2022-09-23 10:22:54.935;213.55.225.209;GET_NEW_VERSION     ;Anonymous User;connected[1];Algorithmi 22.09
+1019;2022-09-23 10:22:54.936;213.55.225.209;GET_NEW_VERSION     ;Anonymous User;processed[1];
+1020;2022-09-23 10:22:57.488;213.55.225.209;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Mac OS X 8 procs 16,0 / 1,0 gb
+1021;2022-09-23 10:23:27.803;194.210.240.214;connecting [1];194.210.240.214;;
+1022;2022-09-23 10:23:27.819;194.210.240.214;NEW_USERNAME        ;user17@ipt.pt User17 KJ ;connected[1];Algorithmi 22.09
+1023;2022-09-23 10:23:29.178;194.210.240.214;NEW_USERNAME        ;user17@ipt.pt User17 KJ ;processed[2];
+1024;2022-09-23 10:23:29.179;194.210.240.214;NEW_USERNAME        ;user17@ipt.pt User17 KJ ;service done![2];user23491@ipt.pt - LEI_2022
+1025;2022-09-23 10:23:32.413;193.137.5.231;connecting [2];193.137.5.231;;
+1026;2022-09-23 10:23:32.429;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+1027;2022-09-23 10:23:32.442;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+1028;2022-09-23 10:23:32.443;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+1029;2022-09-23 10:23:40.158;213.55.225.209;connecting [2];213.55.225.209;;
+1030;2022-09-23 10:23:40.533;213.55.225.209;CORE_VERSION        ;Anonymous User;connected[2];Algorithmi 22.09
+1031;2022-09-23 10:23:40.534;213.55.225.209;CORE_VERSION        ;Anonymous User;processed[2];
+1032;2022-09-23 10:23:40.551;213.55.225.209;CORE_VERSION        ;Anonymous User;service done![2];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Mac OS X 12.5 x86_64  # Cristina 
+1033;2022-09-23 10:23:40.888;213.55.225.209;connecting [2];213.55.225.209;;
+1034;2022-09-23 10:23:41.098;213.55.225.209;GET_UPDATER         ;Anonymous User;connected[2];Algorithmi 22.09
+1035;2022-09-23 10:23:41.099;213.55.225.209;GET_UPDATER         ;Anonymous User;processed[2];
+1036;2022-09-23 10:23:41.116;213.55.225.209;GET_UPDATER         ;Anonymous User;service done![2];algorithmi upadater[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Portugal português
+1037;2022-09-23 10:23:41.615;213.55.225.209;connecting [2];213.55.225.209;;
+1038;2022-09-23 10:23:41.933;213.55.225.209;GET_NEW_VERSION     ;Anonymous User;connected[2];Algorithmi 22.09
+1039;2022-09-23 10:23:41.934;213.55.225.209;GET_NEW_VERSION     ;Anonymous User;processed[2];
+1040;2022-09-23 10:23:43.143;193.137.5.231;connecting [1];193.137.5.231;;
+1041;2022-09-23 10:23:43.161;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[2];Algorithmi 22.09
+1042;2022-09-23 10:23:43.164;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[2];
+1043;2022-09-23 10:23:43.164;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![2];  ver[ Algorithmi 21.11]  - 
+1044;2022-09-23 10:23:44.670;213.55.225.209;GET_NEW_VERSION     ;Anonymous User;service done![1];new algorithmi version[22-09-2022 13:31:26 -> 22-09-2022 13:31:26] Mac OS X 8 procs 16,0 / 0,9 gb
+1045;2022-09-23 10:23:56.315;89.214.152.65;connecting [1];89.214.152.65;;
+1046;2022-09-23 10:23:56.487;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+1047;2022-09-23 10:23:56.510;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;processed[1];
+1048;2022-09-23 10:23:56.512;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+1049;2022-09-23 10:23:58.252;46.50.2.47;connecting [2];46.50.2.47;;
+1050;2022-09-23 10:23:58.500;46.50.2.47;LOGIN_USERNAME      ;Anonymous User;connected[2];Algorithmi 22.09
+1051;2022-09-23 10:23:58.525;46.50.2.47;LOGIN_USERNAME      ;Anonymous User;processed[2];
+1052;2022-09-23 10:23:58.525;46.50.2.47;LOGIN_USERNAME      ;Anonymous User;service done![2];  ver[ Algorithmi 21.11]  - 
+1053;2022-09-23 10:24:01.953;193.137.5.231;connecting [1];193.137.5.231;;
+1054;2022-09-23 10:24:01.977;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+1055;2022-09-23 10:24:01.980;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;processed[1];
+1056;2022-09-23 10:24:01.980;193.137.5.231;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+1057;2022-09-23 10:24:16.172;193.137.5.231;connecting [1];193.137.5.231;;
+1058;2022-09-23 10:24:16.199;193.137.5.231;LOGIN_USERNAME      ;user13@ipt.pt User13 AM;connected[1];Algorithmi 22.09
+1059;2022-09-23 10:24:16.218;193.137.5.231;LOGIN_USERNAME      ;user13@ipt.pt User13 AM;processed[1];
+1060;2022-09-23 10:24:16.219;193.137.5.231;LOGIN_USERNAME      ;user13@ipt.pt User13 AM;service done![1];LEI_2022 user24879@ipt.pt ver[ Algorithmi 21.11] AfonsoMGSá - Afonso Matias Gomes Reis
+1061;2022-09-23 10:24:24.642;193.137.5.231;connecting [1];193.137.5.231;;
+1062;2022-09-23 10:24:24.672;193.137.5.231;LOGIN_USERNAME      ;user18@ipt.pt User18 GA;connected[1];Algorithmi 22.09
+1063;2022-09-23 10:24:24.691;193.137.5.231;LOGIN_USERNAME      ;user18@ipt.pt User18 GA;processed[1];
+1064;2022-09-23 10:24:24.692;193.137.5.231;LOGIN_USERNAME      ;user18@ipt.pt User18 GA;service done![1];LEI_2022 user24842@ipt.pt ver[ Algorithmi 21.11] Gabriel Louro - Gabriel João Lopez Louro
+1065;2022-09-23 10:24:38.619;194.210.112.10;connecting [1];194.210.112.10;;
+1066;2022-09-23 10:24:38.654;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;connected[1];Algorithmi 22.09
+1067;2022-09-23 10:24:38.654;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;processed[1];
+1068;2022-09-23 10:24:38.655;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;service done![1];time : 10:24:38.623 LEI_2022 # Ficha01_009.prog # 0.0 (0 %) 23-09-2022 10:24:44
+1069;2022-09-23 10:25:07.194;194.210.113.253;connecting [1];194.210.113.253;;
+1070;2022-09-23 10:25:07.195;194.210.113.253;connecting [2];194.210.113.253;;
+1071;2022-09-23 10:25:07.228;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;connected[2];Algorithmi 22.09
+1072;2022-09-23 10:25:07.231;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;processed[2];
+1073;2022-09-23 10:25:07.232;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;service done![2];LEI_2022 user24993@ipt.pt ver[ Algorithmi 21.11] D.Pereira - Duarte Filipe Vinhas Reis Pereira
+1074;2022-09-23 10:25:07.309;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;connected[1];Algorithmi 22.09
+1075;2022-09-23 10:25:07.343;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;processed[1];
+1076;2022-09-23 10:25:07.344;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;service done![1];LEI_2022 user24993@ipt.pt - Duarte Filipe Vinhas Reis Pereira
+1077;2022-09-23 10:25:23.446;89.214.152.65;connecting [2];89.214.152.65;;
+1078;2022-09-23 10:25:23.515;194.210.241.64;connecting [1];194.210.241.64;;
+1079;2022-09-23 10:25:23.675;194.210.241.64;CORE_VERSION        ;Anonymous User;connected[2];Algorithmi 22.09
+1080;2022-09-23 10:25:23.676;194.210.241.64;CORE_VERSION        ;Anonymous User;processed[2];
+1081;2022-09-23 10:25:23.710;194.210.241.64;CORE_VERSION        ;Anonymous User;service done![2];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Nunda Guilhermino 
+1082;2022-09-23 10:25:23.746;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;connected[1];Algorithmi 22.09
+1083;2022-09-23 10:25:23.782;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;processed[1];
+1084;2022-09-23 10:25:23.783;89.214.152.65;LOGIN_USERNAME      ;Anonymous User;service done![1];  ver[ Algorithmi 21.11]  - 
+1085;2022-09-23 10:25:39.340;194.210.240.94;connecting [1];194.210.240.94;;
+1086;2022-09-23 10:25:39.373;194.210.240.94;SERVER_TIME         ;user7@ipt.pt User7 FL;connected[1];Algorithmi 22.09
+1087;2022-09-23 10:25:39.374;194.210.240.94;SERVER_TIME         ;user7@ipt.pt User7 FL;processed[1];
+1088;2022-09-23 10:25:39.375;194.210.240.94;SERVER_TIME         ;user7@ipt.pt User7 FL;service done![1];time : 10:25:39.348 LEI_2022 # Ficha01_007.prog # 0.0 (0 %) 23-09-2022 10:26:53
+1089;2022-09-23 10:25:39.688;194.210.240.246;connecting [1];194.210.240.246;;
+1090;2022-09-23 10:25:39.726;194.210.240.246;UPDATE_PROBLEM      ;user9@ipt.pt User9 JV ;connected[1];Algorithmi 22.09
+1091;2022-09-23 10:25:39.837;194.210.240.246;UPDATE_PROBLEM      ;user9@ipt.pt User9 JV ;processed[1];
+1092;2022-09-23 10:25:39.877;194.210.240.246;UPDATE_PROBLEM      ;user9@ipt.pt User9 JV ;service done![1];user9@ipt.pt User9 JV Sá Maia update Ficha01
+1093;2022-09-23 10:25:54.511;194.210.112.10;connecting [1];194.210.112.10;;
+1094;2022-09-23 10:25:54.539;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;connected[1];Algorithmi 22.09
+1095;2022-09-23 10:25:54.541;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;processed[1];
+1096;2022-09-23 10:25:54.542;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;service done![1];time : 10:25:54.523 LEI_2022 # Ficha01_007.prog # 0.0 (0 %) 23-09-2022 10:26:00
+1097;2022-09-23 10:26:07.932;194.210.113.253;connecting [1];194.210.113.253;;
+1098;2022-09-23 10:26:08.057;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;connected[1];Algorithmi 22.09
+1099;2022-09-23 10:26:08.129;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;processed[1];
+1100;2022-09-23 10:26:08.130;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;service done![1];LEI_2022 user24993@ipt.pt - Duarte Filipe Vinhas Reis Pereira
+1101;2022-09-23 10:26:19.607;194.210.113.253;connecting [1];194.210.113.253;;
+1102;2022-09-23 10:26:19.678;194.210.113.253;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+1103;2022-09-23 10:26:19.680;194.210.113.253;CORE_VERSION        ;Anonymous User;processed[1];
+1104;2022-09-23 10:26:19.681;194.210.113.253;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # Duarte 
+1105;2022-09-23 10:26:45.950;194.210.112.10;connecting [1];194.210.112.10;;
+1106;2022-09-23 10:26:46.015;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;connected[1];Algorithmi 22.09
+1107;2022-09-23 10:26:46.016;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;processed[1];
+1108;2022-09-23 10:26:46.016;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;service done![1];time : 10:26:45.959 LEI_2022 # Ficha01_008.prog # 0.0 (0 %) 23-09-2022 10:26:52
+1109;2022-09-23 10:26:48.955;194.210.113.253;connecting [1];194.210.113.253;;
+1110;2022-09-23 10:26:49.018;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;connected[1];Algorithmi 22.09
+1111;2022-09-23 10:26:49.020;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;processed[1];
+1112;2022-09-23 10:26:49.021;194.210.113.253;LOGIN_USERNAME      ;user10@ipt.pt User10 DF;service done![1];LEI_2022 user24993@ipt.pt ver[ Algorithmi 21.11] D.Pereira - Duarte Filipe Vinhas Reis Pereira
+1113;2022-09-23 10:26:57.563;194.210.113.253;connecting [1];194.210.113.253;;
+1114;2022-09-23 10:26:57.624;194.210.113.253;UPDATE_PROBLEM      ;user10@ipt.pt User10 DF;connected[1];Algorithmi 22.09
+1115;2022-09-23 10:26:57.728;194.210.113.253;UPDATE_PROBLEM      ;user10@ipt.pt User10 DF;processed[1];
+1116;2022-09-23 10:26:57.831;194.210.113.253;UPDATE_PROBLEM      ;user10@ipt.pt User10 DF;service done![1];user10@ipt.pt User10 DF Vinhas Reis Pereira update Ficha01
+1117;2022-09-23 10:27:09.591;193.137.5.231;connecting [1];193.137.5.231;;
+1118;2022-09-23 10:27:09.662;193.137.5.231;LOGIN_USERNAME      ;user14@ipt.pt User14 AC;connected[1];Algorithmi 22.09
+1119;2022-09-23 10:27:09.663;193.137.5.231;LOGIN_USERNAME      ;user14@ipt.pt User14 AC;processed[1];
+1120;2022-09-23 10:27:09.664;193.137.5.231;LOGIN_USERNAME      ;user14@ipt.pt User14 AC;service done![1];LEI_2022 user24855@ipt.pt ver[ Algorithmi 21.11] Afonso_Calado - Afonso Calado
+1121;2022-09-23 10:27:23.212;89.214.152.65;connecting [1];89.214.152.65;;
+1122;2022-09-23 10:27:23.589;89.214.152.65;LOGIN_USERNAME      ;user11@ipt.pt User11 JJ;connected[1];Algorithmi 22.09
+1123;2022-09-23 10:27:23.655;89.214.152.65;LOGIN_USERNAME      ;user11@ipt.pt User11 JJ;processed[1];
+1124;2022-09-23 10:27:23.656;89.214.152.65;LOGIN_USERNAME      ;user11@ipt.pt User11 JJ;service done![1];LEI_2022 user24729@ipt.pt ver[ Algorithmi 21.11] Joot_111 - João Joaquim
+1125;2022-09-23 10:27:40.325;193.137.5.231;connecting [1];193.137.5.231;;
+1126;2022-09-23 10:27:40.392;193.137.5.231;UPDATE_PROBLEM      ;user14@ipt.pt User14 AC;connected[1];Algorithmi 22.09
+1127;2022-09-23 10:27:40.506;193.137.5.231;UPDATE_PROBLEM      ;user14@ipt.pt User14 AC;processed[1];
+1128;2022-09-23 10:27:40.506;193.137.5.231;UPDATE_PROBLEM      ;user14@ipt.pt User14 AC;service done![1];user14@ipt.pt User14 AC update Ficha01
+1129;2022-09-23 10:27:45.348;193.137.5.231;connecting [1];193.137.5.231;;
+1130;2022-09-23 10:27:45.421;193.137.5.231;UPDATE_PROBLEM      ;user18@ipt.pt User18 GA;connected[1];Algorithmi 22.09
+1131;2022-09-23 10:27:45.535;193.137.5.231;UPDATE_PROBLEM      ;user18@ipt.pt User18 GA;processed[1];
+1132;2022-09-23 10:27:45.536;193.137.5.231;UPDATE_PROBLEM      ;user18@ipt.pt User18 GA;service done![1];user18@ipt.pt User18 GAnio Lopez Louro update Ficha01
+1133;2022-09-23 10:27:47.139;194.210.241.64;connecting [1];194.210.241.64;;
+1134;2022-09-23 10:27:47.204;194.210.241.64;NEW_USERNAME        ;user24514@ipt.pt Guilhermino   ;connected[1];Algorithmi 22.09
+1135;2022-09-23 10:27:48.488;194.210.241.64;NEW_USERNAME        ;user24514@ipt.pt Guilhermino   ;processed[1];
+1136;2022-09-23 10:27:48.489;194.210.241.64;NEW_USERNAME        ;user24514@ipt.pt Guilhermino   ;service done![1];user24514@ipt.pt - LEI_2022
+1137;2022-09-23 10:28:03.496;193.137.5.231;connecting [1];193.137.5.231;;
+1138;2022-09-23 10:28:03.563;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+1139;2022-09-23 10:28:03.563;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+1140;2022-09-23 10:28:03.563;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+1141;2022-09-23 10:28:07.747;194.210.112.10;connecting [2];194.210.112.10;;
+1142;2022-09-23 10:28:07.817;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;connected[2];Algorithmi 22.09
+1143;2022-09-23 10:28:07.818;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;processed[2];
+1144;2022-09-23 10:28:07.818;194.210.112.10;SERVER_TIME         ;user6@ipt.pt User6 AL ;service done![2];time : 10:28:07.752 LEI_2022 # Ficha01_010.prog # 0.0 (0 %) 23-09-2022 10:28:13
+1145;2022-09-23 10:28:09.093;193.137.5.231;connecting [1];193.137.5.231;;
+1146;2022-09-23 10:28:09.161;193.137.5.231;UPDATE_PROBLEM      ;user12@ipt.pt User12 MF;connected[1];Algorithmi 22.09
+1147;2022-09-23 10:28:09.272;193.137.5.231;UPDATE_PROBLEM      ;user12@ipt.pt User12 MF;processed[1];
+1148;2022-09-23 10:28:09.272;193.137.5.231;UPDATE_PROBLEM      ;user12@ipt.pt User12 MF;service done![1];user12@ipt.pt User12 MFe Galhardo Malho update Ficha01
+1149;2022-09-23 10:28:26.380;193.137.5.231;connecting [1];193.137.5.231;;
+1150;2022-09-23 10:28:26.447;193.137.5.231;UPDATE_PROBLEM      ;user13@ipt.pt User13 AM;connected[1];Algorithmi 22.09
+1151;2022-09-23 10:28:26.552;193.137.5.231;UPDATE_PROBLEM      ;user13@ipt.pt User13 AM;processed[1];
+1152;2022-09-23 10:28:26.552;193.137.5.231;UPDATE_PROBLEM      ;user13@ipt.pt User13 AM;service done![1];user13@ipt.pt User13 AMs Gomes Reis update Ficha01
+1153;2022-09-23 10:28:28.409;194.210.240.214;connecting [1];194.210.240.214;;
+1154;2022-09-23 10:28:28.480;194.210.240.214;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+1155;2022-09-23 10:28:28.480;194.210.240.214;CORE_VERSION        ;Anonymous User;processed[1];
+1156;2022-09-23 10:28:28.480;194.210.240.214;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 11 10.0 amd64  # Liam 
+1157;2022-09-23 10:28:30.640;46.50.2.47;connecting [1];46.50.2.47;;
+1158;2022-09-23 10:28:30.709;46.50.2.47;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+1159;2022-09-23 10:28:30.709;46.50.2.47;CORE_VERSION        ;Anonymous User;processed[1];
+1160;2022-09-23 10:28:30.709;46.50.2.47;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_341-b10 # Mac OS X 12.6 x86_64  # FlorbelGraçaeira 
+1161;2022-09-23 10:28:44.765;194.210.240.94;connecting [1];194.210.240.94;;
+1162;2022-09-23 10:28:44.840;194.210.240.94;SERVER_TIME         ;user7@ipt.pt User7 FL;connected[1];Algorithmi 22.09
+1163;2022-09-23 10:28:44.841;194.210.240.94;SERVER_TIME         ;user7@ipt.pt User7 FL;processed[1];
+1164;2022-09-23 10:28:44.841;194.210.240.94;SERVER_TIME         ;user7@ipt.pt User7 FL;service done![1];time : 10:28:44.771 LEI_2022 # Ficha01_008.prog # 0.0 (0 %) 23-09-2022 10:29:58
+1165;2022-09-23 10:29:54.648;193.236.38.160;connecting [1];193.236.38.160;;
+1166;2022-09-23 10:29:54.725;193.236.38.160;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+1167;2022-09-23 10:29:54.725;193.236.38.160;CORE_VERSION        ;Anonymous User;processed[1];
+1168;2022-09-23 10:29:54.726;193.236.38.160;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_271-b09 # Windows 7 6.1 x86  # Professor 
+1169;2022-09-23 10:30:07.416;194.210.112.194;connecting [1];194.210.112.194;;
+1170;2022-09-23 10:30:07.494;194.210.112.194;SERVER_TIME         ;user8@ipt.pt User8 RF;connected[1];Algorithmi 22.09
+1171;2022-09-23 10:30:07.494;194.210.112.194;SERVER_TIME         ;user8@ipt.pt User8 RF;processed[1];
+1172;2022-09-23 10:30:07.495;194.210.112.194;SERVER_TIME         ;user8@ipt.pt User8 RF;service done![1];time : 10:30:07.416 LEI_2022 # Ficha01_007.prog # 0.0 (0 %) 23-09-2022 10:30:10
+1173;2022-09-23 10:30:31.189;193.236.38.160;connecting [1];193.236.38.160;;
+1174;2022-09-23 10:30:31.269;193.236.38.160;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+1175;2022-09-23 10:30:31.270;193.236.38.160;CORE_VERSION        ;Anonymous User;processed[1];
+1176;2022-09-23 10:30:31.270;193.236.38.160;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 1.8.0_271-b09 # Windows 7 6.1 x86  # Professor 
+1177;2022-09-23 10:30:32.662;194.210.112.194;connecting [1];194.210.112.194;;
+1178;2022-09-23 10:30:32.742;194.210.112.194;SEND_ALGORITHM      ;user8@ipt.pt User8 RF;connected[1];Algorithmi 22.09
+1179;2022-09-23 10:30:33.444;194.210.112.194;SEND_ALGORITHM      ;user8@ipt.pt User8 RF;processed[1];
+1180;2022-09-23 10:30:33.445;194.210.112.194;SEND_ALGORITHM      ;user8@ipt.pt User8 RF;service done![1];Algorithmi 22.09 Processing ExerciseFicha01.zip[ 53104 bytes] [LEI_2022 Ricardo Filipe Alcacer Salgueiro
+1181;2022-09-23 10:30:50.903;193.137.5.231;connecting [1];193.137.5.231;;
+1182;2022-09-23 10:30:50.980;193.137.5.231;CORE_VERSION        ;Anonymous User;connected[1];Algorithmi 22.09
+1183;2022-09-23 10:30:50.980;193.137.5.231;CORE_VERSION        ;Anonymous User;processed[1];
+1184;2022-09-23 10:30:50.981;193.137.5.231;CORE_VERSION        ;Anonymous User;service done![1];ver[22-09-2022 13:31:26] Portugal # Oracle Corporation 19+36-2238 # Windows 10 10.0 amd64  # IPT 
+1259  ;2022-09-23 10:34:29.471;194.210.112.10;SEND_ALGORITHM      ;aluno24868@ipt.pt André Lopes ;processed[1];
