@@ -18,6 +18,94 @@
         background-color: #f9f9f9;
     }
     tr:hover {
-        background-color: #f5f5f5;
+        background-color: #9c9c9c;
+        color: #fffaff;
+    }
+    
+    #cabeca {
+        height: 325px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        background: linear-gradient(rgba(19, 20, 24, 0.7),rgba(4,9,30,0.7)), url(back.png);
+        background-position: center;
+        background-size: cover;
+      }
+      
+
+    #main_icon
+    {
+        width: 100px;
+        height: 100px;
+        margin: 20px 0px 0px 890px;
+        display: block;
+    }
+
+    #title
+    {
+        color : #fffaff ;
+    }
+
+    #buttons {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #hideTable, #showGraph {
+        background-color: #f44336;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin-right: 10px;
+    }
+
+    #hideTable:hover, #showGraph:hover {
+        background-color: #d32f2f;
+    }
+
+    #tableContainer {
+        display: none;
+    }
+
+
+    #container {
+        display: flex;
+      }
+      
+      #sidebar {
+        width: 200px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      
+      #content {
+        flex-grow: 1;
+        padding: 20px;
+      }
+
+      #footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #footer p {
+        margin: 0;
+    }
+    
+    #footer p:first-child {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    #footer p:last-child {
+        font-size: 14px;
     }
     

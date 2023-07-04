@@ -1,6 +1,8 @@
 <head>
     <link rel="stylesheet" href="css.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>PI2023</title>
+    <link rel="shortcut icon" href="icon.png"/>
 </head>
 
 
@@ -144,8 +146,14 @@ echo "</thead>";
 echo "<tbody>";
 
 // button to hide the table and display a button to show a graph using the data from the table
+echo "<div id = 'cabeca'>"; 
+echo "<img id = 'main_icon'src = 'icon.png'>";
+echo "<h1 id='title'>PI2023</h1>";
+echo "<div id='buttons'>";
 echo "<button id='hideTable' onclick='showANDhideTable()'>Esconder tabela</button>";
 echo "<button id='showGraph' onclick='showGraph()'>Mostrar Gráfico</button>";
+echo "</div>";
+echo "</div>";
 
 // Process and output the remaining rows
 while (($row = fgetcsv($fileHandle)) !== false) {
@@ -168,6 +176,7 @@ while (($row = fgetcsv($fileHandle)) !== false) {
 echo "</tbody>";
 echo "</table>";
 
+
 // Close the file handle
 fclose($fileHandle);
 ?>
@@ -179,3 +188,9 @@ fclose($fileHandle);
 
 <!-- Chart canvas -->
 <canvas id="chart" style="display: none;"></canvas>
+<footer>
+    <div id="footer">
+        <p>Francisco e Xavier</p>
+        <p>PI2023</p>
+    </div>
+</footer>
