@@ -19,12 +19,12 @@ foreach ($filteredData as $row)
 	echo $column ;
 	echo "</br>";
 }
-$open2 = fopen("filtroSend.txt", "w");
-$fsize=filesize("filtroSend.txt");
+$open2 = fopen("filtroSend.csv", "w");
+$fsize=filesize("filtroSend.csv");
 // if ($fsize ==0){
 	foreach($filteredData as $row){
 		$substri= substr($row[1],0, 10);
-		fwrite($open2, $substri."; \n");
+		fwrite($open2, $substri." \n");
 	// }
 }
 	fclose($open2);
