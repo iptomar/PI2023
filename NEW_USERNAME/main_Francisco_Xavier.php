@@ -187,7 +187,7 @@ fclose($fileHandle);
 <br><br>
 
 <!-- Chart canvas -->
-
+<canvas id="chart" style="display: none;"></canvas>
 <footer>
     <div id="footer">
         <p>Francisco e Xavier</p>
