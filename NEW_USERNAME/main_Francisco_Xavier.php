@@ -8,9 +8,14 @@
 </head>
 
 <body>
+  <div id="container">
+    <img id="main_icon" src="icon.png">
+    <h1 id="title">PI2023</h1>
+
   <form action="main.php" id="charts">
-    <button type="submit"> Gráficos</button>
+    <button type="submit" id = "hideTable"> Gráficos</button>
   </form>
+  </div>
 </body>
 
 <script>

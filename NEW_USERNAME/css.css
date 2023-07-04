@@ -1,28 +1,39 @@
-    table {
+    table 
+    {
         display: table;
         width: 100%;
         border-collapse: collapse;
         font-family: Arial, sans-serif;
         color: #333;
     }
-    th, td {
+
+    th, td 
+    {
         padding: 10px;
         text-align: left;
         border-bottom: 1px solid #ddd;
     }
-    th {
+
+    th 
+
+    {
         background-color: #f2f2f2;
         font-weight: bold;
     }
-    tr:nth-child(even) {
+
+    tr:nth-child(even) 
+    {
         background-color: #f9f9f9;
     }
-    tr:hover {
+
+    tr:hover 
+    {
         background-color: #9c9c9c;
         color: #fffaff;
     }
     
-    #cabeca {
+    #container 
+    {
         height: 325px;
         text-align: center;
         font-size: 30px;
@@ -31,8 +42,13 @@
         background: linear-gradient(rgba(19, 20, 24, 0.7),rgba(4,9,30,0.7)), url(back.png);
         background-position: center;
         background-size: cover;
-      }
+    }
       
+    #container img
+    {
+        padding-top: 10px;
+        color: #fffaff;
+    }
 
     #main_icon
     {
@@ -44,16 +60,18 @@
 
     #title
     {
+        text-align: center;
         color : #fffaff ;
     }
 
-    #buttons {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    #charts 
+    {
         text-align: center;
+        margin-top: 20px;
     }
-
-    #hideTable, #showGraph {
+    
+    #charts button 
+    {
         background-color: #f44336;
         color: white;
         padding: 10px 20px;
@@ -62,50 +80,78 @@
         font-size: 16px;
         border-radius: 4px;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        margin-right: 10px;
+        margin-bottom : 20px ;
     }
-
-    #hideTable:hover, #showGraph:hover {
+    
+    #charts button:hover 
+    {
         background-color: #d32f2f;
     }
 
-    #tableContainer {
-        display: none;
-    }
-
-
-    #container {
-        display: flex;
-      }
-      
-      #sidebar {
-        width: 200px;
-        background-color: #f2f2f2;
-        padding: 20px;
-      }
-      
-      #content {
-        flex-grow: 1;
-        padding: 20px;
-      }
-
-      #footer {
+      #footer 
+      {
         background-color: #333;
         color: white;
         text-align: center;
         padding: 10px;
     }
     
-    #footer p {
+    #backWEGO
+    {
+        width: 100px;
+        height: 100px;
+        margin: 20px 0px 0px 890px;
+        display: block;
+    }
+
+    #backWEGO  button 
+    {
+        background-color: #f44336;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #chartContainer 
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+        max-width: 1700px;
+        height : 1300px ;
+        background-color: #333;
+      }
+      
+    .chart 
+    {
+        width: 100%;
+        height: 400px;
+        margin: 20px;
+    }
+      
+    #footer
+    {
+        margin-top: 20px ;
+    }
+
+    #footer p 
+    {
         margin: 0;
     }
     
-    #footer p:first-child {
+    #footer p:first-child 
+    {
         font-size: 18px;
         font-weight: bold;
     }
     
-    #footer p:last-child {
+    #footer p:last-child 
+    {
         font-size: 14px;
     }
     

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <form action="main_Francisco_Xavier.php" id="backWEGO">
-    <button type="submit"> Voltar</button>
-    </form>
+    <link rel="stylesheet" href="css.css">
+    <div id="container">
+    <img id="main_icon" src="icon.png">
+    <h1 id="title">PI2023</h1>
+  <form action="main_Francisco_Xavier.php" id="backWEGO">
+    <button type="submit" id = "hideTable"> Lista</button>
+  </form>
+  </div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
@@ -13,6 +18,61 @@
             drawWeeksChart();
             drawDaysChart();
             drawMonthsChart();
+        }
+
+        function drawDaysChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Data');
+            data.addColumn('number', 'Quantidade');
+
+            <?php
+            // Lê o arquivo CSV
+            $file = fopen('logIPRP.csv', 'r');
+
+            // Array para armazenar as contagens por data
+            $counts = array();
+
+            // Ignora a primeira linha (cabeçalho)
+            fgets($file);
+
+            // Processa cada linha do arquivo
+            while (($line = fgets($file)) !== false) {
+                $fields = explode(';', $line);
+
+                // Extrai a data/hora da linha
+                $datetime = $fields[1];
+                $date = explode(' ', $datetime)[0];
+
+                // Incrementa a contagem para a data atual
+                if (isset($counts[$date])) {
+                    $counts[$date]++;
+                } else {
+                    $counts[$date] = 1;
+                }
+            }
+
+            // Fecha o arquivo
+            fclose($file);
+
+            // Cria as linhas do gráfico de barras
+            foreach ($counts as $date => $count) {
+                echo "data.addRow(['$date', $count]);";
+            }
+            ?>
+
+            var options = {
+                title: 'Estatísticas por Dia',
+                hAxis: {title: 'Data', titleTextStyle: {color: '#333'}},
+                vAxis: {minValue: 0},
+                series: {
+                    0: { color: '#32d600' } // Set the color for the first series (bars)
+                },
+                width: 800,
+                height: 600
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_days'));
+            chart.draw(data, options);
         }
 
         function drawWeeksChart() {
@@ -60,68 +120,20 @@
             ?>
 
             var options = {
-                title: 'Estatísticas por Semana',
-                hAxis: {title: 'Semana', titleTextStyle: {color: '#333'}},
-                vAxis: {minValue: 0},
-                width: 800,
-                height: 600
+            title: 'Estatísticas por Semana',
+            hAxis: { title: 'Semana', titleTextStyle: { color: '#333' } },
+            vAxis: { minValue: 0 },
+            series: {
+                0: { color: '#32d600' } // Set the color for the first series (bars)
+            },
+            width: 800,
+            height: 600
             };
 
             var chart = new google.visualization.ColumnChart(document.getElementById('chart_weeks'));
             chart.draw(data, options);
         }
 
-        function drawDaysChart() {
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Data');
-            data.addColumn('number', 'Quantidade');
-
-            <?php
-            // Lê o arquivo CSV
-            $file = fopen('logIPRP.csv', 'r');
-
-            // Array para armazenar as contagens por data
-            $counts = array();
-
-            // Ignora a primeira linha (cabeçalho)
-            fgets($file);
-
-            // Processa cada linha do arquivo
-            while (($line = fgets($file)) !== false) {
-                $fields = explode(';', $line);
-
-                // Extrai a data/hora da linha
-                $datetime = $fields[1];
-                $date = explode(' ', $datetime)[0];
-
-                // Incrementa a contagem para a data atual
-                if (isset($counts[$date])) {
-                    $counts[$date]++;
-                } else {
-                    $counts[$date] = 1;
-                }
-            }
-
-            // Fecha o arquivo
-            fclose($file);
-
-            // Cria as linhas do gráfico de barras
-            foreach ($counts as $date => $count) {
-                echo "data.addRow(['$date', $count]);";
-            }
-            ?>
-
-            var options = {
-                title: 'Estatísticas por Data',
-                hAxis: {title: 'Data', titleTextStyle: {color: '#333'}},
-                vAxis: {minValue: 0},
-                width: 800,
-                height: 600
-            };
-
-            var chart = new google.visualization.ColumnChart(document.getElementById('chart_days'));
-            chart.draw(data, options);
-        }
 
         function drawMonthsChart() {
             var data = new google.visualization.DataTable();
@@ -170,6 +182,9 @@
                 hAxis: {title: 'Mês'},
                 vAxis: {title: 'Registros'},
                 legend: 'none',
+                series: {
+                    0: { color: '#32d600' } // Set the color for the first series (bars)
+                },
                 width: 800,
                 height: 600
             };
@@ -180,13 +195,24 @@
     </script>
 </head>
 <body>
-<!-- Chart for Weeks -->
-<div id="chart_weeks" style="width: 800px; height: 600px; margin-bottom: 30px;"></div>
+  <div id="chartContainer">
+    <!-- Chart for Days -->
+    <div id="chart_days" class="chart"></div>
 
-<!-- Chart for Days -->
-<div id="chart_days" style="width: 800px; height: 600px;"></div>
+    <!-- Chart for Weeks -->
+    <div id="chart_weeks" class="chart"></div>
 
-<!-- Chart for Months -->
-<div id="chart_month" style="width: 800px; height: 600px;"></div>
+    <!-- Chart for Months -->
+    <div id="chart_month" class="chart"></div>
+  </div>
+
+  <footer>
+    <div id="footer">
+        <p>Francisco e Xavier</p>
+        <p>PI2023</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
