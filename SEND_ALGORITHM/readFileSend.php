@@ -5,7 +5,7 @@
     while(!feof($myfile)) {
         $line = fgets($myfile); 
         $row = explode(";", $line);
-        if(count($row) >= 4 && strcmp("SEND_ALGORITHM", $row[4]) == true){
+        if(count($row) >= 4 && strcmp($row[4], "SEND_ALGORITHM") == true){
             $amd = substr($row[1], 0, 10);
             $text = $amd."\n";
             fwrite($filtroFile, $text);
