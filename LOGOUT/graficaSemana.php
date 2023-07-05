@@ -1,56 +1,101 @@
 <?php
-$myfile = fopen("../logIPRP.csv", "r");
-$data = array();
-while (!feof($myfile)) {
-    $line = fgets($myfile);
-    $fields = explode(";", $line);
-    array_push($data, $fields);
-}
-fclose($myfile);
+$myfile = fopen("logout_amostra.csv", "r");
 
 $filteredData = array();
-if (isset($_POST['selectedWeek'])) {
-  $selectedWeek = $_POST['selectedWeek'];
-  $selectedWeekStart = date("Y-m-d", strtotime($selectedWeek));
-  $selectedWeekEnd = date("Y-m-d", strtotime($selectedWeek . " +6 days"));
-    $tempData = array();
-    foreach ($data as $row) {
-      if (isset($row[1]) && trim($row[3]) === "LOGOUT" && (strtotime($row[1]) >= strtotime($selectedWeekStart)) && (strtotime($row[1]) <= strtotime($selectedWeekEnd))) {
+$email = "";
+$totalLogouts = 0; // Variável para armazenar o número total de logouts
 
-            $user = $row[4];
-            if (!isset($tempData[$user])) {
-                $tempData[$user] = 1;
-            } else {
-                $tempData[$user]++;
+$selectedYear = isset($_POST['selectedYear']) ? $_POST['selectedYear'] : date("Y"); // Obtém o ano selecionado ou o ano atual
+
+if (isset($_POST['selectedEmail'])) {
+    $selectedEmail = $_POST['selectedEmail'];
+
+    $tempData = array();
+    $currentWeek = null;
+    $currentYear = null;
+
+    while (!feof($myfile)) {
+        $line = fgets($myfile);
+        $fields = explode(";", $line);
+        $email = explode(" ", $fields[4])[0]; // Extrair o email do campo e remover o nome do usuário
+
+        if (trim($email) === $selectedEmail) {
+            $date = strtotime($fields[1]);
+
+            $week = date("W", $date);
+            $year = date("Y", $date);
+
+            if ($year != $selectedYear) {
+                continue; // Ignorar logouts de outros anos
             }
+
+            $currentWeek = $week;
+            $currentYear = $year;
+
+            $key = $year . '-' . $week;
+
+            if (!isset($tempData[$key])) {
+                $tempData[$key] = 1;
+            } else {
+                $tempData[$key]++;
+            }
+
+            $totalLogouts++; // Incrementar o número total de logouts
         }
     }
+    $totalLogouts = $totalLogouts / 3;
 
-    // Dividir o número de registros de cada usuário por 3
-    $filteredData = array_map(function ($count) {
-        return $count / 3;
-    }, $tempData);
+    if (empty($tempData)) {
+        echo "Usuário não encontrado.";
+    } else {
+        $weeksInYear = getWeeksInYear($selectedYear);
+        for ($week = 1; $week <= $weeksInYear; $week++) {
+            $weekKey = $selectedYear . '-' . sprintf('%02d', $week);
+            $filteredData[$weekKey] = isset($tempData[$weekKey]) ? $tempData[$weekKey] / 3 : 0;
+        }
+    }
+}
+
+fclose($myfile);
+
+function getWeeksInYear($year) {
+    $date = new DateTime();
+    $date->setISODate($year, 53);
+    return ($date->format("W") === "53" ? 53 : 52);
 }
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gráfico de Logouts por Usuário</title>
+    <title>Gráfico de Logouts por Semana</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
         <form method="POST" action="">
-            <label for="selectedWeek">Selecione uma semana:</label>
-            <input type="week" id="selectedWeek" name="selectedWeek">
-
+            <label for="selectedEmail">Digite o email do usuário:</label>
+            <input type="email" id="selectedEmail" name="selectedEmail">
+            <label for="selectedYear">Selecione o ano:</label>
+            <select id="selectedYear" name="selectedYear">
+                <?php
+                $currentYear = date("Y");
+                for ($year = $currentYear; $year >= $currentYear - 10; $year--) {
+                    $selected = ($year == $selectedYear) ? 'selected' : '';
+                    echo "<option value='$year' $selected>$year</option>";
+                }
+                ?>
+            </select>
             <button type="submit">Filtrar</button>
         </form>
     </header>
 
     <div id='selecionados'>
-        <canvas id="logoutChart"></canvas>
+        <?php if (empty($filteredData)) : ?>
+            <p><?php echo "Usuário não encontrado."; ?></p>
+        <?php else : ?>
+            <canvas id="logoutChart"></canvas>
+        <?php endif; ?>
     </div>
 
     <script>
@@ -58,8 +103,8 @@ if (isset($_POST['selectedWeek'])) {
             var labels = [];
             var data = [];
 
-            <?php foreach ($filteredData as $user => $count): ?>
-            labels.push("<?php echo $user; ?>");
+            <?php foreach ($filteredData as $week => $count): ?>
+            labels.push("<?php echo $week; ?>");
             data.push(<?php echo $count; ?>);
             <?php endforeach; ?>
 
@@ -69,7 +114,7 @@ if (isset($_POST['selectedWeek'])) {
                 data: {
                     labels: labels,
                     datasets: [{
-                        label: 'Número de Logouts por Usuário (por Semana)',
+                        label: 'Número de Logouts por Semana',
                         data: data,
                         backgroundColor: 'rgba(0, 123, 255, 0.7)',
                         borderColor: 'rgba(0, 123, 255, 1)',
@@ -77,11 +122,23 @@ if (isset($_POST['selectedWeek'])) {
                     }]
                 },
                 options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '<?php echo $selectedEmail . " - Total de Logouts: " . $totalLogouts; ?>',
+                            padding: {
+                                top: 10
+                            }
+                        }
+                    },
                     scales: {
                         y: {
                             beginAtZero: true,
-                            suggestedMax: Math.max(...data) + 1, // Removido o limite superior do gráfico
+                            suggestedMax: Math.max(...data) > 0 ? Math.max(...data) + 1 : 10,
                             stepSize: 1
+                        },
+                        x: {
+                            minBarLength: 1
                         }
                     }
                 }
