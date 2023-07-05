@@ -15,3 +15,25 @@ table{
     text-align: center;
     
 }
+
+.buttons{
+    position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #721c1c;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  display: inline;
+  margin-inline: 10px;
+}
+
+.conteiner{
+    display: flex;
+}
