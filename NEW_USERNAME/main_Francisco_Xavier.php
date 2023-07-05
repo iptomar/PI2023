@@ -1,10 +1,22 @@
+<!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="css.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <title>PI2023</title>
     <link rel="shortcut icon" href="icon.png"/>
 </head>
 
+<body>
+  <div id="container">
+    <img id="main_icon" src="icon.png">
+    <h1 id="title">PI2023</h1>
+
+  <form action="main.php" id="charts">
+    <button type="submit" id = "hideTable"> Gráficos</button>
+  </form>
+  </div>
+</body>
 
 <script>
     function showANDhideTable() {
@@ -22,175 +34,196 @@
     function showGraph() {
         var chartCanvas = document.getElementById("chart");
         chartCanvas.style.display = "block";
-        createChart();
+        drawChart();
     }
 
-    function createChart() {
-        var chartCanvas = document.getElementById("chart");
-        var ctx = chartCanvas.getContext("2d");
-        var selectedDate = document.getElementById("selectedDate").value;
-
-        // Get the data for the selected date from the CSV file
-        var data = getDataForDate(selectedDate);
-
-        // Chart options
-        var options = {
-            responsive: true,
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+    function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Semana");
+        data.addColumn("number", "Quantidade de Registros");
+        data.addRows([
+            <?php
+            foreach ($weeks as $week => $count) {
+                echo '["Semana ' . $week . '", ' . $count . '],';
             }
+            ?>
+        ]);
+
+        var options = {
+            title: "Estatísticas por Semana",
+            hAxis: { title: "Semana", titleTextStyle: { color: "#333" } },
+            vAxis: { minValue: 0 },
+            width: 800,
+            height: 600
         };
 
-        // Create the chart
-        new Chart(ctx, {
-            type: "line",
-            data: data,
-            options: options
-        });
+        var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
+        chart.draw(data, options);
+    }
+
+    function isValidDateFormat(dateString) {
+        var pattern = /^\d{4}-\d{2}-\d{2}$/;
+        return pattern.test(dateString);
     }
 
     function getDataForDate(selectedDate) {
-  // Specify the path to your CSV file
-  var csvFile = "logIPRP.csv";
+        // Specify the path to your CSV file
+        var csvFile = "logIPRP.csv";
 
-  return fetch(csvFile)
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error("Failed to fetch the CSV file.");
-      }
-      return response.text();
-    })
-    .then(function (csvText) {
-      // Parse the CSV data
-      var rows = csvText.split("\n");
-      var chartData = {
-        labels: [],
-        datasets: [
-          {
-            label: "NewUsername",
-            data: [],
-            borderColor: "blue",
-            fill: false,
-          },
-        ],
-      };
+        return fetch(csvFile)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error("Failed to fetch the CSV file.");
+                }
+                return response.text();
+            })
+            .then(function(csvText) {
+                // Parse the CSV data
+                var rows = csvText.split("\n");
+                var ipAddresses = [];
 
-      // Process and filter the rows based on the selected date
-      for (var i = 0; i < rows.length; i++) {
-        var lineValues = rows[i].split(";");
-        var date = lineValues[1];
+                // Process and filter the rows based on the selected date
+                for (var i = 0; i < rows.length; i++) {
+                    var lineValues = rows[i].split(";");
+                    if (lineValues.length >= 3) {
+                        var date = lineValues[1].trim(); // Trim the date value
 
-        // Filter the rows based on the selected date
-        if (date === selectedDate) {
-          var count = parseInt(lineValues[3]); // Assuming the user count is in the 4th column
-          chartData.labels.push(date);
-          chartData.datasets[0].data.push(count);
+                        // Filter the rows based on the selected date
+                        if (date === selectedDate) {
+                            var ipAddress = lineValues[2].trim(); // Trim the IP address value
+                            ipAddresses.push(ipAddress);
+                        }
+                    }
+                }
+
+                var count = Math.floor(ipAddresses.length / 3); // Divide the count by 3
+
+                // Prepare the chart data
+                var chartData = {
+                    labels: [selectedDate],
+                    datasets: [
+                        {
+                            label: "Unique IPs",
+                            data: [count],
+                            borderColor: "blue",
+                            fill: false,
+                        },
+                    ],
+                };
+
+                return chartData;
+            })
+            .catch(function(error) {
+                console.error(error);
+                return null;
+            });
+    }
+
+    function enviar() {
+        var selectedDate = document.getElementById("selectedDate").value;
+
+        // Ensure the selected date is in the correct format
+        if (!isValidDateFormat(selectedDate)) {
+            alert("Invalid date format. Please enter the date in yyyy-mm-dd format.");
+            return;
         }
-      }
 
-      return chartData;
-    })
-    .catch(function (error) {
-      console.error(error);
-      return null;
-    });
-
-
-
-        // Process and filter the rows based on the selected date
-        while ((row = fgetcsv(fileHandle)) !== false) {
-            var lineValues = array_map("trim", explode(";", row[0]));
-            var date = lineValues[1];
-
-            // Filter the rows based on the selected date
-            if (date === selectedDate) {
-                var count = parseInt(lineValues[3]); // Assuming the user count is in the 4th column
-                chartData.labels.push(date);
-                chartData.datasets[0].data.push(count);
-            }
-        }
-
-        // Close the file handle
-        fclose(fileHandle);
-
-        return chartData;
+        // Display the graph for the selected date
+        showGraph();
     }
 </script>
 
-<?php
-// Specify the path to your CSV file
-$csvFile = "logIPRP.csv";
+<body>
+    <!-- PHP code to read and process the CSV file -->
+    <?php
+    // Lê o conteúdo do arquivo CSV
+    $file = fopen('logIPRP.csv', 'r');
 
-// Open the CSV file
-$fileHandle = fopen($csvFile, "r");
+    // Lê a primeira linha do arquivo (cabeçalho)
+    $headers = fgetcsv($file, 0, ';');
 
-// Check if the file opened successfully
-if ($fileHandle === false) {
-    die("Failed to open the CSV file.");
-}
+    // Array para armazenar as semanas e a quantidade de registros por semana
+    $weeks = array();
 
-// Output the header row (optional)
-$header = fgetcsv($fileHandle);
+    // Lê as linhas restantes do arquivo
+    while (($row = fgetcsv($file, 0, ';')) !== false) {
+        // Extrai a data/hora do registro
+        $datetime = strtotime($row[1]);
 
-// Start the table
-echo "<table id='table'>";
-echo "<thead>";
-echo "<tr>";
-echo "<th>Date</th>";
-echo "<th>Email</th>";
-echo "<th>Name</th>";
-echo "</tr>";
-echo "</thead>";
-echo "<tbody>";
+        // Obtém o número da semana do ano
+        $week = date('W', $datetime);
 
-// button to hide the table and display a button to show a graph using the data from the table
-echo "<div id = 'cabeca'>"; 
-echo "<img id = 'main_icon'src = 'icon.png'>";
-echo "<h1 id='title'>PI2023</h1>";
-echo "<div id='buttons'>";
-echo "<button id='hideTable' onclick='showANDhideTable()'>Esconder tabela</button>";
-echo "<button id='showGraph' onclick='showGraph()'>Mostrar Gráfico</button>";
-echo "</div>";
-echo "</div>";
+        // Verifica se a semana já existe no array
+        if (isset($weeks[$week])) {
+            // Incrementa o contador da semana
+            $weeks[$week]++;
+        } else {
+            // Cria uma nova entrada no array para a semana
+            $weeks[$week] = 1;
+        }
+    }
 
-// Process and output the remaining rows
-while (($row = fgetcsv($fileHandle)) !== false) {
-    $lineValues = array_map("trim", explode(";", $row[0]));
-    $date = $lineValues[1] ?? "";
-    $emailName = $lineValues[4] ?? "";
-    $explodedEmailName = explode(" ", $emailName);
-    $email = $explodedEmailName[0] ?? "";
-    $name = (count($explodedEmailName) >= 2) ? $explodedEmailName[1] : "No name";
+    // Fecha o arquivo CSV
+    fclose($file);
+    ?>
 
-    // Output a table row for each user
-    echo "<tr>";
-    echo "<td>" . $date . "</td>";
-    echo "<td>" . $email . "</td>";
-    echo "<td>" . $name . "</td>";
-    echo "</tr>";
-}
+    <!-- Table section -->
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Email</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            // Open the CSV file
+            $fileHandle = fopen('logIPRP.csv', 'r');
 
-// Close the table
-echo "</tbody>";
-echo "</table>";
+            // Check if the file opened successfully
+            if ($fileHandle === false) {
+                die("Failed to open the CSV file.");
+            }
+
+            // Output the header row (optional)
+            $header = fgetcsv($fileHandle);
+
+            // Process and output the remaining rows
+            while (($row = fgetcsv($fileHandle)) !== false) {
+                $lineValues = array_map("trim", explode(";", $row[0]));
+                $date = $lineValues[1] ?? "";
+                $emailName = $lineValues[4] ?? "";
+                $explodedEmailName = explode(" ", $emailName);
+                $email = $explodedEmailName[0] ?? "";
+                $name = (count($explodedEmailName) >= 2) ? $explodedEmailName[1] : "No name";
+
+                // Output a table row for each user
+                echo "<tr>";
+                echo "<td>" . $date . "</td>";
+                echo "<td>" . $email . "</td>";
+                echo "<td>" . $name . "</td>";
+                echo "</tr>";
+            }
+
+            // Close the table
+            fclose($fileHandle);
+            ?>
+        </tbody>
+    </table>
 
 
-// Close the file handle
-fclose($fileHandle);
-?>
+    <footer>
+        <div id="footer">
+            <p>Francisco e Xavier</p>
+            <p>PI2023</p>
+        </div>
+    </footer>
 
-<!-- Add a date picker -->
-<label for="selectedDate">Select Date:</label>
-<input type="date" id="selectedDate">
-<br><br>
-
-<!-- Chart canvas -->
-<canvas id="chart" style="display: none;"></canvas>
-<footer>
-    <div id="footer">
-        <p>Francisco e Xavier</p>
-        <p>PI2023</p>
-    </div>
-</footer>
+    <script>
+        // Load Google Charts library
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+    </script>
+</body>
+</html>

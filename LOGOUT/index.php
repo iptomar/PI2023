@@ -1,5 +1,5 @@
 <?php
-$myfile = fopen("logout_amostra.csv", "r");
+$myfile = fopen("../logIPRP.csv", "r");
 $data = array();
 while (!feof($myfile)) {
     $line = fgets($myfile);
@@ -9,9 +9,12 @@ while (!feof($myfile)) {
 fclose($myfile);
 
 $filteredData = array();
-foreach ($data as $row) {
-    if (isset($row[3]) && trim($row[3]) === "LOGOUT") {
-        $filteredData[] = $row;
+if (isset($_POST['selectedDate'])) {
+    $selectedDate = $_POST['selectedDate'];
+    foreach ($data as $row) {
+        if (isset($row[1]) && trim($row[3]) === "LOGOUT" && trim(date("Y-m-d", strtotime($row[1]))) === $selectedDate) {
+            $filteredData[] = $row;
+        }
     }
 }
 ?>
@@ -29,9 +32,20 @@ foreach ($data as $row) {
             border: 1px solid black;
             padding: 5px;
         }
+        #registros{
+
+        }
     </style>
 </head>
 <body>
+  <header>
+    <form method="POST" action="">
+      <label for="selectedDate">Selecione uma data:</label>
+      <input type="date" id="selectedDate" name="selectedDate">
+      <button type="submit">Filtrar</button>
+    </form>
+  </header>
+  <div id='registros'>
     <table>
         <thead>
             <tr>
@@ -58,5 +72,7 @@ foreach ($data as $row) {
             <?php endforeach; ?>
         </tbody>
     </table>
+  </div>
+  <div id= 'selecionados'></div>
 </body>
 </html>

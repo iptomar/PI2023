@@ -3,6 +3,7 @@
 
     $data->title = 'How Much Pizza I Ate Last Night';
     $data->columns = array();
+    
 
     $c1 = new stdClass();
     $c1->type = 'string';
