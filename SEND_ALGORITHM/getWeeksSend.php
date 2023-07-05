@@ -1,5 +1,5 @@
 <?php
-$myfile = fopen("logIPRP.csv","r");
+$myfile = fopen("../logIPRP.csv","r");
 $weeks = array();
 
 while(!feof($myfile)){
