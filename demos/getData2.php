@@ -7,8 +7,10 @@
 
     $l1 = array();
     array_push($l1,'City');
+
     array_push($l1,'2010 Population');
     array_push($l1,'2000 Population');
+
 
     $l2 = array();
     array_push($l2,'New York City, NY');
