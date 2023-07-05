@@ -1,6 +1,6 @@
 <?php
 // Ler o arquivo de logins
-$logFile = 'C:\Users\andra\Ambiente de Trabalho\teste.txt';
+$logFile = 'C:\xampp\htdocs\PI2023\LOGIN\logIPRP.csv';
 $logData = file_get_contents($logFile);
 
 // Extrair as datas das entradas de login
@@ -36,8 +36,10 @@ $dataJson = json_encode($dataArray);
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
+<link rel="stylesheet" href="css.css">
+<form action="main.php" ><button class="buttons">Voltar</button></form>
+    <script class="scripts" type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" class="scripts">
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
 

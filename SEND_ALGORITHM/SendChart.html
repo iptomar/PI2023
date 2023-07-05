@@ -1,11 +1,16 @@
 <html>
   <head>
+    <style>
+      div{height: 2000;}
+      button{border: none; display: inline-block; font-size: 19px; border-radius: 4px; background-color: #8093e0; color:#ffffff;}
+    </style>
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 
       google.charts.load('current', {packages: ['corechart', 'bar']});
 
+      var chartData;
 
       xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
@@ -21,10 +26,15 @@
       function drawBarColors(chartData) {
             var data = google.visualization.arrayToDataTable(chartData.data);
 
-            var options = {
+            var button1 = document.getElementById('change-chart1');
+            var button2 = document.getElementById('change-chart2');
+            var button3 = document.getElementById('change-chart3');
+            var chartDiv = document.getElementById('chart_div');
+
+            var daysOptions = {
               title: chartData.title,
               chartArea: {width: '50%'},
-              colors: ['#b0120a', '#ffab91'],
+              colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
                 minValue: 0
@@ -34,10 +44,10 @@
               }
             };
 
-            var weeks = {
-              title: chartData.title,
+            var weeksOptions = {
+              title: 'Volume of Sendings per Week',
               chartArea: {width: '50%'},
-              colors: ['#b0120a', '#ffab91'],
+              colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
                 minValue: 0
@@ -47,10 +57,10 @@
               }
             };
 
-            var meses = {
-              title: chartData.title,
+            var monthsOptions = {
+              title: 'Volume of Sendings per Month',
               chartArea: {width: '50%'},
-              colors: ['#b0120a', '#ffab91'],
+              colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
                 minValue: 0
@@ -60,17 +70,57 @@
               }
             };
 
-            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-            chart.draw(data, options);
+            function loadDataAndDrawChart(url, options, button) {
+              var xmlhttp = new XMLHttpRequest();
+              xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  var newData = JSON.parse(this.responseText);
+                  data = google.visualization.arrayToDataTable(newData.data);
+                  var chart = new google.visualization.BarChart(chartDiv);
+                  chart.draw(data, google.charts.Bar.convertOptions(options));
+                  button.disabled = false;
+                }
+              };
+              xmlhttp.open("GET", url, true);
+              xmlhttp.send();
+            }
+
+
+            function drawDaysChart() {
+              button1.disabled = true;
+              loadDataAndDrawChart("getDaysSend.php", daysOptions, button1);
+              button2.onclick = drawWeeksChart;
+              button3.onclick = drawMonthsChart;
+              chartDiv.style.height = '2000px';
+            }
+
+            function drawWeeksChart() {
+              button2.disabled = true;
+              loadDataAndDrawChart("getWeeksSend.php", weeksOptions, button2);
+              button1.onclick = drawDaysChart;
+              button3.onclick = drawMonthsChart;
+              chartDiv.style.height = '1000px';
+            }
+
+            function drawMonthsChart() {
+              button3.disabled = true;
+              loadDataAndDrawChart("getMonthsSend.php", monthsOptions, button3);
+              button1.onclick = drawDaysChart;
+              button2.onclick = drawWeeksChart;
+              chartDiv.style.height = '500px';
+            }
+
+            drawDaysChart();
           }
     </script>
   </head>
 
   <body>
-    <button id="change-chart1">Change to Weeks</button>
-    <button id="change-chart2">Change to Months</button>
+    <button id="change-chart1">Change to Days</button>
+    <button id="change-chart2">Change to Weeks</button>
+    <button id="change-chart3">Change to Months</button>
     <br><br>
     <!--Div that will hold the pie chart-->
-    <div id="chart_div" style="height: 2000px;"></div>
+    <div id="chart_div"></div>
   </body>
 </html>
