@@ -1,66 +1,3 @@
-<?php
-$myfile = fopen("logout_amostra.csv", "r");
-
-$filteredData = array();
-$email = "";
-$totalLogouts = 0; // Variável para armazenar o número total de logouts
-
-if (isset($_POST['selectedEmail'])) {
-    $selectedEmail = $_POST['selectedEmail'];
-
-    $tempData = array();
-    $firstDate = null;
-    $lastDate = null;
-
-    // Processar o arquivo em lotes de 1000 linhas
-    $batchSize = 100000;
-    $batchCount = 0;
-
-    while (!feof($myfile)) {
-        $line = fgets($myfile);
-        $fields = explode(";", $line);
-        $email = explode(" ", $fields[4])[0]; // Extrair o email do campo e remover o nome do usuário
-
-        if (trim($email) === $selectedEmail) {
-            $date = date("Y-m-d", strtotime($fields[1]));
-
-            if ($firstDate === null || $date < $firstDate) {
-                $firstDate = $date;
-            }
-            if ($lastDate === null || $date > $lastDate) {
-                $lastDate = $date;
-            }
-
-            if (!isset($tempData[$date])) {
-                $tempData[$date] = 1;
-            } else {
-                $tempData[$date]++;
-            }
-
-            $totalLogouts++; // Incrementar o número total de logouts
-        }
-
-        $batchCount++;
-        if ($batchCount >= $batchSize) {
-            break; // Interromper o processamento após atingir o tamanho do lote
-        }
-    }
-    $totalLogouts = $totalLogouts/3;
-    if (empty($tempData)) {
-        echo "Usuário não encontrado.";
-    } else {
-        $currentDate = $firstDate;
-        while ($currentDate <= $lastDate) {
-            $count = isset($tempData[$currentDate]) ? $tempData[$currentDate] / 3 : 0;
-            $filteredData[$currentDate] = $count;
-            $currentDate = date("Y-m-d", strtotime($currentDate . " +1 day"));
-        }
-    }
-}
-
-fclose($myfile);
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,6 +5,69 @@ fclose($myfile);
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <?php
+    $myfile = fopen("logout_amostra.csv", "r");
+
+    $filteredData = array();
+    $email = "";
+    $totalLogouts = 0; // Variável para armazenar o número total de logouts
+
+    if (isset($_POST['selectedEmail'])) {
+        $selectedEmail = $_POST['selectedEmail'];
+
+        $tempData = array();
+        $firstDate = null;
+        $lastDate = null;
+
+        // Processar o arquivo em lotes de 1000 linhas
+        $batchSize = 100000;
+        $batchCount = 0;
+
+        while (!feof($myfile)) {
+            $line = fgets($myfile);
+            $fields = explode(";", $line);
+            $email = explode(" ", $fields[4])[0]; // Extrair o email do campo e remover o nome do usuário
+
+            if (trim($email) === $selectedEmail) {
+                $date = date("Y-m-d", strtotime($fields[1]));
+
+                if ($firstDate === null || $date < $firstDate) {
+                    $firstDate = $date;
+                }
+                if ($lastDate === null || $date > $lastDate) {
+                    $lastDate = $date;
+                }
+
+                if (!isset($tempData[$date])) {
+                    $tempData[$date] = 1;
+                } else {
+                    $tempData[$date]++;
+                }
+
+                $totalLogouts++; // Incrementar o número total de logouts
+            }
+
+            $batchCount++;
+            if ($batchCount >= $batchSize) {
+                break; // Interromper o processamento após atingir o tamanho do lote
+            }
+        }
+        $totalLogouts = $totalLogouts/3;
+        if (empty($tempData)) {
+            echo "Usuário não encontrado.";
+        } else {
+            $currentDate = $firstDate;
+            while ($currentDate <= $lastDate) {
+                $count = isset($tempData[$currentDate]) ? $tempData[$currentDate] / 3 : 0;
+                $filteredData[$currentDate] = $count;
+                $currentDate = date("Y-m-d", strtotime($currentDate . " +1 day"));
+            }
+        }
+    }
+
+    fclose($myfile);
+    ?>
+
     <header>
         <form method="POST" action="">
             <label for="selectedEmail">Digite o email do usuário:</label>
@@ -96,7 +96,7 @@ fclose($myfile);
 
             var ctx = document.getElementById('logoutChart').getContext('2d');
             var chart = new Chart(ctx, {
-                type: 'bar',
+               type: 'line',
                 data: {
                     labels: labels,
                     datasets: [{
@@ -104,7 +104,8 @@ fclose($myfile);
                         data: data,
                         backgroundColor: 'rgba(0, 123, 255, 0.7)',
                         borderColor: 'rgba(0, 123, 255, 1)',
-                        borderWidth: 1
+                        borderWidth: 1,
+                        fill: true
                     }]
                 },
                 options: {
@@ -124,6 +125,7 @@ fclose($myfile);
                             stepSize: 1
                         }
                     }
+
                 }
             });
         });
