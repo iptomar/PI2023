@@ -49,7 +49,7 @@ if (isset($_POST['selectedEmail'])) {
         echo "Usuário não encontrado.";
     } else {
         $weeksInYear = getWeeksInYear($selectedYear);
-        for ($week = 1; $week <= $weeksInYear; $week++) {
+        for ($week = 0; $week <= $weeksInYear; $week++) {
             $weekKey = $selectedYear . '-' . sprintf('%02d', $week);
             $weekLabel = 'Semana ' . $week;
             $logoutCount = isset($tempData[$weekKey]) ? $tempData[$weekKey] / 3 : 0;
@@ -127,7 +127,7 @@ function getWeeksInYear($year) {
       plugins: {
           title: {
               display: true,
-              text: '<?php echo $selectedEmail . "<br> - Total de Logouts: " . $totalLogouts; ?>',
+              text: '<?php echo $selectedEmail . " - Total de Logouts: " . $totalLogouts; ?>',
               padding: {
                   top: 10
               }
@@ -143,7 +143,7 @@ function getWeeksInYear($year) {
               minBarLength: 1,
               ticks: {
                   callback: function(value, index, values) {
-                      return  data[index] +'\n\n'+ value;
+                      return  data[index] +'\n'+ value  ;
                   }
               }
           }
