@@ -23,14 +23,14 @@
             var data = google.visualization.arrayToDataTable(chartData.data);
 
             var button1 = document.getElementById('change-chart1');
-            
+            var button2 = document.getElementById('change-chart2');
             var button3 = document.getElementById('change-chart3');
             var chartDiv = document.getElementById('chart_div');
 
             var daysOptions = {
               title: chartData.title,
               chartArea: {width: '50%'},
-              colors: ['#b0120a', '#ffab91'],
+              colors: ['#b0120a'],
               hAxis: {
                 title: 'Sendings',
                 minValue: 0
@@ -85,47 +85,35 @@
             function drawDaysChart() {
               button1.disabled = true;
               loadDataAndDrawChart("getDaysSend.php", daysOptions, button1);
-              button3.innerText = 'Change to Months';
+              button2.onclick = drawWeeksChart;
               button3.onclick = drawMonthsChart;
             }
 
+            function drawWeeksChart() {
+              button2.disabled = true;
+              loadDataAndDrawChart("getWeeksSend.php", weeksOptions, button2);
+              button1.onclick = drawDaysChart;
+              button3.onclick = drawMonthsChart;
+            }
 
             function drawMonthsChart() {
               button3.disabled = true;
               loadDataAndDrawChart("getMonthsSend.php", monthsOptions, button3);
-              button1.innerText = 'Change to Days';
               button1.onclick = drawDaysChart;
+              button2.onclick = drawWeeksChart;
             }
-
-            /*function drawDaysChart2() {
-              var daysChart = new google.visualization.BarChart(chartDiv);
-              daysChart.draw(data, google.charts.Bar.convertOptions(daysOptions));
-              button.innerText = 'Change to Months';
-              button.onclick = drawMonthsChart;
-            }
-
-            function drawMonthsChart() {
-              var monthsChart = new google.visualization.BarChart(chartDiv);
-              monthsChart.draw(data, monthsOptions);
-              button.innerText = 'Change to Days';
-              button.onclick = drawDaysChart2;
-
-              
-            }*/
 
             drawDaysChart();
-
-            //var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-            //chart.draw(data, daysOptions);
           }
     </script>
   </head>
 
   <body>
-    <button id="change-chart1">Change to days</button>
+    <button id="change-chart1">Change to Days</button>
+    <button id="change-chart2">Change to Weeks</button>
     <button id="change-chart3">Change to Months</button>
     <br><br>
     <!--Div that will hold the pie chart-->
-    <div id="chart_div" style="height: 2000px;"></div>
+    <div id="chart_div" style="height: 3500px;"></div>
   </body>
 </html>
