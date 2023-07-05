@@ -15,7 +15,7 @@ if(isset($fields[3]) && strcmp(trim($fields[3]), "SEND_ALGORITHM") == 0){
             $w = date("W", $time);
 
     //armazena na variável $key as semanas pelo formato $w
-    $key = "$w";
+    $key = "$w de $a";
     //conta os dias por semana
     if(isset($weeks[$key]))
 	    $weeks[$key]++;
