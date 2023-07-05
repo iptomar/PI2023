@@ -2,7 +2,7 @@
   <head>
     <style>
       div{height: 2000;}
-      button{}
+      button{border: none; display: inline-block; font-size: 20px; border-radius: 6px; background-color: #8093e0; color:#ffffff;}
     </style>
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -47,7 +47,7 @@
             var weeksOptions = {
               title: 'Volume of Sendings per Week',
               chartArea: {width: '50%'},
-              colors: ['#b0120a'],
+              colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
                 minValue: 0
@@ -60,7 +60,7 @@
             var monthsOptions = {
               title: 'Volume of Sendings per Month',
               chartArea: {width: '50%'},
-              colors: ['#b0120a'],
+              colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
                 minValue: 0
@@ -121,6 +121,8 @@
     <button id="change-chart3">Change to Months</button>
     <br><br>
     <!--Div that will hold the pie chart-->
-    <div id="chart_div"></div>
+    <div id="chart_div">
+      
+    </div>
   </body>
 </html>
