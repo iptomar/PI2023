@@ -27,7 +27,7 @@ if(isset($fields[3]) && strcmp(trim($fields[3]), "SEND_ALGORITHM") == 0){
 fclose($myfile);
 
 foreach($weeks as $key => $cont){
-    echo "$key $cont <br>";
+    echo "Semana ".$key." ".$cont."<br>";
 }
 
 
