@@ -19,118 +19,128 @@
 </body>
 
 <script>
-    function showANDhideTable() {
-        var table = document.getElementById("table");
-        var hideTable = document.getElementById("hideTable");
-        if (table.style.display === "none") {
-            table.style.display = "table";
-            hideTable.innerHTML = "Esconder tabela";
-        } else {
-            table.style.display = "none";
-            hideTable.innerHTML = "Mostrar tabela";
-        }
-    }
-
-    function showGraph() {
-        var chartCanvas = document.getElementById("chart");
-        chartCanvas.style.display = "block";
-        drawChart();
-    }
-
-    function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn("string", "Semana");
-        data.addColumn("number", "Quantidade de Registros");
-        data.addRows([
-            <?php
-            foreach ($weeks as $week => $count) {
-                echo '["Semana ' . $week . '", ' . $count . '],';
+        function showANDhideTable() {
+            // Função para mostrar ou esconder a tabela
+            var table = document.getElementById("table");
+            var hideTable = document.getElementById("hideTable");
+            if (table.style.display === "none") {
+                // Se a tabela estiver escondida, mostra a tabela e altera o texto do botão
+                table.style.display = "table";
+                hideTable.innerHTML = "Esconder tabela";
+            } else {
+                // Se a tabela estiver visível, esconde a tabela e altera o texto do botão
+                table.style.display = "none";
+                hideTable.innerHTML = "Mostrar tabela";
             }
-            ?>
-        ]);
+        }
 
-        var options = {
-            title: "Estatísticas por Semana",
-            hAxis: { title: "Semana", titleTextStyle: { color: "#333" } },
-            vAxis: { minValue: 0 },
-            width: 800,
-            height: 600
-        };
+        function showGraph() {
+            // Função para exibir o gráfico
+            var chartCanvas = document.getElementById("chart");
+            chartCanvas.style.display = "block";
+            drawChart();
+        }
 
-        var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
-        chart.draw(data, options);
-    }
-
-    function isValidDateFormat(dateString) {
-        var pattern = /^\d{4}-\d{2}-\d{2}$/;
-        return pattern.test(dateString);
-    }
-
-    function getDataForDate(selectedDate) {
-        // Specify the path to your CSV file
-        var csvFile = "logIPRP.csv";
-
-        return fetch(csvFile)
-            .then(function(response) {
-                if (!response.ok) {
-                    throw new Error("Failed to fetch the CSV file.");
+        function drawChart() {
+            // Função para desenhar o gráfico de colunas
+            var data = new google.visualization.DataTable();
+            data.addColumn("string", "Semana");
+            data.addColumn("number", "Quantidade de Registros");
+            data.addRows([
+                <?php
+                // Loop para adicionar as linhas ao gráfico com os dados das semanas
+                foreach ($weeks as $week => $count) {
+                    echo '["Semana ' . $week . '", ' . $count . '],';
                 }
-                return response.text();
-            })
-            .then(function(csvText) {
-                // Parse the CSV data
-                var rows = csvText.split("\n");
-                var ipAddresses = [];
+                ?>
+            ]);
 
-                // Process and filter the rows based on the selected date
-                for (var i = 0; i < rows.length; i++) {
-                    var lineValues = rows[i].split(";");
-                    if (lineValues.length >= 3) {
-                        var date = lineValues[1].trim(); // Trim the date value
+            var options = {
+                title: "Estatísticas por Semana",
+                hAxis: { title: "Semana", titleTextStyle: { color: "#333" } },
+                vAxis: { minValue: 0 },
+                width: 800,
+                height: 600
+            };
 
-                        // Filter the rows based on the selected date
-                        if (date === selectedDate) {
-                            var ipAddress = lineValues[2].trim(); // Trim the IP address value
-                            ipAddresses.push(ipAddress);
+            var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
+            chart.draw(data, options);
+        }
+
+        function isValidDateFormat(dateString) {
+            // Função para verificar se uma data está no formato válido (yyyy-mm-dd)
+            var pattern = /^\d{4}-\d{2}-\d{2}$/;
+            return pattern.test(dateString);
+        }
+
+        function getDataForDate(selectedDate) {
+            // Função para obter os dados para uma data selecionada
+            // Especifica o caminho para o arquivo CSV
+            var csvFile = "logIPRP.csv";
+
+            return fetch(csvFile)
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error("Falha ao buscar o arquivo CSV.");
+                    }
+                    return response.text();
+                })
+                .then(function(csvText) {
+                    // Parseia os dados do CSV
+                    var rows = csvText.split("\n");
+                    var ipAddresses = [];
+
+                    // Processa e filtra as linhas com base na data selecionada
+                    for (var i = 0; i < rows.length; i++) {
+                        var lineValues = rows[i].split(";");
+                        if (lineValues.length >= 3) {
+                            var date = lineValues[1].trim(); // Remove espaços em branco da data
+
+                            // Filtra as linhas com base na data selecionada
+                            if (date === selectedDate) {
+                                var ipAddress = lineValues[2].trim(); // Remove espaços em branco do endereço IP
+                                ipAddresses.push(ipAddress);
+                            }
                         }
                     }
-                }
 
-                var count = Math.floor(ipAddresses.length / 3); // Divide the count by 3
+                    var count = Math.floor(ipAddresses.length / 3); // Divide a contagem por 3
 
-                // Prepare the chart data
-                var chartData = {
-                    labels: [selectedDate],
-                    datasets: [
-                        {
-                            label: "Unique IPs",
-                            data: [count],
-                            borderColor: "blue",
-                            fill: false,
-                        },
-                    ],
-                };
+                    // Prepara os dados do gráfico
+                    var chartData = {
+                        labels: [selectedDate],
+                        datasets: [
+                            {
+                                label: "Unique IPs",
+                                data: [count],
+                                borderColor: "blue",
+                                fill: false,
+                            },
+                        ],
+                    };
 
-                return chartData;
-            })
-            .catch(function(error) {
-                console.error(error);
-                return null;
-            });
-    }
+                    return chartData;
+                })
+                .catch(function(error) {
+                    console.error(error);
+                    return null;
+                });
+        }
 
     function enviar() {
+        // Função para enviar o formulário e exibir o gráfico para a data selecionada
         var selectedDate = document.getElementById("selectedDate").value;
 
-        // Ensure the selected date is in the correct format
+        // Verifica se a data selecionada está no formato correto
         if (!isValidDateFormat(selectedDate)) {
-            alert("Invalid date format. Please enter the date in yyyy-mm-dd format.");
+            alert("Formato de data inválido. Por favor, insira a data no formato yyyy-mm-dd.");
             return;
         }
 
-        // Display the graph for the selected date
+        // Exibe o gráfico para a data selecionada
         showGraph();
     }
+
 </script>
 
 <body>
