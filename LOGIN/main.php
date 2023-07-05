@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <form action="graficos.php"><button type = "submit">Verificar graficos</button>
+
+    </head>
 <body>
 <table>
     <thead>
+        <link rel="stylesheet" href="css.css">
         <tr>
             <th>Date-Time</th>
             <th>IP</th>
