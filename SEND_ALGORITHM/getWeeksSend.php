@@ -2,6 +2,17 @@
 $myfile = fopen("../logIPRP.csv","r");
 $weeks = array();
 
+$data = new stdClass();
+
+//$data->title = 'Volume of Sendings per Week';
+$data->data = array();
+
+$label = array();
+array_push($label,'Weeks');
+array_push($label,'Sendings');
+
+array_push($data->data, $label);
+
 while(!feof($myfile)){
 $line = fgets($myfile);
 $fields = explode(";",$line);
@@ -25,9 +36,12 @@ if(isset($fields[3]) && strcmp(trim($fields[3]), "SEND_ALGORITHM") == 0){
 }
 
 fclose($myfile);
-
+$l = array();
 foreach($weeks as $key => $cont){
-    echo "Semana ".$key." ".$cont."<br>";
+    array_push($l,$key);
+    array_push($l,$cont);
+    array_push($data->data,$l);
+    $l = [];
 }
 
 
