@@ -28,8 +28,8 @@ $dataJson = json_encode($dataArray);
 <head>
 <link rel="stylesheet" href="css.css">
     <form action="main.php"><button class="buttons">Voltar</button></form>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" class="scripts" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" class="scripts">
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
 
