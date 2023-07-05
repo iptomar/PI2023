@@ -17,6 +17,7 @@ while (!feof($file)) {
 fclose($file);
 
 array_pop($days);
+//array_shift($days);
 $counters = [];
 // Itera sobre a lista de datas
 foreach ($days as $day) {
@@ -28,7 +29,7 @@ foreach ($days as $day) {
         // Incrementa o contador dos dias
         $counters[$dateOnly]++;
     } else {
-        // Cria um novo contador para o dia x
+        // contador para o dia x
         $counters[$dateOnly] = 1;
     }
 }
@@ -39,9 +40,8 @@ foreach ($counters as $day => $count) {
     array_push($data->data, $l);
     $l = [];
 }
-
-$encodedData = json_encode($data);
-$encodedDataWithLineBreaks = implode("\n", explode(",", $encodedData));
-
-echo $encodedDataWithLineBreaks;
+echo json_encode($data);
+//$encodedData = json_encode($data);
+//$encodedDataWithLineBreaks = implode("\n", explode(",", $encodedData));
+//echo $encodedDataWithLineBreaks;
 ?>
