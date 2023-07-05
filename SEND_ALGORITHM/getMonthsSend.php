@@ -1,7 +1,7 @@
 <?php
     $data = new stdClass();
 
-    $data->title = 'Volume of Sendings per Month';
+    //$data->title = 'Volume of Sendings per Month';
     $data->data = array();
     
     $label = array();
@@ -15,8 +15,9 @@
     while(!feof($file)) {
         $line = fgets($file); 
         $row = explode("-", $line);
-        if(count($row) >= 1)
-            array_push($months, $row[1]);
+      
+        if(isset($row[0]) && isset($row[1]))
+            array_push($months, $row[0]."-".$row[1]);
     }
 
     fclose($file);
