@@ -41,8 +41,8 @@
         array_push($data->data, $l);
     }
 
-    $encodedData = json_encode($data);
-    $encodedDataWithLineBreaks = implode("\n", explode(",", $encodedData));
-
-    echo $encodedDataWithLineBreaks;
+    echo json_encode($data);
+//$encodedData = json_encode($data);
+//$encodedDataWithLineBreaks = implode("\n", explode(",", $encodedData));
+//echo $encodedDataWithLineBreaks;
 ?>
