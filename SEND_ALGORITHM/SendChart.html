@@ -6,6 +6,7 @@
 
       google.charts.load('current', {packages: ['corechart', 'bar']});
 
+      var chartData;
 
       xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
@@ -21,7 +22,12 @@
       function drawBarColors(chartData) {
             var data = google.visualization.arrayToDataTable(chartData.data);
 
-            var options = {
+            var button1 = document.getElementById('change-chart1');
+            
+            var button3 = document.getElementById('change-chart3');
+            var chartDiv = document.getElementById('chart_div');
+
+            var daysOptions = {
               title: chartData.title,
               chartArea: {width: '50%'},
               colors: ['#b0120a', '#ffab91'],
@@ -34,8 +40,8 @@
               }
             };
 
-            var weeks = {
-              title: chartData.title,
+            var weeksOptions = {
+              title: 'Volume of Sendings per Week',
               chartArea: {width: '50%'},
               colors: ['#b0120a', '#ffab91'],
               hAxis: {
@@ -47,8 +53,8 @@
               }
             };
 
-            var meses = {
-              title: chartData.title,
+            var monthsOptions = {
+              title: 'Volume of Sendings per Month',
               chartArea: {width: '50%'},
               colors: ['#b0120a', '#ffab91'],
               hAxis: {
@@ -60,15 +66,64 @@
               }
             };
 
-            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-            chart.draw(data, options);
+            function loadDataAndDrawChart(url, options, button) {
+              var xmlhttp = new XMLHttpRequest();
+              xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  var newData = JSON.parse(this.responseText);
+                  data = google.visualization.arrayToDataTable(newData.data);
+                  var chart = new google.visualization.BarChart(chartDiv);
+                  chart.draw(data, google.charts.Bar.convertOptions(options));
+                  button.disabled = false;
+                }
+              };
+              xmlhttp.open("GET", url, true);
+              xmlhttp.send();
+            }
+
+
+            function drawDaysChart() {
+              button1.disabled = true;
+              loadDataAndDrawChart("getDaysSend.php", daysOptions, button1);
+              button3.innerText = 'Change to Months';
+              button3.onclick = drawMonthsChart;
+            }
+
+
+            function drawMonthsChart() {
+              button3.disabled = true;
+              loadDataAndDrawChart("getMonthsSend.php", monthsOptions, button3);
+              button1.innerText = 'Change to Days';
+              button1.onclick = drawDaysChart;
+            }
+
+            /*function drawDaysChart2() {
+              var daysChart = new google.visualization.BarChart(chartDiv);
+              daysChart.draw(data, google.charts.Bar.convertOptions(daysOptions));
+              button.innerText = 'Change to Months';
+              button.onclick = drawMonthsChart;
+            }
+
+            function drawMonthsChart() {
+              var monthsChart = new google.visualization.BarChart(chartDiv);
+              monthsChart.draw(data, monthsOptions);
+              button.innerText = 'Change to Days';
+              button.onclick = drawDaysChart2;
+
+              
+            }*/
+
+            drawDaysChart();
+
+            //var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+            //chart.draw(data, daysOptions);
           }
     </script>
   </head>
 
   <body>
-    <button id="change-chart1">Change to Weeks</button>
-    <button id="change-chart2">Change to Months</button>
+    <button id="change-chart1">Change to days</button>
+    <button id="change-chart3">Change to Months</button>
     <br><br>
     <!--Div that will hold the pie chart-->
     <div id="chart_div" style="height: 2000px;"></div>
