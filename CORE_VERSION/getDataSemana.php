@@ -1,10 +1,10 @@
 <?php
     $data = new stdClass();
-    $data->title = 'Count per day';
+    $data->title = 'Count per semana';
     $data->data = array();
     
     $label = array();
-    array_push($label, 'days');
+    array_push($label, 'semana');
     array_push($label, 'count');
 
     array_push($data->data, $label);
@@ -21,21 +21,24 @@
     $counters = [];
     // Itera sobre a lista de datas
     foreach ($days as $day) {
-        // Verifica se a data já existe no array de contadores
-        if (isset($counters[$day])) {
-            // incrementa o contador dos dias
-            $counters[$day]++;
+        // Obtém apenas o mês da data
+        $semana = date('W', strtotime($day));
+
+        // Verifica se o semana já existe no array de contadores
+        if (isset($counters[$semana])) {
+            // incrementa o contador dos meses
+            $counters[$semana]++;
         } else {
-            // Cria um novo contador para o dia x
-            $counters[$day] = 1;
+            // Cria um novo contador para o semana x
+            $counters[$semana] = 1;
         }
     }
-    $l = array();
-    foreach($counters as $days => $count){
-        array_push($l, $days);
+
+    foreach($counters as $semana => $count){
+        $l = array();
+        array_push($l, $semana);
         array_push($l, $count);
         array_push($data->data, $l);
-        $l = [];
     }
 
     echo json_encode($data);
