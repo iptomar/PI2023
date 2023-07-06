@@ -50,3 +50,7 @@ table{
 .scripts{
     width:100%
 }
+
+#chart_div{
+    width:100%;
+}
