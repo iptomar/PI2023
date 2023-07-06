@@ -26,11 +26,13 @@
       function drawBarColors(chartData) {
             var data = google.visualization.arrayToDataTable(chartData.data);
 
+            //variaveir referentes aos elementos do html
             var button1 = document.getElementById('change-chart1');
             var button2 = document.getElementById('change-chart2');
             var button3 = document.getElementById('change-chart3');
             var chartDiv = document.getElementById('chart_div');
 
+            //caracteristicas do grafico de envios por dia
             var daysOptions = {
               title: chartData.title,
               chartArea: {width: '50%'},
@@ -44,6 +46,7 @@
               }
             };
 
+            //caracteristicas do grafico de envios por semana
             var weeksOptions = {
               title: 'Volume of Sendings per Week',
               chartArea: {width: '50%'},
@@ -57,6 +60,7 @@
               }
             };
 
+            //caracteristicas do grafico de envios por mês
             var monthsOptions = {
               title: 'Volume of Sendings per Month',
               chartArea: {width: '50%'},
@@ -85,7 +89,7 @@
               xmlhttp.send();
             }
 
-
+            //ao clica neste butão, ele irá mostrar o grafico de envios por dia
             function drawDaysChart() {
               button1.disabled = true;
               loadDataAndDrawChart("getDaysSend.php", daysOptions, button1);
@@ -94,6 +98,7 @@
               chartDiv.style.height = '2000px';
             }
 
+            //ao clica neste butão, ele irá mostrar o grafico de envios por semana
             function drawWeeksChart() {
               button2.disabled = true;
               loadDataAndDrawChart("getWeeksSend.php", weeksOptions, button2);
@@ -102,6 +107,7 @@
               chartDiv.style.height = '1000px';
             }
 
+            //ao clica neste butão, ele irá mostrar o grafico de envios por mês
             function drawMonthsChart() {
               button3.disabled = true;
               loadDataAndDrawChart("getMonthsSend.php", monthsOptions, button3);
@@ -110,6 +116,7 @@
               chartDiv.style.height = '500px';
             }
 
+            //inicializa o grafico de envios por dia
             drawDaysChart();
           }
     </script>
