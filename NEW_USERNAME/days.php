@@ -7,14 +7,10 @@
     <div id="container">
         <img id="main_icon" src="icon.png"> <!-- Logo principal -->
         <h1 id="title">PI2023</h1> <!-- Título principal -->
-        <form action="main_Francisco_Xavier.php" id="backWEGO"> <!-- Formulário para voltar à lista -->
-            <button type="submit" id="hideTable"> Lista</button> <!-- Botão para voltar à lista -->
-        </form>
-        <form action="main.php" id="charts">
-            <button type="submit" id = "hideTable"> Gráficos dos Semanas</button>
-        </form>
-        <form action="Month.php" id="charts">
-            <button type="submit" id = "hideTable"> Gráfico dos Meses</button>
+        <form id="backWEGO"> <!-- Formulário para voltar à lista -->
+            <button type="button" id="hideTable" onclick="location.href = 'main_Francisco_Xavier.php'" > Lista</button> <!-- Botão para voltar à lista -->
+            <button type="button" id = "hideTable" onclick="location.href = 'main.php'"  > Gráficos dos Semanas</button>
+            <button type="button" id = "hideTable" onclick="location.href = 'Month.php'" > Gráfico dos Meses</button>
         </form>
     </div>
 

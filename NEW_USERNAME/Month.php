@@ -7,14 +7,10 @@
     <div id="container">
         <img id="main_icon" src="icon.png"> <!-- Logo principal -->
         <h1 id="title">PI2023</h1> <!-- Título principal -->
-        <form action="main_Francisco_Xavier.php" id="backWEGO"> <!-- Formulário para voltar à lista -->
-            <button type="submit" id="hideTable"> Lista</button> <!-- Botão para voltar à lista -->
-        </form>
-        <form action="days.php" id="charts">
-            <button type="submit" id = "hideTable"> Gráfico dos Dias</button>
-        </form>
-        <form action="main.php" id="charts">
-            <button type="submit" id = "hideTable"> Gráficos dos Semanas</button>
+        <form action="" id="backWEGO"> <!-- Formulário para voltar à lista -->
+            <button type="button" id="hideTable" onclick="location.href ='main_Francisco_Xavier.php'"> Lista</button> <!-- Botão para voltar à lista -->
+            <button type="button" id="hideTable" onclick="location.href = 'days.php'" > Gráficos dos Dias</button> <!-- Botão para voltar à lista -->
+            <button type="button" id = "hideTable" onclick="location.href = 'main.php'"  > Gráficos dos Semanas</button>
         </form>
     </div>
 
@@ -94,29 +90,7 @@
     <!-- Div for the Charts -->
   <div id="chartContainer">
     <!-- Chart for Days -->
-    <div id="chart_days" class="chart"></div>
-  </div>
-
-  <!-- Just a Footer -->
-  <footer>
-    <div id="footer">
-        <p>Francisco e Xavier</p>
-        <p>PI2023</p>
-    </div>
-  </footer>
-
-</body>
-
-</html>
-
-        </script>
-</head>
-<body>
-    
-    <!-- Div for the Charts -->
-  <div id="chartContainer">
-    <!-- Chart for Days -->
-    <div id="chart_days" class="chart"></div>
+    <div id="chart_month" class="chart"></div>
   </div>
 
   <!-- Just a Footer -->

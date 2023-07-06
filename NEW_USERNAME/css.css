@@ -99,10 +99,10 @@
     
     #backWEGO
     {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: auto;
         margin: 20px 0px 0px 890px;
-        display: block;
+        display: flex;
     }
 
     #backWEGO  button 
@@ -110,6 +110,7 @@
         background-color: #f44336;
         color: white;
         padding: 10px 20px;
+        margin-right: 20px;
         border: none;
         cursor: pointer;
         font-size: 16px;
