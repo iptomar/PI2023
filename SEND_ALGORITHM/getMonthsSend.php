@@ -44,7 +44,7 @@
     foreach ($months as $month) {
         // Verifica se a data já existe no array de contadores
         if (isset($counters[$month])) {
-            // Incrementa o contador do nome existente
+            // Incrementa o contador do mês existente
             $counters[$month]++;
         } else {
             // Cria um novo contador para a data

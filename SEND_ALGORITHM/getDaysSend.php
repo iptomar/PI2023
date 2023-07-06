@@ -30,9 +30,6 @@
     //conclui o acesso ao ficheiro
     fclose($file);
 
-    //remove o elemento que dizia DATA/HORA
-    array_shift($days);
-
     //remove o zero causado pela quebra de linha 
     array_pop($days);
 
@@ -66,8 +63,6 @@
         //apaga o conteudo deste array para criar um novo dado 
         $l = [];
     }
-
-
 
     echo json_encode($data);
 ?>
