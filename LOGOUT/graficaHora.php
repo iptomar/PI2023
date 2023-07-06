@@ -33,9 +33,11 @@ fclose($file);
 <head>
     <title>Gráfico de Logouts por Hora</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
     <div id='selecionados'>
+        <a href="Inicio.html"><button>Retornar ao inicio</button></a>
         <canvas id="logoutChart"></canvas>
     </div>
     <script>
@@ -76,4 +78,3 @@ fclose($file);
     </script>
 </body>
 </html>
-

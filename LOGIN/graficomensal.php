@@ -36,6 +36,11 @@ $dataJson = json_encode($dataArray);
 <head>
 <link rel="stylesheet" href="css.css">
 <form action="main.php"><button class="buttons">Voltar</button></form>
+<form method="POST" action="diasmes.php">
+        <label for="month">Selecione um mês:</label>
+        <input type="month" id="month" name="month">
+        <button type="submit">Gerar Gráfico</button>
+    </form>
     <script type="text/javascript" class="scripts" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" class="scripts">
         google.charts.load('current', {'packages':['corechart']});
@@ -62,6 +67,6 @@ $dataJson = json_encode($dataArray);
     </script>
 </head>
 <body>
-    <div id="chart_div" style="width: 800px; height: 400px;"></div>
+    <div id="chart_div" style="width: 1300px; height: 770px;"></div>
 </body>
 </html>
