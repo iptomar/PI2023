@@ -12,14 +12,138 @@
     <img id="main_icon" src="icon.png">
     <h1 id="title">PI2023</h1>
 
-    <form id="backWEGO"> <!-- Formulário para voltar à lista -->
-            <button type="button" id="hideTable" onclick="location.href = 'days.php'" > Gráficos dos Dias</button> <!-- Botão para voltar à lista -->
-            <button type="button" id = "hideTable" onclick="location.href = 'main.php'"  > Gráficos dos Semanas</button>
-            <button type="button" id = "hideTable" onclick="location.href = 'Month.php'" > Gráfico dos Meses</button>
-        </form>
+  <form id="charts">
+    <button type="button" onclick = "location.href = 'days.php'" id = "hideTable"> Gráfico dos Dias</button>
+    <button type="button" onclick = "location.href = 'main.php'" id = "hideTable"> Gráficos dos Semanas</button>
+    <button type="button" onclick = "location.href = 'Month.php'" id = "hideTable"> Gráfico dos Meses</button>
+  </form>
   </div>
 </body>
 
+<script>
+        function showANDhideTable() {
+            // Função para mostrar ou esconder a tabela
+            var table = document.getElementById("table");
+            var hideTable = document.getElementById("hideTable");
+            if (table.style.display === "none") {
+                // Se a tabela estiver escondida, mostra a tabela e altera o texto do botão
+                table.style.display = "table";
+                hideTable.innerHTML = "Esconder tabela";
+            } else {
+                // Se a tabela estiver visível, esconde a tabela e altera o texto do botão
+                table.style.display = "none";
+                hideTable.innerHTML = "Mostrar tabela";
+            }
+        }
+
+        function showGraph() {
+            // Função para exibir o gráfico
+            var chartCanvas = document.getElementById("chart");
+            chartCanvas.style.display = "block";
+            drawChart();
+        }
+
+        function drawChart() {
+            // Função para desenhar o gráfico de colunas
+            var data = new google.visualization.DataTable();
+            data.addColumn("string", "Semana");
+            data.addColumn("number", "Quantidade de Registros");
+            data.addRows([
+                <?php
+                // Loop para adicionar as linhas ao gráfico com os dados das semanas
+                foreach ($weeks as $week => $count) {
+                    echo '["Semana ' . $week . '", ' . $count . '],';
+                }
+                ?>
+            ]);
+
+            var options = {
+                title: "Estatísticas por Semana",
+                hAxis: { title: "Semana", titleTextStyle: { color: "#333" } },
+                vAxis: { minValue: 0 },
+                width: 800,
+                height: 600
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
+            chart.draw(data, options);
+        }
+
+        function isValidDateFormat(dateString) {
+            // Função para verificar se uma data está no formato válido (yyyy-mm-dd)
+            var pattern = /^\d{4}-\d{2}-\d{2}$/;
+            return pattern.test(dateString);
+        }
+
+        function getDataForDate(selectedDate) {
+            // Função para obter os dados para uma data selecionada
+            // Especifica o caminho para o arquivo CSV
+            var csvFile = "logIPRP.csv";
+
+            return fetch(csvFile)
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error("Falha ao buscar o arquivo CSV.");
+                    }
+                    return response.text();
+                })
+                .then(function(csvText) {
+                    // Parseia os dados do CSV
+                    var rows = csvText.split("\n");
+                    var ipAddresses = [];
+
+                    // Processa e filtra as linhas com base na data selecionada
+                    for (var i = 0; i < rows.length; i++) {
+                        var lineValues = rows[i].split(";");
+                        if (lineValues.length >= 3) {
+                            var date = lineValues[1].trim(); // Remove espaços em branco da data
+
+                            // Filtra as linhas com base na data selecionada
+                            if (date === selectedDate) {
+                                var ipAddress = lineValues[2].trim(); // Remove espaços em branco do endereço IP
+                                ipAddresses.push(ipAddress);
+                            }
+                        }
+                    }
+
+                    var count = Math.floor(ipAddresses.length / 3); // Divide a contagem por 3
+
+                    // Prepara os dados do gráfico
+                    var chartData = {
+                        labels: [selectedDate],
+                        datasets: [
+                            {
+                                label: "Unique IPs",
+                                data: [count],
+                                borderColor: "blue",
+                                fill: false,
+                            },
+                        ],
+                    };
+
+                    return chartData;
+                })
+                .catch(function(error) {
+                    console.error(error);
+                    return null;
+                });
+        }
+
+    function enviar() {
+        // Função para enviar o formulário e exibir o gráfico para a data selecionada
+        var selectedDate = document.getElementById("selectedDate").value;
+
+        // Verifica se a data selecionada está no formato correto
+        if (!isValidDateFormat(selectedDate)) {
+            alert("Formato de data inválido. Por favor, insira a data no formato yyyy-mm-dd.");
+            return;
+        }
+
+        // Exibe o gráfico para a data selecionada
+        showGraph();
+    }
+
+</script>
 
 <body>
     <!-- PHP code to read and process the CSV file -->
