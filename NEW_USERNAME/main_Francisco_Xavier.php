@@ -12,8 +12,14 @@
     <img id="main_icon" src="icon.png">
     <h1 id="title">PI2023</h1>
 
+  <form action="days.php" id="charts">
+    <button type="submit" id = "hideTable"> Gráfico dos Dias</button>
+  </form>
   <form action="main.php" id="charts">
-    <button type="submit" id = "hideTable"> Gráficos</button>
+    <button type="submit" id = "hideTable"> Gráficos dos Semanas</button>
+  </form>
+  <form action="Month.php" id="charts">
+    <button type="submit" id = "hideTable"> Gráfico dos Meses</button>
   </form>
   </div>
 </body>
