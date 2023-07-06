@@ -93,14 +93,10 @@
     
     <!-- Div for the Charts -->
   <div id="chartContainer">
-    <!-- Chart for Days -->
-    <div id="chart_days" class="chart"></div>
-
+    
     <!-- Chart for Weeks -->
     <div id="chart_weeks" class="chart"></div>
 
-    <!-- Chart for Months -->
-    <div id="chart_month" class="chart"></div>
   </div>
 
   <!-- Just a Footer -->
