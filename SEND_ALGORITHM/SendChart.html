@@ -30,6 +30,7 @@
             var button1 = document.getElementById('change-chart1');
             var button2 = document.getElementById('change-chart2');
             var button3 = document.getElementById('change-chart3');
+            var button4 = document.getElementById('change-chart4');
             var chartDiv = document.getElementById('chart_div');
 
             //caracteristicas do grafico de envios por dia
@@ -74,6 +75,20 @@
               }
             };
 
+            //caracteristicas do grafico da moda de envios por hora
+            var hoursOptions = {
+              title: 'Mode Sendings per Hour',
+              chartArea: {width: '50%'},
+              colors: ['#8093e0'],
+              hAxis: {
+                title: 'Sendings',
+                minValue: 0
+              },
+              vAxis: {
+                title: 'Hours'
+              }
+            };
+
             function loadDataAndDrawChart(url, options, button) {
               var xmlhttp = new XMLHttpRequest();
               xmlhttp.onreadystatechange = function() {
@@ -95,6 +110,7 @@
               loadDataAndDrawChart("getDaysSend.php", daysOptions, button1);
               button2.onclick = drawWeeksChart;
               button3.onclick = drawMonthsChart;
+              button4.onclick = drawHoursChart;
               chartDiv.style.height = '2000px';
             }
 
@@ -104,6 +120,7 @@
               loadDataAndDrawChart("getWeeksSend.php", weeksOptions, button2);
               button1.onclick = drawDaysChart;
               button3.onclick = drawMonthsChart;
+              button4.onclick = drawHoursChart;
               chartDiv.style.height = '1000px';
             }
 
@@ -113,7 +130,18 @@
               loadDataAndDrawChart("getMonthsSend.php", monthsOptions, button3);
               button1.onclick = drawDaysChart;
               button2.onclick = drawWeeksChart;
+              button4.onclick = drawHoursChart;
               chartDiv.style.height = '500px';
+            }
+
+            //ao clica neste butão, ele irá mostrar o grafico da moda de envios por hora
+            function drawHoursChart() {
+              button4.disabled = true;
+              loadDataAndDrawChart("getHoursSend.php", hoursOptions, button4);
+              button1.onclick = drawDaysChart;
+              button2.onclick = drawWeeksChart;
+              button3.onclick = drawMonthsChart;
+              chartDiv.style.height = '1000px';
             }
 
             //inicializa o grafico de envios por dia
@@ -126,6 +154,7 @@
     <button id="change-chart1">Change to Days</button>
     <button id="change-chart2">Change to Weeks</button>
     <button id="change-chart3">Change to Months</button>
+    <button id="change-chart4">Change to Hours</button>
     <br><br>
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
