@@ -52,6 +52,8 @@
         }
     }
 
+    // Ordena os meses em ordem crescente
+    ksort($counters);
 
     //inicia um array que irá juntar os dois atributos
     $l = array();

@@ -12,8 +12,10 @@
     <img id="main_icon" src="icon.png">
     <h1 id="title">PI2023</h1>
 
-  <form action="main.php" id="charts">
-    <button type="submit" id = "hideTable"> Gráficos</button>
+  <form id="charts">
+    <button type="button" onclick = "location.href = 'days.php'" id = "hideTable"> Gráfico dos Dias</button>
+    <button type="button" onclick = "location.href = 'main.php'" id = "hideTable"> Gráficos dos Semanas</button>
+    <button type="button" onclick = "location.href = 'Month.php'" id = "hideTable"> Gráfico dos Meses</button>
   </form>
   </div>
 </body>

@@ -8,8 +8,8 @@
         <img id="main_icon" src="icon.png"> <!-- Logo principal -->
         <h1 id="title">PI2023</h1> <!-- Título principal -->
         <form id="charts">
-            <button type="button" id="hideTable" onclick="location.href ='main_Francisco_Xavier.php'"> Lista</button> <!-- Botão para voltar à lista -->
-            <button type="button" id="hideTable" onclick="location.href ='days.php'"> Gráficos dos Dias</button> <!-- Botão para voltar à lista -->
+            <button type="button" id="hideTable" onclick="location.href = 'main_Francisco_Xavier.php'" > Lista</button> <!-- Botão para voltar à lista -->
+            <button type="button" id = "hideTable" onclick="location.href = 'main.php'"  > Gráficos dos Semanas</button>
             <button type="button" id = "hideTable" onclick="location.href = 'Month.php'" > Gráfico dos Meses</button>
         </form>
     </div>
@@ -20,42 +20,38 @@
         google.charts.setOnLoadCallback(drawCharts); // Chama a função para desenhar os gráficos após o carregamento da biblioteca
 
         function drawCharts() {
-            drawWeeksChart(); // Chama a função para desenhar o gráfico por semanas
+            drawDaysChart(); // Chama a função para desenhar o gráfico por dias
         }
 
-       function drawWeeksChart() {
-            // Criação do objeto DataTable para os dados do gráfico por semanas
+        function drawDaysChart() {
+            // Criação do objeto DataTable para os dados do gráfico por dias
             var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Semana');
-            data.addColumn('number', 'Quantidade de Registros');
+            data.addColumn('string', 'Data');
+            data.addColumn('number', 'Quantidade');
 
             <?php
             // Lê o arquivo CSV
             $file = fopen('logIPRP.csv', 'r');
 
-            // Array para armazenar as semanas e a quantidade de registros por semana
-            $weeks = array();
+            // Array para armazenar as contagens por data
+            $counts = array();
 
-            // Lê a primeira linha do arquivo (cabeçalho)
+            // Ignora a primeira linha (cabeçalho)
             fgets($file);
 
             // Processa cada linha do arquivo
             while (($line = fgets($file)) !== false) {
                 $fields = explode(';', $line);
 
-                // Extrai a data/hora do registro
-                $datetime = strtotime($fields[1]);
+                // Extrai a data/hora da linha
+                $datetime = $fields[1];
+                $date = explode(' ', $datetime)[0];
 
-                // Obtém o número da semana do ano
-                $week = date('W', $datetime);
-
-                // Verifica se a semana já existe no array
-                if (isset($weeks[$week])) {
-                    // Incrementa o contador da semana
-                    $weeks[$week]++;
+                // Incrementa a contagem para a data atual
+                if (isset($counts[$date])) {
+                    $counts[$date]++;
                 } else {
-                    // Cria uma nova entrada no array para a semana
-                    $weeks[$week] = 1;
+                    $counts[$date] = 1;
                 }
             }
 
@@ -63,16 +59,16 @@
             fclose($file);
 
             // Cria as linhas do gráfico de barras
-            foreach ($weeks as $week => $count) {
-                echo "data.addRow(['$week', $count]);";
+            foreach ($counts as $date => $count) {
+                echo "data.addRow(['$date', $count]);";
             }
             ?>
 
-            // Opções de configuração do gráfico por semanas
+            // Opções de configuração do gráfico por dias
             var options = {
-                title: 'Estatísticas por Semana',
-                hAxis: { title: 'Semana', titleTextStyle: { color: '#333' } },
-                vAxis: { minValue: 0 },
+                title: 'Estatísticas por Dia',
+                hAxis: {title: 'Data', titleTextStyle: {color: '#333'}},
+                vAxis: {minValue: 0},
                 series: {
                     0: { color: '#32d600' } // Define a cor para a primeira série (barras)
                 },
@@ -80,23 +76,18 @@
                 height: 600
             };
 
-            // Criação do gráfico de barras por semanas
-            var chart = new google.visualization.ColumnChart(document.getElementById('chart_weeks'));
+            // Criação do gráfico de barras por dias
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_days'));
             chart.draw(data, options);
         }
-
-
-    </script>
-    
+        </script>
 </head>
 <body>
     
     <!-- Div for the Charts -->
   <div id="chartContainer">
-    
-    <!-- Chart for Weeks -->
-    <div id="chart_weeks" class="chart"></div>
-
+    <!-- Chart for Days -->
+    <div id="chart_days" class="chart"></div>
   </div>
 
   <!-- Just a Footer -->
@@ -106,8 +97,7 @@
         <p>PI2023</p>
     </div>
   </footer>
-  
+
 </body>
-    
 
 </html>

@@ -1,143 +1,166 @@
 <?php
 
-// define uma variável padrão para a data
-$data_selecionada = "";
-
-// verifica se o formulário foi enviado
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $data_selecionada = trim($_POST['data_selecionada']);
-}
-
+// verifica se o botão "volta" foi pressionado
 if(!empty($_POST["volta"])){
-
+    // se sim, redireciona o user para outra página
     header("Location: grafico_dias.php");
 }
 
-// abre o arquivo "registos.txt" para leitura
-$arquivo = fopen("registos.txt", "r");
-
-// inicializa o array $horas_totais
-$horas_totais = array();
-
-// lê cada linha do arquivo
-while (!feof($arquivo)) {
-    $linha = fgets($arquivo);
-    // verifica se a linha contém informações relevantes
-    if (strpos($linha, "service done") !== false) {
-        // extrai a data do serviço
-        preg_match('/^\d+;(\d{4}\-\d{2}\-\d{2}).*/', $linha, $data);
-        $data = $data[1];
-        // extrai o tempo do serviço
-        preg_match('/time : (.*?)[^0-9\.]/', $linha, $tempo);
-        $tempo = $tempo[1];
-        // adiciona o tempo ao total da data correspondente
-        if (isset($horas_totais[$data])) {
-            $horas_totais[$data] += strtotime($tempo) - strtotime('00:00:00');
-        } else {
-            $horas_totais[$data] = strtotime($tempo) - strtotime('00:00:00');
-        }
-    }
-}
-
-// fecha o arquivo
-fclose($arquivo);
-
 ?>
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Horas totais por dia</title>
-    <style>
-        /* estilo do título */
-        h1 {
-            color: #333;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        /* estilo da página */
-        body {
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 20px;
-        }
-        /* estilo da tabela */
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto;
-            font-size: 14px;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        td {
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        /* estilo do formulário */
-        form {
-          margin-bottom: 20px;
-        }
-        label, select {
-          font-family: Arial, sans-serif;
-          font-size: 14px;
-        }
-        label {
-          display: block;
-          margin-bottom: 5px;
-        }
-        select {
-          width: 150px;
-        }
-        input[type=submit] {
-          background-color: #4CAF50;
-          color: #fff;
-          border: none;
-          padding: 10px;
-          cursor: pointer;
-          border-radius: 5px;
-          transition: background-color 0.3s ease;
-        }
-        input[type=submit]:hover {
-          background-color: #3e8e41;
-        }
+  <head>
+    <meta charset="utf-8">
+    <title>Registos Diários</title>
+    <style type="text/css">
+      body {
+        background-color: #e8e8e8;
+      }
+
+      .form-table {
+        overflow: hidden;
+      }
+
+      table {
+        border: 1px solid #999;
+        border-collapse: collapse;
+        margin: 20px auto;
+        font-family: Arial;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        width: 50%;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      th, td {
+        padding: 10px;
+        border: 1px solid #999;
+      }
+
+      th {
+        background-color: #2d3436;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      tr {
+        background-color: #fff;
+        transition: background-color 0.3s ease;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #dfe6e9;
+      }
+
+      form {
+        float: left;
+        width: 35%;
+        margin: 20px 20px 20px 0;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-left: 475px;
+      }
+
+      input {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 90%;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #2d3436;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #444;
+      }
+
+      .error , p{
+        float: left;
+        color: #ff0000;
+        font-weight: bold;
+        margin-top: 70px;
+        width: 650px;
+        font-size: 20px;
+      }
+      
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <?php
+      // lê o arquivo txt com os registos diários e armazena as informações em um array $regByDay
+      $file = file_get_contents('registos.txt');
+      $lines = explode("\n", $file);
+      $regByDay = [];
+      foreach ($lines as $line) {
+        if (empty($line)) {
+          continue;
+        }
+        $values = explode(";", $line);
+        $date = explode(" ", $values[1])[0];
+        if (array_key_exists($date, $regByDay)) {
+          $regByDay[$date] += 1;
+        } else {
+          $regByDay[$date] = 1;
+        }
+      }
 
-    <h1>Total de horas por dia</h1>
-
-    <form method="POST">
-        <label for="data_selecionada">Selecione uma data:</label>
-        <select name="data_selecionada" id="data_selecionada">
-            <option value="">Todos os dias</option>
-            <?php foreach ($horas_totais as $data => $tempo) { ?>
-                <option value="<?php echo $data; ?>" <?php if ($data === $data_selecionada) { echo 'selected'; } ?>><?php echo $data; ?></option>
-            <?php } ?>
-        </select>
-        <input type="submit" value="Exibir">
-        <input type="submit" value="Voltar" name="volta">
-    </form>
-
+      // verifica se o botão "busca" foi pressionado e, se sim, busca o número de registos para a data inserida pelo usuário e armazena o valor em uma variável $totalRegs
+      if (!empty($_POST["busca"])) {
+        $searchedDate = $_POST['searchedDate'];
+        $totalRegs = (array_key_exists($searchedDate, $regByDay)) ? $regByDay[$searchedDate] : null;
+      }
+    ?>
+    <div class="form-table">
+      <!-- exibe um formulário onde o usuário pode inserir uma data para buscar o número de registos correspondente -->
+      <form method="post">
+          <label for="searchedDate">Digite uma data para buscar os registos:</label>
+          <input type="date" name="searchedDate" id="searchedDate">
+          <input type="submit" name="busca" value="Buscar"><br>
+          <input type="submit" name="volta" value="Voltar">
+      </form>
+      <?php if (!empty($_POST["busca"])): ?>
+          <?php if ($totalRegs === null): ?>
+              <!-- exibe uma mensagem de erro se a data inserida pelo usuário não corresponder a nenhum registo -->
+              <p class="error">Nenhum registo encontrado para a data inserida.</p>
+          <?php else: ?>
+              <!-- exibe o número de registos correspondente à data inserida pelo usuário -->
+              <p>Total de registos encontrados para a data <?php echo $searchedDate; ?>: <?php echo $totalRegs; ?></p>
+          <?php endif; ?>
+      <?php endif; ?>
+    </div>
+    <!-- exibe uma tabela com os registos diários -->
     <table>
+      <thead>
         <tr>
-            <th>Data</th>
-            <th>Horas totais</th>
+          <th>Data</th>
+          <th>Número de Registos</th>
         </tr>
-        <?php foreach ($horas_totais as $data => $tempo) { ?>
-            <?php if ($data_selecionada === "" || $data_selecionada === $data) { ?>
-                <tr>
-                    <td><?php echo $data; ?></td>
-                    <td><?php echo date('H:i:s', $tempo); ?></td>
-                </tr>
-            <?php } ?>
-        <?php } ?>
+      </thead>
+      <tbody>
+        <?php foreach ($regByDay as $date => $count): ?>
+          <tr>
+            <td><?php echo $date; ?></td>
+            <td><?php echo $count; ?></td>
+          </tr>
+        <?php endforeach; ?>
+      </tbody>
     </table>
-
-</body>
+  </body>
 </html>

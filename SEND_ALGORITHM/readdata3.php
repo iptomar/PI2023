@@ -23,7 +23,7 @@ foreach ($filteredData as $row)
 // $open2 = fopen("filtroUsers.csv", "w");
 // fclose($open2);
 $open2 = fopen("filtroUsers.csv", "w");
-
+//balinbus
 $fsize=filesize("filtroUsers.csv");
 // if ($fsize ==0){
 	foreach($filteredData as $row){
