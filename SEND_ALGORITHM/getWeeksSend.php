@@ -46,7 +46,7 @@ foreach($weeks as $key => $cont){
 
 
 
-
+echo json_encode($data);
 
 
 ?>

@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <div class = "conteiner">
 <head>
-    <form action="graficos.php"><button type = "submit">Verificar graficos</button>
+    <form action="grafico.php" method="post">
+        <button type="submit" name="submit" value="verify" class="buttons">Grafico diario</button></form>
+    
+    <form action="graficosemanl.php" method="post">
+        <button type="submit" name="submit" value="verify" class="buttons">Grafico semanal</button></form>
 
+    <form action="graficomensal.php" method="post">
+        <button type="submit" name="submit" value="verify" class="buttons">Grafico mensal</button></form>
     </head>
+    </div>
 <body>
 <table>
     <thead>
