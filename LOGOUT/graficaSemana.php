@@ -76,6 +76,7 @@ function getWeeksInYear($year) {
     </head>
     <body>
         <header>
+            <a href="Inicio.html"><button>Retornar ao inicio</button></a>
             <form method="POST" action="">
                 <label for="selectedEmail">Digite o email do usuário:</label>
                 <input type="email" id="selectedEmail" name="selectedEmail">
@@ -91,7 +92,7 @@ function getWeeksInYear($year) {
     </select>
     <button type="submit">Filtrar</button>
     </form>
-    <a href="Inicio.html"><button>Retornar ao inicio</button></a>
+
     </header>
 
     <div id='selecionados'>

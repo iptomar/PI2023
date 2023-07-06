@@ -55,16 +55,58 @@
                 break; // Interromper o processamento após atingir o tamanho do lote
             }
         }
-        $totalLogouts = $totalLogouts/3;
+
         if (empty($tempData)) {
             echo "Usuário não encontrado.";
         } else {
             $currentDate = $firstDate;
             while ($currentDate <= $lastDate) {
-                $count = isset($tempData[$currentDate]) ? $tempData[$currentDate] / 3 : 0;
+                $count = isset($tempData[$currentDate]) ? $tempData[$currentDate] : 0;
                 $filteredData[$currentDate] = $count;
                 $currentDate = date("Y-m-d", strtotime($currentDate . " +1 day"));
             }
+        }
+    } else {
+        // Processar todos os registros sem filtrar por email
+        $tempData = array();
+        $firstDate = null;
+        $lastDate = null;
+
+        // Processar o arquivo em lotes de 1000 linhas
+        $batchSize = 100000;
+        $batchCount = 0;
+
+        while (!feof($myfile)) {
+            $line = fgets($myfile);
+            $fields = explode(";", $line);
+            $date = date("Y-m-d", strtotime($fields[1]));
+
+            if ($firstDate === null || $date < $firstDate) {
+                $firstDate = $date;
+            }
+            if ($lastDate === null || $date > $lastDate) {
+                $lastDate = $date;
+            }
+
+            if (!isset($tempData[$date])) {
+                $tempData[$date] = 1;
+            } else {
+                $tempData[$date]++;
+            }
+
+            $totalLogouts++; // Incrementar o número total de logouts
+
+            $batchCount++;
+            if ($batchCount >= $batchSize) {
+                break; // Interromper o processamento após atingir o tamanho do lote
+            }
+        }
+
+        $currentDate = $firstDate;
+        while ($currentDate <= $lastDate) {
+            $count = isset($tempData[$currentDate]) ? $tempData[$currentDate] : 0;
+            $filteredData[$currentDate] = $count;
+            $currentDate = date("Y-m-d", strtotime($currentDate . " +1 day"));
         }
     }
 
@@ -72,12 +114,13 @@
     ?>
 
     <header>
+      <a href="Inicio.html"><button>Retornar ao inicio</button></a>
         <form method="POST" action="">
             <label for="selectedEmail">Digite o email do usuário:</label>
             <input type="email" id="selectedEmail" name="selectedEmail">
-            <button type="submit">Filtrar</button>
+            <button type="submit">Filtrar</button>            
         </form>
-        <a href="Inicio.html"><button>Retornar ao inicio</button></a>
+
     </header>
 
     <div id='selecionados'>
@@ -116,7 +159,7 @@
                     plugins: {
                         title: {
                             display: true,
-                            text: '<?php echo $selectedEmail . " - Total de Logouts: " . $totalLogouts; ?>',
+                            text: '<?php echo $selectedEmail ?? "Todos os Usuários"; ?> - Total de Logouts: <?php echo $totalLogouts; ?>',
                             padding: {
                                 top: 10
                             }
@@ -129,7 +172,6 @@
                             stepSize: 1
                         }
                     }
-
                 }
             });
         });
