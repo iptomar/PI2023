@@ -3,6 +3,9 @@
 <head>
     <title>Gráfico de Logouts por Dia</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+    </style>
 </head>
 <body>
     <?php
@@ -74,6 +77,7 @@
             <input type="email" id="selectedEmail" name="selectedEmail">
             <button type="submit">Filtrar</button>
         </form>
+        <a href="Inicio.html"><button>Retornar ao inicio</button></a>
     </header>
 
     <div id='selecionados'>

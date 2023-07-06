@@ -72,6 +72,7 @@ function getWeeksInYear($year) {
     <head>
         <title>Gráfico de Logouts por Semana</title>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     </head>
     <body>
         <header>
@@ -90,6 +91,7 @@ function getWeeksInYear($year) {
     </select>
     <button type="submit">Filtrar</button>
     </form>
+    <a href="Inicio.html"><button>Retornar ao inicio</button></a>
     </header>
 
     <div id='selecionados'>
