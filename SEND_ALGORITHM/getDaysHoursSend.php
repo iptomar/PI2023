@@ -24,6 +24,7 @@
     //adiciona o conteudo de cada linha do ficheiro ao conjunto de dias  
     while(!feof($file)) {
         $line = fgets($file); 
+        $line = trim($line);
         array_push($days, $line);
     }
 
@@ -43,6 +44,7 @@
     //adiciona o conteudo de cada linha do ficheiro ao conjunto de horas 
     while(!feof($file)) {
         $line = fgets($file); 
+        $line = trim($line);
         array_push($hours, $line);
     }
 
@@ -93,5 +95,7 @@
         $l = [];
     }
 
-    echo json_encode($data);
+    $sendDayHours = $data->data;
+    
+    //echo json_encode($data);
 ?>

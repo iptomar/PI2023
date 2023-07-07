@@ -23,7 +23,7 @@ foreach ($filteredData as $row)
 // $open2 = fopen("filtroUsers.csv", "w");
 // fclose($open2);
 $open2 = fopen("filtroUsers.csv", "w");
-//balinbus
+
 $fsize=filesize("filtroUsers.csv");
 // if ($fsize ==0){
 	foreach($filteredData as $row){
@@ -31,11 +31,11 @@ $fsize=filesize("filtroUsers.csv");
 		$ficheiro = file_get_contents("filtroUsers.csv");
 		$substri= substr($row[4],0, $posi);
 		//fwrite($open2, $row[4]."\n");
-		if (!(strpos($ficheiro, $substri)!== false)){
+		//if (!(strpos($ficheiro, $substri)!== false)){
 			if (!(strpos($substri, "aluno") !== 0)){
 				fwrite($open2, $substri." \n");
 			}
-		}
+		//}
 	// }
 }
 	fclose($open2);
