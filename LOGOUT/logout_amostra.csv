@@ -33,7 +33,7 @@
   940,44: 939;2022-09-23 10:18:11.435;194.210.112.10;LOGOUT              ;user6@ipt.pt User6 AL ;service done![1];LEI_2022 user24868@ipt.pt - Andreia Lopez Ribeiro
   970,45: 969;2022-09-23 10:20:34.959;194.210.240.214;LOGOUT              ;Anonymous User;connected[1];Algorithmi 22.09
   971,45: 970;2022-09-23 10:20:34.960;194.210.240.214;LOGOUT              ;Anonymous User;processed[1];
-  972,45: 971;2022-09-23 10:20:34.960;194.210.240.214;LOGOUT              ;Anonymous User;service done![1];  - 
+  972,45: 971;2022-09-23 10:20:34.960;194.210.240.214;LOGOUT              ;Anonymous User;service done![1];  -
   1075,46: 1074;2022-09-23 10:25:07.309;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;connected[1];Algorithmi 22.09
   1076,46: 1075;2022-09-23 10:25:07.343;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;processed[1];
   1077,46: 1076;2022-09-23 10:25:07.344;194.210.113.253;LOGOUT              ;user10@ipt.pt User10 DF;service done![1];LEI_2022 user24993@ipt.pt - Duarte Filipe Vinhas Reis Pereira
@@ -6015,7 +6015,7 @@
   231629,44: 231626;2022-10-15 19:07:03.949;2.80.99.240;LOGOUT              ;user13@ipt.pt User13 AM;service done![1];LEI_2022 user24879@ipt.pt - Afonso Matias Gomes Reis
   231631,44: 231628;2022-10-15 19:07:22.162;2.80.151.49;LOGOUT              ;unicornio@ipt.pt              ;connected[1];Algorithmi 22.1b
   231632,44: 231629;2022-10-15 19:07:22.162;2.80.151.49;LOGOUT              ;unicornio@ipt.pt              ;processed[1];
-  231633,44: 231630;2022-10-15 19:07:22.162;2.80.151.49;LOGOUT              ;unicornio@ipt.pt              ;service done![1];LEI_2022 unicornio@ipt.pt - 
+  231633,44: 231630;2022-10-15 19:07:22.162;2.80.151.49;LOGOUT              ;unicornio@ipt.pt              ;service done![1];LEI_2022 unicornio@ipt.pt -
   231643,44: 231640;2022-10-15 19:07:46.395;2.80.99.240;LOGOUT              ;user13@ipt.pt User13 AM;connected[1];Algorithmi 22.09
   231644,44: 231641;2022-10-15 19:07:46.395;2.80.99.240;LOGOUT              ;user13@ipt.pt User13 AM;processed[1];
   231645,44: 231642;2022-10-15 19:07:46.395;2.80.99.240;LOGOUT              ;user13@ipt.pt User13 AM;service done![1];LEI_2022 user24879@ipt.pt - Afonso Matias Gomes Reis
@@ -6045,7 +6045,7 @@
   232760,46: 232757;2022-10-15 20:28:06.920;149.90.27.170;LOGOUT              ;user20615@ipt.pt Daniel Afons;service done![1];LEI_2022 user20615@ipt.pt - Daniel Afonso
   232902,44: 232899;2022-10-15 20:33:16.700;2.80.151.49;LOGOUT              ;unicornio@ipt.pt              ;connected[1];Algorithmi 22.1b
   232903,44: 232900;2022-10-15 20:33:16.700;2.80.151.49;LOGOUT              ;unicornio@ipt.pt              ;processed[1];
-  232904,44: 232901;2022-10-15 20:33:16.700;2.80.151.49;LOGOUT              ;unicornio@ipt.pt              ;service done![1];LEI_2022 unicornio@ipt.pt - 
+  232904,44: 232901;2022-10-15 20:33:16.700;2.80.151.49;LOGOUT              ;unicornio@ipt.pt              ;service done![1];LEI_2022 unicornio@ipt.pt -
   233052,46: 233049;2022-10-15 20:55:42.768;37.189.38.138;LOGOUT              ;user25083@ipt.pt Timoneiro Manuel;connected[1];Algorithmi 22.1b
   233053,46: 233050;2022-10-15 20:55:42.768;37.189.38.138;LOGOUT              ;user25083@ipt.pt Timoneiro Manuel;processed[1];
   233054,46: 233051;2022-10-15 20:55:42.768;37.189.38.138;LOGOUT              ;user25083@ipt.pt Timoneiro Manuel;service done![1];TPSI_2022 user25083@ipt.pt - Timoneiro Manuel Graca Sá
@@ -12261,7 +12261,7 @@
   586295,48: 586292;2022-11-03 16:14:40.045;194.210.112.131;LOGOUT              ;user24852@ipt.pt Rute Martin;service done![97];LEI_2022 user24852@ipt.pt - Rute Ribeiro
   586317,48: 586314;2022-11-03 16:26:18.458;194.210.241.221;LOGOUT              ;algorithmi@ipt.pt My_Full_Name;connected[97];Algorithmi 19.10.28
   586318,48: 586315;2022-11-03 16:26:18.559;194.210.241.221;LOGOUT              ;algorithmi@ipt.pt My_Full_Name;processed[97];
-  586319,48: 586316;2022-11-03 16:26:18.559;194.210.241.221;LOGOUT              ;algorithmi@ipt.pt My_Full_Name;service done![97];  - 
+  586319,48: 586316;2022-11-03 16:26:18.559;194.210.241.221;LOGOUT              ;algorithmi@ipt.pt My_Full_Name;service done![97];  -
   586325,47: 586322;2022-11-03 16:27:08.045;194.210.112.67;LOGOUT              ;user2GO@ipt.pt User2 GO;connected[97];Algorithmi 22.1b
   586326,47: 586323;2022-11-03 16:27:08.046;194.210.112.67;LOGOUT              ;user2GO@ipt.pt User2 GO;processed[97];
   586327,47: 586324;2022-11-03 16:27:08.047;194.210.112.67;LOGOUT              ;user2GO@ipt.pt User2 GO;service done![97];LEI_2022 user24878@ipt.pt - Alexandre Laranjeira
