@@ -78,7 +78,7 @@ function getWeeksInYear($year) {
     <header>
         <a href="Inicio.html"><button>Retornar ao inicio</button></a>
         <form method="POST" action="">
-            <label for="selectedEmail">Digite o email do usuário:</label>
+            <label for="selectedEmail">Digite o email do utilizador:</label>
             <input type="email" id="selectedEmail" name="selectedEmail" required>
             <label for="selectedYear">Selecione o ano:</label>
             <select id="selectedYear" name="selectedYear">
@@ -96,9 +96,7 @@ function getWeeksInYear($year) {
 
     <div id='selecionados'>
         <?php if ($filteredData === null && isset($_POST['selectedEmail'])) : ?>
-            <p>Usuário não encontrado.</p>
-        <?php elseif (empty($filteredData)) : ?>
-            <p>É necessário inserir um e-mail.</p>
+            <p>utilizador não encontrado.</p>
         <?php else : ?>
             <canvas id="logoutChart"></canvas>
         <?php endif; ?>

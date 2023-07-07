@@ -58,7 +58,7 @@ if (isset($_POST['selectedEmail'])) {
     }
     $totalLogouts = ceil($totalLogouts / 3);
     if (empty($tempData)) {
-        echo "Usuário não encontrado.";
+        echo "utilizador não encontrado.";
     } else {
         $currentDate = $firstDate;
         while ($currentDate <= $lastDate) {
@@ -126,8 +126,8 @@ fclose($myfile);
 <header>
     <a href="Inicio.html"><button>Retornar ao início</button></a>
     <form method="POST" action="">
-        <label for="selectedEmail">Digite o email do usuário:</label>
-        <input type="email" id="selectedEmail" name="selectedEmail">
+        <label for="selectedEmail">Digite o email do utilizador:</label>
+        <input type="email" id="selectedEmail" name="selectedEmail" required>
         <button type="submit">Filtrar</button>
     </form>
 
@@ -135,7 +135,7 @@ fclose($myfile);
 
 <div id='selecionados'>
     <?php if (empty($filteredData)) : ?>
-        <p><?php echo "Usuário não encontrado."; ?></p>
+        <p><?php echo "utilizador não encontrado."; ?></p>
     <?php else : ?>
         <canvas id="logoutChart"></canvas>
     <?php endif; ?>
@@ -169,7 +169,7 @@ fclose($myfile);
                 plugins: {
                     title: {
                         display: true,
-                        text: '<?php echo $selectedEmail ?? "Todos os Usuários"; ?> - Total de Logouts: <?php echo $totalLogouts; ?>',
+                        text: '<?php echo $selectedEmail ?? "Todos os utilizador"; ?> - Total de Logouts: <?php echo $totalLogouts; ?>',
                         padding: {
                             top: 10
                         }
