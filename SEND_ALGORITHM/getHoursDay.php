@@ -3,23 +3,26 @@
     // que o getHoursDay.php utilize o codigo do ficheiro requerido
     require_once "getDaysHoursSend.php";
 
-    $dayPost = $_POST["day"];
     $fileDay = fopen("selectedDay.csv", "w+");
+
+
+    if (isset($_POST["day"])) {
+        $dayPost = $_POST["day"];
     
-    $day = ""; // Inicializa a variável com um valor padrão vazio
-    
-    if ($fileDay) {
         $day = fgets($fileDay);
         $day = trim($day);
-    }
     
-    if ($day != $dayPost) {
-        fseek($fileDay, 0); // Volta para o início do arquivo
-        fwrite($fileDay, $dayPost);
-        $day = $dayPost;
+        if ($day != $dayPost) {
+            fseek($fileDay, 0); // Volta para o início do arquivo
+            fwrite($fileDay, $dayPost);
+        }
     }
-    
-    fclose($fileDay);
+    $day = fgets($fileDay);
+
+fclose($fileDay);
+
+echo $day;
+
     
     echo $day;
     // Cria uma nova stdClass
