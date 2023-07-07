@@ -1,4 +1,29 @@
 <style>
+
+    /* Estilos para o formulário */
+    form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"] {
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
     /* Estilos para a tabela */
     table {
         border-collapse: collapse;
@@ -33,6 +58,18 @@
         }
     }
 </style>
+
+<!-- Formulário de Filtro -->
+<form method="get">
+    <label for="email">E-mail:</label>
+    <input type="text" name="email" id="email">
+
+    <label for="semana">Semana:</label>
+    <input type="text" name="semana" id="semana">
+
+    <button type="submit">Filtrar</button>
+</form>
+
 <table>
     <tr>
         <th>Email</th>
@@ -40,7 +77,7 @@
         <th>Total de Registos</th>
     </tr>
     <?php
-    // Ler o ficheiro de registros
+    // Ler o arquivo de registos
     $registros = file("registos.txt");
 
     // Inicializar o contador
@@ -72,14 +109,66 @@
         $contador[$email][$semana]++;
     }
 
-    // Imprimir os resultados na tabela
-    foreach ($contador as $email => $semanas) {
-        foreach ($semanas as $semana => $total_registros) {
-            echo "<tr>";
-            echo "<td>$email</td>";
-            echo "<td>Semana $semana</td>";
-            echo "<td>$total_registros</td>";
-            echo "</tr>";
+    // Verificar se o formulário foi enviado
+    if ($_GET) {
+        // Obter o e-mail e a semana selecionados
+        $email = $_GET['email'];
+        $semana = $_GET['semana'];
+
+        // Verificar se os campos foram preenchidos
+        if (!empty($email) && !empty($semana)) {
+            // Filtrar os resultados pelo email e semana selecionados
+            foreach ($contador[$email] as $semana_atual => $total_registros) {
+                if ($semana_atual == $semana) {
+                    echo "<tr>";
+                    echo "<td>$email</td>";
+                    echo "<td>Semana $semana_atual</td>";
+                    echo "<td>$total_registros</td>";
+                    echo "</tr>";
+                }
+            }
+        } elseif (!empty($email)) {
+            // Filtrar os resultados pelo email selecionado
+            foreach ($contador[$email] as $semana_atual => $total_registros) {
+                echo "<tr>";
+                echo "<td>$email</td>";
+                echo "<td>Semana $semana_atual</td>";
+                echo "<td>$total_registros</td>";
+                echo "</tr>";
+            }
+        } elseif (!empty($semana)) {
+            // Filtrar os resultados pela semana selecionada
+            foreach ($contador as $email => $semanas) {
+                if (isset($semanas[$semana])) {
+                    echo "<tr>";
+                    echo "<td>$email</td>";
+                    echo "<td>Semana $semana</td>";
+                    echo "<td>{$semanas[$semana]}</td>";
+                    echo "</tr>";
+                }
+            }
+        } else {
+            // Mostrar todos os resultados
+            foreach ($contador as $email => $semanas) {
+                foreach ($semanas as $semana => $total_registros) {
+                    echo "<tr>";
+                    echo "<td>$email</td>";
+                    echo "<td>Semana $semana</td>";
+                    echo "<td>$total_registros</td>";
+                    echo "</tr>";
+                }
+            }
+        }
+    } else {
+        // Mostrar todos os resultados
+        foreach ($contador as $email => $semanas) {
+            foreach ($semanas as $semana => $total_registros) {
+                echo "<tr>";
+                echo "<td>$email</td>";
+                echo "<td>Semana $semana</td>";
+                echo "<td>$total_registros</td>";
+                echo "</tr>";
+            }
         }
     }
     ?>
