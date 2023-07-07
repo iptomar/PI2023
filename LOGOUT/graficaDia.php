@@ -55,14 +55,14 @@
                 break; // Interromper o processamento após atingir o tamanho do lote
             }
         }
-
+        $totalLogouts = $totalLogouts / 3;
         if (empty($tempData)) {
             echo "Usuário não encontrado.";
         } else {
             $currentDate = $firstDate;
             while ($currentDate <= $lastDate) {
                 $count = isset($tempData[$currentDate]) ? $tempData[$currentDate] : 0;
-                $filteredData[$currentDate] = $count;
+                $filteredData[$currentDate] = $count /3;
                 $currentDate = date("Y-m-d", strtotime($currentDate . " +1 day"));
             }
         }
@@ -101,11 +101,11 @@
                 break; // Interromper o processamento após atingir o tamanho do lote
             }
         }
-
+        $totalLogouts = $totalLogouts / 3;
         $currentDate = $firstDate;
         while ($currentDate <= $lastDate) {
             $count = isset($tempData[$currentDate]) ? $tempData[$currentDate] : 0;
-            $filteredData[$currentDate] = $count;
+            $filteredData[$currentDate] = $count /3;
             $currentDate = date("Y-m-d", strtotime($currentDate . " +1 day"));
         }
     }
@@ -118,7 +118,7 @@
         <form method="POST" action="">
             <label for="selectedEmail">Digite o email do usuário:</label>
             <input type="email" id="selectedEmail" name="selectedEmail">
-            <button type="submit">Filtrar</button>            
+            <button type="submit">Filtrar</button>
         </form>
 
     </header>

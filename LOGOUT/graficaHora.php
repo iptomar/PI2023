@@ -16,9 +16,9 @@ while (($line = fgetcsv($file, 0, ";")) !== false) {
 
     // Incrementar a contagem correspondente
     if (!isset($counts[$hora])) {
-        $counts[$hora] = 1;
+        $counts[$hora] =ceil( 1 /3);
     } else {
-        $counts[$hora]++;
+        $counts[$hora]+= ceil( 1/3);
     }
 }
 
