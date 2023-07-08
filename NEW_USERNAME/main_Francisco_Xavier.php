@@ -12,6 +12,14 @@
     <img id="main_icon" src="icon.png">
     <h1 id="title">PI2023</h1>
 
+    
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Enter username">
+            <button type="button" onclick="searchByUsername()">Search</button>
+        </form>
+    
+
+
   <form id="charts">
     <button type="button" onclick = "location.href = 'days.php'" id = "hideTable"> Gráfico dos Dias</button>
     <button type="button" onclick = "location.href = 'main.php'" id = "hideTable"> Gráficos dos Semanas</button>
@@ -21,129 +29,120 @@
 </body>
 
 <script>
-        function showANDhideTable() {
-            // Função para mostrar ou esconder a tabela
-            var table = document.getElementById("table");
-            var hideTable = document.getElementById("hideTable");
-            if (table.style.display === "none") {
-                // Se a tabela estiver escondida, mostra a tabela e altera o texto do botão
-                table.style.display = "table";
-                hideTable.innerHTML = "Esconder tabela";
-            } else {
-                // Se a tabela estiver visível, esconde a tabela e altera o texto do botão
-                table.style.display = "none";
-                hideTable.innerHTML = "Mostrar tabela";
-            }
-        }
+    var buttonClicked = false;
 
-        function showGraph() {
-            // Função para exibir o gráfico
-            var chartCanvas = document.getElementById("chart");
-            chartCanvas.style.display = "block";
-            drawChart();
-        }
+    function searchByUsername() {
+        buttonClicked = true;
 
-        function drawChart() {
-            // Função para desenhar o gráfico de colunas
-            var data = new google.visualization.DataTable();
-            data.addColumn("string", "Semana");
-            data.addColumn("number", "Quantidade de Registros");
-            data.addRows([
-                <?php
-                // Loop para adicionar as linhas ao gráfico com os dados das semanas
-                foreach ($weeks as $week => $count) {
-                    echo '["Semana ' . $week . '", ' . $count . '],';
+        // Get the input value
+        var username = document.getElementById("searchInput").value;
+
+        // Get the table body element
+        var tableBody = document.querySelector("#table tbody");
+
+        // Clear the table body
+        tableBody.innerHTML = "";
+
+        // Fetch and parse the CSV data
+        fetch("logIPRP.csv")
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error("Failed to fetch the CSV file.");
                 }
-                ?>
-            ]);
+                return response.text();
+            })
+            .then(function(csvText) {
+                // Parse the CSV data
+                var rows = csvText.split("\n");
 
-            var options = {
-                title: "Estatísticas por Semana",
-                hAxis: { title: "Semana", titleTextStyle: { color: "#333" } },
-                vAxis: { minValue: 0 },
-                width: 800,
-                height: 600
-            };
+                // Loop through the CSV data and display rows matching the username
+                for (var i = 0; i < rows.length; i++) {
+                    var rowValues = rows[i].split(";");
+                    var emailName = rowValues[4] ?? "";
+                    var explodedEmailName = emailName.split(" ");
+                    var email = explodedEmailName[0] ?? "";
+                    var name = (explodedEmailName.length >= 2) ? explodedEmailName[1] : "No name";
 
-            var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
-            chart.draw(data, options);
-        }
+                    // Check if the username matches and the name has more than one letter
+                    if (name.toLowerCase() === username.toLowerCase() && name.length > 1) {
+                        // Create a new table row
+                        var newRow = document.createElement("tr");
 
-        function isValidDateFormat(dateString) {
-            // Função para verificar se uma data está no formato válido (yyyy-mm-dd)
-            var pattern = /^\d{4}-\d{2}-\d{2}$/;
-            return pattern.test(dateString);
-        }
+                        // Create table cells for each data column
+                        var dateCell = document.createElement("td");
+                        dateCell.textContent = rowValues[1];
+                        newRow.appendChild(dateCell);
 
-        function getDataForDate(selectedDate) {
-            // Função para obter os dados para uma data selecionada
-            // Especifica o caminho para o arquivo CSV
-            var csvFile = "logIPRP.csv";
+                        var emailCell = document.createElement("td");
+                        emailCell.textContent = email;
+                        newRow.appendChild(emailCell);
 
-            return fetch(csvFile)
-                .then(function(response) {
-                    if (!response.ok) {
-                        throw new Error("Falha ao buscar o arquivo CSV.");
+                        var nameCell = document.createElement("td");
+                        nameCell.textContent = name;
+                        newRow.appendChild(nameCell);
+
+                        // Append the new row to the table body
+                        tableBody.appendChild(newRow);
                     }
-                    return response.text();
-                })
-                .then(function(csvText) {
-                    // Parseia os dados do CSV
-                    var rows = csvText.split("\n");
-                    var ipAddresses = [];
-
-                    // Processa e filtra as linhas com base na data selecionada
-                    for (var i = 0; i < rows.length; i++) {
-                        var lineValues = rows[i].split(";");
-                        if (lineValues.length >= 3) {
-                            var date = lineValues[1].trim(); // Remove espaços em branco da data
-
-                            // Filtra as linhas com base na data selecionada
-                            if (date === selectedDate) {
-                                var ipAddress = lineValues[2].trim(); // Remove espaços em branco do endereço IP
-                                ipAddresses.push(ipAddress);
-                            }
-                        }
-                    }
-
-                    var count = Math.floor(ipAddresses.length / 3); // Divide a contagem por 3
-
-                    // Prepara os dados do gráfico
-                    var chartData = {
-                        labels: [selectedDate],
-                        datasets: [
-                            {
-                                label: "Unique IPs",
-                                data: [count],
-                                borderColor: "blue",
-                                fill: false,
-                            },
-                        ],
-                    };
-
-                    return chartData;
-                })
-                .catch(function(error) {
-                    console.error(error);
-                    return null;
-                });
-        }
-
-    function enviar() {
-        // Função para enviar o formulário e exibir o gráfico para a data selecionada
-        var selectedDate = document.getElementById("selectedDate").value;
-
-        // Verifica se a data selecionada está no formato correto
-        if (!isValidDateFormat(selectedDate)) {
-            alert("Formato de data inválido. Por favor, insira a data no formato yyyy-mm-dd.");
-            return;
-        }
-
-        // Exibe o gráfico para a data selecionada
-        showGraph();
+                }
+            })
+            .catch(function(error) {
+                console.error(error);
+            });
     }
 
+    function displayCompleteTable() {
+        // Get the table body element
+        var tableBody = document.querySelector("#table tbody");
+
+        // Fetch and parse the CSV data
+        fetch("logIPRP.csv")
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error("Failed to fetch the CSV file.");
+                }
+                return response.text();
+            })
+            .then(function(csvText) {
+                // Parse the CSV data
+                var rows = csvText.split("\n");
+
+                // Loop through the CSV data and display all rows
+                for (var i = 0; i < rows.length; i++) {
+                    var rowValues = rows[i].split(";");
+                    var emailName = rowValues[4] ?? "";
+                    var explodedEmailName = emailName.split(" ");
+                    var email = explodedEmailName[0] ?? "";
+                    var name = (explodedEmailName.length >= 2) ? explodedEmailName[1] : "No name";
+
+                    // Create a new table row
+                    var newRow = document.createElement("tr");
+
+                    // Create table cells for each data column
+                    var dateCell = document.createElement("td");
+                    dateCell.textContent = rowValues[1];
+                    newRow.appendChild(dateCell);
+
+                    var emailCell = document.createElement("td");
+                    emailCell.textContent = email;
+                    newRow.appendChild(emailCell);
+
+                    var nameCell = document.createElement("td");
+                    nameCell.textContent = name;
+                    newRow.appendChild(nameCell);
+
+                    // Append the new row to the table body
+                    tableBody.appendChild(newRow);
+                }
+            })
+            .catch(function(error) {
+                console.error(error);
+            });
+    }
+
+    displayCompleteTable();
 </script>
+
 
 <body>
     <!-- PHP code to read and process the CSV file -->

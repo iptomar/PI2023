@@ -51,6 +51,33 @@
         color: #fffaff;
     }
 
+    #container #searchForm 
+    {
+        margin-top: -40px;
+        text-align: center;
+        color: #fffaff;
+    }
+
+    #searchForm input[type=text] 
+    {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: center;
+        background: #f1f1f1;
+    }
+
+    #searchForm button{
+        background-color: #f44336;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
     #main_icon
     {
         width: 100px;
