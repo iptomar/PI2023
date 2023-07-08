@@ -1,3 +1,15 @@
+<?php
+
+    if(!empty($_POST["volta"])){
+        header("Location: index.php");
+    }
+
+    if(!empty($_POST["alunos"])){
+        header("Location: Grafico_semanas_aluno.php");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,6 +53,33 @@
     .column-chart-bars:hover {
         fill: #2E8B57;
     }
+
+    form{
+			max-width: 200px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 2px solid #333;
+			border-radius: 5px;
+			background-color: #FDFDFD;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            text-align:center;
+            margin-top:10px;
+		}
+		
+		input[type="submit"]{
+			background-color: #333;
+			color: #FFF;
+			font-size: 16px;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		
+		input[type="submit"]:hover{
+			background-color: #111;
+		}
     </style>
     <title>Gráfico de Barras - Registros por Semana</title>
     <meta charset="utf-8">
@@ -103,5 +142,9 @@
 <body>
     <!-- Define um container para o gráfico -->
     <div id="chart_div"></div>
+    <form action="" method="post">
+        <input type="submit" name="alunos" value="Alunos">
+        <input type="submit" name="volta" value="Voltar">
+    </form>
 </body>
 </html>
