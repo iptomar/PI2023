@@ -40,6 +40,12 @@ $graph_data = array();
 // Adiciona a primeira linha com os cabeçalhos das colunas
 $graph_data[] = array("Data", "Registos");
 
+
+//Verifica se o botão de voltar foi pressionado
+if(!empty($_POST["volta"])){
+  header("Location: grafico_dias.php");
+}
+
 // Verifica se foi enviado o formulário
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recupera o email enviado pelo formulário
@@ -69,10 +75,11 @@ $graph_data_json = json_encode($graph_data);
             <h2>Verificar registo</h2>
             <div class="form-control">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
             </div>
             <div class="form-submit">
                 <button type="submit">Verificar</button>
+                <input type="submit" name="volta" value="Voltar">
             </div>
         </fieldset>
     </form>
@@ -165,7 +172,7 @@ body {
   text-align: center;
 }
 
-.form-submit button {
+.form-submit button , .form-submit input{
   width: 100%;
   padding: 10px;
   border: none;
@@ -175,6 +182,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  margin-top:10px;
 }
 
 .result {
