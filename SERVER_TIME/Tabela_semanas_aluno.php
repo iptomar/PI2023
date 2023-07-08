@@ -1,3 +1,8 @@
+<?php
+    if(!empty($_GET["volta"])){
+        header("Location: Tabela_semanas.php");
+    }
+?>
 <style>
 
     /* Estilos para o formulário */
@@ -16,7 +21,7 @@
         margin-right: 10px;
     }
 
-    button[type="submit"] {
+    button[type="submit"],input[type="submit"]{
         background-color: #4CAF50;
         color: white;
         border: none;
@@ -68,6 +73,7 @@
     <input type="text" name="semana" id="semana">
 
     <button type="submit">Filtrar</button>
+    <input type="submit" name="volta" value="Voltar">
 </form>
 
 <table>
