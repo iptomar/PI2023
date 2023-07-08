@@ -1,3 +1,12 @@
+<?php
+
+    if(!empty($_GET["volta"])){
+
+        header("Location: Grafico_semanas.php");
+    }
+
+?>
+
 <style>
      {
         margin: 0;
@@ -38,7 +47,7 @@
         box-shadow: inset 0 0 0 2px #4CAF50;
     }
 
-    button[type="submit"] {
+    button[type="submit"], input[type="submit"]{
         background-color: #4CAF50;
         color: white;
         border: none;
@@ -47,7 +56,7 @@
         cursor: pointer;
     }
 
-    button[type="submit"]:hover {
+    button[type="submit"]:hover ,input[type="submit"]:hover{
         background-color: #3E8E41;
     }
 
@@ -73,6 +82,7 @@
     <input type="text" name="semana" id="semana">
 
     <button type="submit">Filtrar</button>
+    <input type="submit" name="volta" value="Voltar">
 </form>
 
 <!-- Gráfico de Barras do Google Charts -->
