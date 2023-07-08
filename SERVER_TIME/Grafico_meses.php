@@ -1,5 +1,16 @@
+<?php
+
+    if(!empty($_POST["volta"])){
+        header("Location: index.php");
+    }
+
+    if(!empty($_POST["alunos"])){
+        header("Location: Grafico_meses_aluno.php");
+    }
+?>
+
 <style>
-    * {
+    {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -21,6 +32,33 @@
         text-align: center;
         margin-top: 20px;
     }
+
+    /*Estilos para o Formulário */
+    form{
+			max-width: 300px;
+			margin: 50px auto;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			background-color: #FFFFFF;
+            text-align:center;
+		}
+		
+		input[type="submit"]{
+			background-color: #3498DB;
+			color: #FFFFFF;
+			font-size: 18px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-right: 10px;
+			transition: background-color 0.3s ease;
+		}
+		
+		input[type="submit"]:hover{
+			background-color: #2980B9;
+		}
 </style>
 
 <!-- Título da Página -->
@@ -128,3 +166,8 @@ if ($_GET) {
         chart.draw(data, options);
     }
 </script>
+
+<form action="" method="post">
+    <input type="submit" name="alunos" value="Alunos">
+    <input type="submit" name="volta" value="Voltar">
+</form>
