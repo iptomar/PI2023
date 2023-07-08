@@ -1,4 +1,8 @@
 <?php
+
+if(!empty($_POST["volta"])){
+    header("Location: Tabela_dias.php");
+}
 // Lê o conteúdo do arquivo "registos.txt"
 $file_contents = file_get_contents("registos.txt");
 
@@ -83,14 +87,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2>Verificar registo</h2>
             <div class="form-control">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
             </div>
             <div class="form-control">
                 <label for="data">Data:</label>
-                <input type="date" id="data" name="data" required>
+                <input type="date" id="data" name="data">
             </div>
             <div class="form-submit">
                 <button type="submit">Verificar</button>
+                <input type="submit" name="volta" value="Voltar">
             </div>
         </fieldset>
     </form>
@@ -173,7 +178,7 @@ body {
     text-align: center;
 }
 
-.form-submit button {
+.form-submit button, .form-submit input{
     width: 100%;
     padding: 10px;
     border: none;
@@ -183,6 +188,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    margin-top:10px;
 }
 
 .result {
