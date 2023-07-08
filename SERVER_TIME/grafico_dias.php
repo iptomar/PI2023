@@ -1,8 +1,12 @@
 <?php
 
 //Verificação se o botão de redirecionar para outra página foi pressionado ou não
-if(!empty($_POST["tabela"])){
-    header("Location: Tabela_dias.php");
+if(!empty($_POST["alunos"])){
+    header("Location: Grafico_dias_aluno.php");
+}
+
+if(!empty($_POST["volta"])){
+    header("Location: index.php");
 }
 
 
@@ -49,7 +53,7 @@ if (!empty($_POST["consultar"])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registros por dia</title>
+    <title>Registos por dia</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <style>
     /* CSS para estilizar a página */
@@ -180,7 +184,8 @@ if (!empty($_POST["consultar"])) {
         <label for="data">Selecione uma data:</label>
         <input type="date" name="data" id="data">
         <input type="submit" name="consultar" value="Consultar">
-        <input type="submit" name="tabela" value="Tabela">
+        <input type="submit" name="alunos" value="Alunos">
+        <input type="submit" name="volta" value="Voltar">
     </form>
 </body>
 </html>
