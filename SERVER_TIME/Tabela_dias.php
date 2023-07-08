@@ -3,7 +3,11 @@
 // verifica se o botão "volta" foi pressionado
 if(!empty($_POST["volta"])){
     // se sim, redireciona o user para outra página
-    header("Location: grafico_dias.php");
+    header("Location: index.php");
+}
+
+if(!empty($_POST["alunos"])){
+  header("Location: Tabela_dias_aluno.php");
 }
 
 ?>
@@ -133,6 +137,7 @@ if(!empty($_POST["volta"])){
           <label for="searchedDate">Digite uma data para buscar os registos:</label>
           <input type="date" name="searchedDate" id="searchedDate">
           <input type="submit" name="busca" value="Buscar"><br>
+          <input type="submit" name="alunos" value="Alunos">
           <input type="submit" name="volta" value="Voltar">
       </form>
       <?php if (!empty($_POST["busca"])): ?>
