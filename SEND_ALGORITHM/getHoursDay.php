@@ -3,8 +3,8 @@
     // que o getHoursDay.php utilize o codigo do ficheiro requerido
     require_once "getDaysHoursSend.php";
 
-    // atribuir o valor introduzido no formulario a uma variavel 
-    $day = $_POST["day"];
+    // Obtenha a data selecionada como parâmetro
+    $day = $_GET['day'];
 
     // Cria uma nova stdClass
     $dataDay = new stdClass();
@@ -52,32 +52,11 @@
         $ld = [];
     }
 
-    //echo json_encode($dataDay);
-
-    // Após construir o objeto $dataDay, converte-o para JSON
-    $jsonData = json_encode($dataDay);
-
-    
-    if (isset($_SERVER['HTTP_REFERER'])) {
-        $pagina_anterior = $_SERVER['HTTP_REFERER'];
-
-        // Faça a condição desejada com a variável $pagina_anterior
-        if ($pagina_anterior != "http://localhost/pi2023/SEND_ALGORITHM/SendChartHours.html") {
-            //redireciona atomaticamente para a pagina SendChartHours.html
-            header("Location: SendChartHours.html");
-            // isto Certifica que script saiu após o redirecionamento
-            exit(); 
-        }
-    }
-    //redireciona atomaticamente para a pagina SendChartHours.html
-    //header("Location: SendChartHours.html");
-    // isto Certifica que script saiu após o redirecionamento
-    //exit(); 
+    echo json_encode($dataDay);
 
     
     //Função para encontrar o envio de uma determinada hora no conjunto de dados.
     //Retorna o envio encontrado ou null se não for encontrado.
-
     function findSendHour($sendDayHours, $day, $hour)
     {
         foreach ($sendDayHours as $sendDH) {

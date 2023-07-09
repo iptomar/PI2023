@@ -31,6 +31,7 @@
             var button2 = document.getElementById('change-chart2');
             var button3 = document.getElementById('change-chart3');
             var button4 = document.getElementById('change-chart4');
+            var button5 = document.getElementById('change-chart5');
             var chartDiv = document.getElementById('chart_div');
 
             // caracteristicas do grafico de envios por dia
@@ -111,6 +112,7 @@
               button2.onclick = drawWeeksChart;
               button3.onclick = drawMonthsChart;
               button4.onclick = drawHoursChart;
+              button5.onclick = drawHDChart;
               chartDiv.style.height = '3500px';
             }
 
@@ -144,6 +146,20 @@
               chartDiv.style.height = '1000px';
             }
 
+            // inicializa o grafico de envios por hora de um dia selecionado
+            function drawHDChart() {
+              // atribui o elemento 'date-input' à variavel dateInput
+              var dateInput = document.getElementById('date-input');
+              // obtem o valor do 'date-input'
+              var selectedDate = dateInput.value;
+
+              // cria a url dos dados do respectivo dia
+              var urlDay = "getHoursDay.php?day=" + selectedDate;
+              
+              loadDataAndDrawChart(urlDay, hoursOptions, button5);
+              chartDiv.style.height = '1000px';
+            }
+
             // inicializa o grafico de envios por dia
             drawDaysChart();
           }
@@ -155,11 +171,11 @@
     <button id="change-chart2">Change to Weeks</button>
     <button id="change-chart3">Change to Months</button>
     <button id="change-chart4">Change to Hours</button>
-    <form action="getHoursDay.php" method="POST" >
-      <label for="date">Selecione uma data:</label>
-      <input type="date" id="day" name="day">
-      <button type="submit">Change to Hours of that day</button>
-    </form>
+    <br>
+
+    <label for="date">Selecione uma data:</label>
+    <input type="date" id="date-input">
+    <button id="change-chart5">Create Chart</button>
     <br><br>
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
