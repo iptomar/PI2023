@@ -1,6 +1,6 @@
 <?php
     $data = new stdClass();
-    $data->title = 'Count per month';
+    $data->title = 'Entradas por Mes';
     $data->data = array();
     
     $label = array();

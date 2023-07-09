@@ -1,6 +1,6 @@
 <?php
     $data = new stdClass();
-    $data->title = 'Count per semana';
+    $data->title = 'Entradas por Semanas';
     $data->data = array();
     
     $label = array();
