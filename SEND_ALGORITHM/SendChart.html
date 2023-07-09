@@ -31,6 +31,8 @@
             var button2 = document.getElementById('change-chart2');
             var button3 = document.getElementById('change-chart3');
             var button4 = document.getElementById('change-chart4');
+            var label1 = document.getElementById('change-label1');
+            var dateInput = document.getElementById('date-input'); 
             var button5 = document.getElementById('change-chart5');
             var chartDiv = document.getElementById('chart_div');
 
@@ -78,7 +80,21 @@
 
             // caracteristicas do grafico da moda de envios por hora
             var hoursOptions = {
-              title: 'Mode Sendings per Hour',
+              title: 'frequency of Sendings per Hour',
+              chartArea: {width: '50%'},
+              colors: ['#8093e0'],
+              hAxis: {
+                title: 'Sendings',
+                minValue: 0
+              },
+              vAxis: {
+                title: 'Hours'
+              }
+            };
+
+            // caracteristicas do grafico da moda de envios por hora
+            var hoursDayOptions = {
+              title: 'Sendings per Hour of the selected day',
               chartArea: {width: '50%'},
               colors: ['#8093e0'],
               hAxis: {
@@ -114,6 +130,15 @@
               button4.onclick = drawHoursChart;
               button5.onclick = drawHDChart;
               chartDiv.style.height = '3500px';
+              
+              button1.style.display = "none";
+              button2.style.display = "inline-block";
+              button3.style.display = "inline-block";
+              button4.style.display = "inline-block";
+              
+              label1.style.display = "inline-block";
+              dateInput.style.display = "inline-block";
+              button5.style.display = "inline-block";
             }
 
             // ao clica neste butão, ele irá mostrar o grafico de envios por semana
@@ -124,6 +149,15 @@
               button3.onclick = drawMonthsChart;
               button4.onclick = drawHoursChart;
               chartDiv.style.height = '1000px';
+              
+              button1.style.display = "inline-block";
+              button2.style.display = "none";
+              button3.style.display = "inline-block";
+              button4.style.display = "inline-block";
+
+              label1.style.display = "none";
+              dateInput.style.display = "none";
+              button5.style.display = "none";
             }
 
             // ao clica neste butão, ele irá mostrar o grafico de envios por mês
@@ -134,6 +168,15 @@
               button2.onclick = drawWeeksChart;
               button4.onclick = drawHoursChart;
               chartDiv.style.height = '500px';
+              
+              button1.style.display = "inline-block";
+              button2.style.display = "inline-block";
+              button3.style.display = "none";
+              button4.style.display = "inline-block";
+
+              label1.style.display = "none";
+              dateInput.style.display = "none";
+              button5.style.display = "none";
             }
 
             // ao clica neste butão, ele irá mostrar o grafico da moda de envios por hora
@@ -144,19 +187,26 @@
               button2.onclick = drawWeeksChart;
               button3.onclick = drawMonthsChart;
               chartDiv.style.height = '1000px';
+
+              button1.style.display = "inline-block";
+              button2.style.display = "inline-block";
+              button3.style.display = "inline-block";
+              button4.style.display = "none";
+
+              label1.style.display = "none";
+              dateInput.style.display = "none";
+              button5.style.display = "none";
             }
 
             // inicializa o grafico de envios por hora de um dia selecionado
             function drawHDChart() {
-              // atribui o elemento 'date-input' à variavel dateInput
-              var dateInput = document.getElementById('date-input');
               // obtem o valor do 'date-input'
               var selectedDate = dateInput.value;
 
               // cria a url dos dados do respectivo dia
               var urlDay = "getHoursDay.php?day=" + selectedDate;
               
-              loadDataAndDrawChart(urlDay, hoursOptions, button5);
+              loadDataAndDrawChart(urlDay, hoursDayOptions, button5);
               chartDiv.style.height = '1000px';
             }
 
@@ -173,7 +223,7 @@
     <button id="change-chart4">Change to Hours</button>
     <br>
 
-    <label for="date">Selecione uma data:</label>
+    <label id="change-label1" for="date">Selecione uma data:</label>
     <input type="date" id="date-input">
     <button id="change-chart5">Create Chart</button>
     <br><br>

@@ -3,7 +3,7 @@
     $data = new stdClass();
 
     //atribui o titulo e inicializa o conjunto dos dados
-    $data->title = 'Volume of Sendings per hour of the day ...';
+    $data->title = 'Sending per day of the student ...';
     $data->data = array();
     
     //cria as etiquetas
@@ -34,48 +34,48 @@
     //remove o zero causado pela quebra de linha 
     array_pop($days);
 
-    //acede ao ficheiro filtrohour.csv para fazer a leitura do conteudo, cujo cada linha 
-    //desse ficheiro representa as horas em que os envios dos algoritmos foram realizados
-    $file = fopen("filtrohour.csv", "r");
+    //acede ao ficheiro filtroUsers.csv para fazer a leitura do conteudo, cujo cada linha 
+    //desse ficheiro representa o aluno que fez o envio do algoritmo
+    $file = fopen("filtroUsers.csv", "r");
 
     //inicializa o cunjunto de horas
-    $hours = array();
+    $students = array();
 
-    //adiciona o conteudo de cada linha do ficheiro ao conjunto de horas 
+    //adiciona o conteudo de cada linha do ficheiro ao conjunto de estudantes 
     while(!feof($file)) {
         $line = fgets($file); 
         $line = trim($line);
-        array_push($hours, $line);
+        array_push($students, $line);
     }
 
     //conclui o acesso ao ficheiro
     fclose($file);
 
     //remove o zero causado pela quebra de linha 
-    array_pop($hours);
+    array_pop($students);
 
-    $daysHours = array();
+    $daysStudents = array();
     $dh = array();
 
-    for($i=0; $i<count($hours); $i++){
+    for($i=0; $i<count($students); $i++){
         array_push($dh, $days[$i]);
-        array_push($dh, $hours[$i]);
-        array_push($daysHours, implode("_", $dh));
+        array_push($dh, $students[$i]);
+        array_push($daysStudents, implode("_", $dh));
         $dh = [];
     }
 
     // Array para armazenar os contadores
     $counters = [];
 
-    // Itera sobre a lista de horas
-    foreach ($daysHours as $dayHour) {
-        // Verifica se a hora já existe no array de contadores
-        if (isset($counters[$dayHour])) {
-            // Incrementa o contador da hora existente
-            $counters[$dayHour]++;
+    // Itera sobre a lista de estudantes
+    foreach ($daysStudents as $dayStudent) {
+        // Verifica se o estudante já existe no array de contadores
+        if (isset($counters[$dayStudent])) {
+            // Incrementa o contador do estudante existente
+            $counters[$dayStudent]++;
         } else {
-            // Cria um novo contador para a hora
-            $counters[$dayHour] = 1;
+            // Cria um novo contador para o estudante
+            $counters[$dayStudent] = 1;
         }
     }
 
@@ -83,17 +83,19 @@
     //inicia um array que irá juntar os dois atributos
     $l = array();
 
-    //precorre pelos conjuntos de horas e de contadores, sendo este ultimo o nº de
-    //envios realizados no respectiva hora, e adiciona-as ao array $l, assim criando
+    //precorre pelos conjuntos de estudantes e de contadores, sendo este ultimo o nº de
+    //envios realizados no respectivo estudante, e adiciona-as ao array $l, assim criando
     //o dado que irá ser adicionado ao conjunto de dados que irá ser utilizado para
-    //conceber um grafico sobre o nº de envios efetuados em cada hora
-    foreach($counters as $daysHours => $sendings){
-        array_push($l, $daysHours);
+    //conceber um grafico sobre o nº de envios efetuados em cada estudante
+    foreach($counters as $daysStudents => $sendings){
+        array_push($l, $daysStudents);
         array_push($l, $sendings);
         array_push($data->data, $l);
         //apaga o conteudo deste array para criar um novo dado 
         $l = [];
     }
 
-    $sendDayHours = $data->data;
+    $sendDayStudents = $data->data;
+    
+    //echo json_encode($data);
 ?>

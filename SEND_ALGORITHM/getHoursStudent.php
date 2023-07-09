@@ -24,7 +24,7 @@
     // Cria um array com todas as horas do dia
     $allHours = range(0, 23);
 
-    //inicia um array que servirá para cirar os atributos
+     //inicia um array que servirá para cirar os atributos
     $ld = array();
 
     // Percorre todas as horas do dia
