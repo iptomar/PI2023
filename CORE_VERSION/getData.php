@@ -1,6 +1,6 @@
 <?php
     $data = new stdClass();
-    $data->title = 'Count per day';
+    $data->title = 'Entradas por Horas';
     $data->data = array();
     
     $label = array();

@@ -1,11 +1,11 @@
 <?php
 $data = new stdClass();
-$data->title = 'Count per day';
+$data->title = 'Entradas por Dia';
 $data->data = array();
 
 $label = array();
-array_push($label, 'days');
-array_push($label, 'count');
+array_push($label, 'dias');
+array_push($label, 'entradas');
 array_push($data->data, $label);
 
 $file = fopen("teste.csv", "r");
