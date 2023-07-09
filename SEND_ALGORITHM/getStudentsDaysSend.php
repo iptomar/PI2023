@@ -8,7 +8,7 @@
     
     //cria as etiquetas
     $label = array();
-    array_push($label,'Hours');
+    array_push($label,'Days');
     array_push($label,'Sendings');
 
     //adiciona as etiquetas ao conjunto de dados
@@ -55,13 +55,13 @@
     array_pop($students);
 
     $daysStudents = array();
-    $dh = array();
+    $ds = array();
 
     for($i=0; $i<count($students); $i++){
-        array_push($dh, $days[$i]);
-        array_push($dh, $students[$i]);
-        array_push($daysStudents, implode("_", $dh));
-        $dh = [];
+        array_push($ds, $days[$i]);
+        array_push($ds, $students[$i]);
+        array_push($daysStudents, implode("_", $ds));
+        $ds = [];
     }
 
     // Array para armazenar os contadores
@@ -95,7 +95,12 @@
         $l = [];
     }
 
-    $sendDayStudents = $data->data;
+    $sendStudentDays = $data->data;
+
+    $allDays = $days;
+    $allDays = array_unique($allDays);
+    $allStudents = $students;
+    $allStudents = array_unique($allStudents)
+
     
-    //echo json_encode($data);
 ?>

@@ -34,6 +34,9 @@
             var label1 = document.getElementById('change-label1');
             var dateInput = document.getElementById('date-input'); 
             var button5 = document.getElementById('change-chart5');
+            var label2 = document.getElementById('change-label2');
+            var userInput = document.getElementById('user-input'); 
+            var button6 = document.getElementById('change-chart6');
             var chartDiv = document.getElementById('chart_div');
 
             // caracteristicas do grafico de envios por dia
@@ -210,6 +213,18 @@
               chartDiv.style.height = '1000px';
             }
 
+            // inicializa o grafico de envios por dia de um estudante selecionado
+            function drawHDChart() {
+              // obtem o valor do 'user-input'
+              var selectedUser = userInput.value;
+
+              // cria a url dos dados do respectivo dia
+              var urlStudent = "getDaysStudent.php?student=" + selectedUser;
+              
+              loadDataAndDrawChart(urlStudent, hoursDayOptions, button6);
+              chartDiv.style.height = '1000px';
+            }
+
             // inicializa o grafico de envios por dia
             drawDaysChart();
           }
@@ -226,6 +241,10 @@
     <label id="change-label1" for="date">Selecione uma data:</label>
     <input type="date" id="date-input">
     <button id="change-chart5">Create Chart</button>
+
+    <label id="change-label2" for="date">Selecione um aluno:</label>
+    <input type="text" id="user-input">
+    <button id="change-chart6">Create Chart</button>
     <br><br>
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>

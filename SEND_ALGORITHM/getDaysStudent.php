@@ -21,15 +21,6 @@ array_push($label, 'Sendings');
 // Adiciona as etiquetas ao conjunto de dados
 array_push($dataStudent->data, $label);
 
-// Cria um array com todas as datas
-$allDays = array_column($sendStudentDay, 0);
-
-// Remove os duplicados do array de datas
-$allDays = array_unique($allDays);
-
-// Ordena as datas em ordem crescente
-sort($allDays);
-
 // Inicializa um array para armazenar os contadores de envios por dia
 $counters = [];
 
@@ -39,13 +30,15 @@ foreach ($allDays as $day) {
 }
 
 // Conta os envios por dia
-foreach ($sendStudentDay as $sendDS) {
+foreach ($sendStudentDays as $sendDS) {
     $sendDay = substr($sendDS[0], 0, 10);
     $sendStudent = substr($sendDS[0], 12);
     if ($sendStudent == $student) {
         $counters[$sendDay] += $sendDS[1];
     }
 }
+
+
 
 // Inicializa um array que servirá para criar os atributos
 $ls = array();
