@@ -1,0 +1,451 @@
+55	2023-02-24 10:47:43.910	193.236.44.161	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+56	2023-02-24 10:47:43.910	193.236.44.161	GET_NEW_VERSION     	Anonymous User	processed[1]				
+57	2023-02-24 10:47:52.681	193.236.44.161	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 7,9 / 3,3 gb			
+823	2023-02-24 16:28:22.319	37.120.142.158	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+824	2023-02-24 16:28:22.323	37.120.142.158	GET_NEW_VERSION     	Anonymous User	processed[1]				
+825	2023-02-24 16:28:23.572	37.120.142.158	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 16,0 / 0,2 gb			
+1818	2023-02-24 22:26:31.450	188.250.152.181	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+1819	2023-02-24 22:26:31.451	188.250.152.181	GET_NEW_VERSION     	Anonymous User	processed[1]				
+1820	2023-02-24 22:26:32.443	188.250.152.181	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 7,9 / 2,6 gb			
+2605	2023-02-25 14:22:33.726	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+2606	2023-02-25 14:22:33.727	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+2607	2023-02-25 14:22:34.864	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 1,5 gb			
+2621	2023-02-25 14:23:24.224	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+2622	2023-02-25 14:23:24.225	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+2623	2023-02-25 14:23:25.193	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 1,1 gb			
+2637	2023-02-25 14:25:46.193	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+2638	2023-02-25 14:25:46.193	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+2639	2023-02-25 14:25:47.855	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 1,0 gb			
+2661	2023-02-25 14:31:04.492	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+2662	2023-02-25 14:31:04.493	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+2663	2023-02-25 14:31:05.708	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,0 gb			
+4050	2023-02-25 22:43:28.313	37.120.142.148	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+4051	2023-02-25 22:43:28.313	37.120.142.148	GET_NEW_VERSION     	Anonymous User	processed[1]				
+4052	2023-02-25 22:43:29.538	37.120.142.148	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 16,0 / 0,2 gb			
+5003	2023-02-26 13:45:28.251	37.120.142.148	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+5004	2023-02-26 13:45:28.253	37.120.142.148	GET_NEW_VERSION     	Anonymous User	processed[1]				
+5005	2023-02-26 13:45:29.057	37.120.142.148	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 16,0 / 0,1 gb			
+5023	2023-02-26 14:08:50.310	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+5024	2023-02-26 14:08:50.311	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+5025	2023-02-26 14:08:51.359	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 1,7 gb			
+5515	2023-02-26 19:21:17.850	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+5516	2023-02-26 19:21:17.851	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+5517	2023-02-26 19:21:19.251	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 1,8 gb			
+6114	2023-02-26 21:33:21.707	85.138.209.73	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+6115	2023-02-26 21:33:21.709	85.138.209.73	GET_NEW_VERSION     	Anonymous User	processed[1]				
+6116	2023-02-26 21:33:23.588	85.138.209.73	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 16,0 / 0,0 gb			
+6654	2023-02-27 11:36:05.424	188.37.120.116	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+6655	2023-02-27 11:36:05.424	188.37.120.116	GET_NEW_VERSION     	Anonymous User	processed[1]				
+6656	2023-02-27 11:36:05.840	188.37.120.116	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 10 procs 16,0 / 0,3 gb			
+7671	2023-02-27 16:03:06.557	40.94.88.73	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+7672	2023-02-27 16:03:06.557	40.94.88.73	GET_NEW_VERSION     	Anonymous User	processed[1]				
+7673	2023-02-27 16:03:07.477	40.94.88.73	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 16.0 / 0.2 gb			
+7691	2023-02-27 16:08:20.549	40.94.105.8	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+7692	2023-02-27 16:08:20.549	40.94.105.8	GET_NEW_VERSION     	Anonymous User	processed[1]				
+7693	2023-02-27 16:08:21.447	40.94.105.8	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 16.0 / 0.2 gb			
+7727	2023-02-27 16:17:03.501	148.71.50.111	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+7728	2023-02-27 16:17:03.503	148.71.50.111	GET_NEW_VERSION     	Anonymous User	processed[1]				
+7729	2023-02-27 16:17:03.953	148.71.50.111	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 16 procs 7,5 / 1,9 gb			
+7743	2023-02-27 16:18:32.568	148.71.50.111	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+7744	2023-02-27 16:18:32.568	148.71.50.111	GET_NEW_VERSION     	Anonymous User	processed[1]				
+7745	2023-02-27 16:18:32.946	148.71.50.111	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 16 procs 7,5 / 2,0 gb			
+8114	2023-02-28 00:00:33.788	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+8115	2023-02-28 00:00:33.788	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+8116	2023-02-28 00:00:34.798	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,0 gb			
+8314	2023-02-28 10:16:01.857	188.37.120.116	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+8315	2023-02-28 10:16:01.857	188.37.120.116	GET_NEW_VERSION     	Anonymous User	processed[1]				
+8316	2023-02-28 10:16:02.283	188.37.120.116	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 10 procs 16,0 / 0,2 gb			
+8502	2023-02-28 11:05:55.422	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+8503	2023-02-28 11:05:55.422	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+8504	2023-02-28 11:05:56.149	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,0 gb			
+9327	2023-02-28 15:17:28.464	89.114.65.49	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+9328	2023-02-28 15:17:28.465	89.114.65.49	GET_NEW_VERSION     	Anonymous User	processed[1]				
+9333	2023-02-28 15:17:43.292	89.114.65.49	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 4 procs 7.9 / 1.0 gb			
+9404	2023-02-28 15:46:13.426	193.137.5.230	GET_NEW_VERSION     	algorithmi.ipt@gmail.com Aluno	connected[1]	Algorithmi 23.2a			
+9405	2023-02-28 15:46:13.434	193.137.5.230	GET_NEW_VERSION     	algorithmi.ipt@gmail.com Aluno	processed[1]				
+9406	2023-02-28 15:46:14.126	193.137.5.230	GET_NEW_VERSION     	algorithmi.ipt@gmail.com Aluno	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 16 procs 13,9 / 5,3 gb			
+9890	2023-02-28 20:41:26.745	89.114.15.48	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+9891	2023-02-28 20:41:26.746	89.114.15.48	GET_NEW_VERSION     	Anonymous User	processed[1]				
+9892	2023-02-28 20:41:28.486	89.114.15.48	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 7,8 / 0,8 gb			
+13929	2023-03-03 11:00:05.230	89.153.12.36	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+13930	2023-03-03 11:00:05.231	89.153.12.36	GET_NEW_VERSION     	Anonymous User	processed[2]				
+13931	2023-03-03 11:00:06.848	89.153.12.36	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 4 procs 7,7 / 2,4 gb			
+14018	2023-03-03 11:37:31.776	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14019	2023-03-03 11:37:31.777	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14020	2023-03-03 11:37:33.441	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,0 gb			
+14034	2023-03-03 11:40:34.151	89.153.12.36	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14035	2023-03-03 11:40:34.152	89.153.12.36	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14036	2023-03-03 11:40:36.918	89.153.12.36	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 4 procs 7,7 / 1,5 gb			
+14276	2023-03-03 16:06:12.534	188.83.242.98	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14277	2023-03-03 16:06:12.534	188.83.242.98	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14278	2023-03-03 16:06:13.259	188.83.242.98	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 7,9 / 2,6 gb			
+14304	2023-03-03 16:06:56.357	188.83.242.98	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14305	2023-03-03 16:06:56.357	188.83.242.98	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14306	2023-03-03 16:06:57.401	188.83.242.98	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 7,9 / 2,6 gb			
+14480	2023-03-03 18:56:14.730	89.214.117.41	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14481	2023-03-03 18:56:14.731	89.214.117.41	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14486	2023-03-03 18:56:27.989	89.214.117.41	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 7,9 / 2,0 gb			
+14726	2023-03-03 21:25:12.042	2.81.32.117	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14727	2023-03-03 21:25:12.042	2.81.32.117	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14728	2023-03-03 21:25:12.902	2.81.32.117	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 2 procs 3,8 / 1,0 gb			
+14770	2023-03-03 22:49:16.799	2.81.32.117	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14771	2023-03-03 22:49:16.800	2.81.32.117	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14772	2023-03-03 22:49:18.146	2.81.32.117	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 2 procs 3,8 / 1,0 gb			
+14830	2023-03-03 23:41:05.853	148.63.228.46	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14831	2023-03-03 23:41:05.853	148.63.228.46	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14832	2023-03-03 23:41:06.225	148.63.228.46	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,0 gb			
+14842	2023-03-03 23:46:25.203	148.63.228.46	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14843	2023-03-03 23:46:25.203	148.63.228.46	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14844	2023-03-03 23:46:25.577	148.63.228.46	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 1,2 gb			
+14858	2023-03-03 23:48:26.256	148.63.228.46	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14859	2023-03-03 23:48:26.256	148.63.228.46	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14860	2023-03-03 23:48:26.657	148.63.228.46	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,9 gb			
+14870	2023-03-03 23:49:08.354	148.63.228.46	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+14871	2023-03-03 23:49:08.354	148.63.228.46	GET_NEW_VERSION     	Anonymous User	processed[2]				
+14872	2023-03-03 23:49:08.758	148.63.228.46	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,9 gb			
+15231	2023-03-04 01:08:34.075	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15232	2023-03-04 01:08:34.075	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15237	2023-03-04 01:08:39.171	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,6 gb			
+15251	2023-03-04 01:10:00.366	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15252	2023-03-04 01:10:00.366	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15253	2023-03-04 01:10:04.108	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,8 gb			
+15299	2023-03-04 01:12:49.387	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15300	2023-03-04 01:12:49.387	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15310	2023-03-04 01:12:53.511	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+15311	2023-03-04 01:12:53.511	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[3]				
+15316	2023-03-04 01:13:20.221	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,6 gb			
+15317	2023-03-04 01:13:28.323	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,6 gb			
+15335	2023-03-04 01:15:20.441	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15336	2023-03-04 01:15:20.441	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15337	2023-03-04 01:15:25.007	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,8 gb			
+15363	2023-03-04 01:18:45.484	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15364	2023-03-04 01:18:45.484	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15365	2023-03-04 01:18:48.074	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,6 gb			
+15383	2023-03-04 01:25:11.587	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15384	2023-03-04 01:25:11.587	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15385	2023-03-04 01:25:14.427	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,2 gb			
+15395	2023-03-04 01:25:14.948	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15396	2023-03-04 01:25:14.949	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15397	2023-03-04 01:25:20.946	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,1 gb			
+15443	2023-03-04 01:30:07.090	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15444	2023-03-04 01:30:07.091	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15445	2023-03-04 01:30:10.226	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,5 gb			
+15463	2023-03-04 01:32:57.090	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15464	2023-03-04 01:32:57.091	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15465	2023-03-04 01:33:00.465	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,8 gb			
+15571	2023-03-04 01:41:24.437	82.155.125.147	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15572	2023-03-04 01:41:24.437	82.155.125.147	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15573	2023-03-04 01:41:27.123	82.155.125.147	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 6,9 / 3,7 gb			
+15807	2023-03-04 11:57:03.308	85.245.80.41	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+15808	2023-03-04 11:57:03.309	85.245.80.41	GET_NEW_VERSION     	Anonymous User	processed[2]				
+15809	2023-03-04 11:59:53.556	85.245.80.41	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 7,8 / 3,6 gb			
+16420	2023-03-04 23:25:57.421	2.81.32.117	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+16421	2023-03-04 23:25:57.421	2.81.32.117	GET_NEW_VERSION     	Anonymous User	processed[2]				
+16422	2023-03-04 23:25:58.713	2.81.32.117	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 2 procs 3,8 / 1,2 gb			
+17022	2023-03-05 12:14:53.302	188.37.120.116	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+17023	2023-03-05 12:14:53.303	188.37.120.116	GET_NEW_VERSION     	Anonymous User	processed[1]				
+17024	2023-03-05 12:14:53.808	188.37.120.116	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 10 procs 16,0 / 0,4 gb			
+17613	2023-03-05 15:49:12.750	2.81.32.117	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+17614	2023-03-05 15:49:12.750	2.81.32.117	GET_NEW_VERSION     	Anonymous User	processed[1]				
+17615	2023-03-05 15:49:13.684	2.81.32.117	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 2 procs 3,8 / 1,0 gb			
+18382	2023-03-05 21:34:24.406	188.37.71.174	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+18383	2023-03-05 21:34:24.407	188.37.71.174	GET_NEW_VERSION     	Anonymous User	processed[1]				
+18384	2023-03-05 21:34:26.063	188.37.71.174	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+18394	2023-03-05 21:35:13.241	188.37.71.174	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+18395	2023-03-05 21:35:13.242	188.37.71.174	GET_NEW_VERSION     	Anonymous User	processed[1]				
+18396	2023-03-05 21:35:13.477	188.37.71.174	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+18410	2023-03-05 21:37:05.654	188.37.71.174	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+18411	2023-03-05 21:37:05.655	188.37.71.174	GET_NEW_VERSION     	Anonymous User	processed[1]				
+18412	2023-03-05 21:37:09.823	188.37.71.174	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+18434	2023-03-05 21:40:32.679	188.37.71.174	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+18435	2023-03-05 21:40:32.680	188.37.71.174	GET_NEW_VERSION     	Anonymous User	processed[1]				
+18436	2023-03-05 21:40:32.973	188.37.71.174	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,1 gb			
+18538	2023-03-05 22:07:34.515	85.138.43.251	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+18539	2023-03-05 22:07:34.516	85.138.43.251	GET_NEW_VERSION     	Anonymous User	processed[1]				
+18540	2023-03-05 22:07:35.404	85.138.43.251	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 10 procs 32,0 / 3,3 gb			
+18562	2023-03-05 22:08:42.391	85.138.43.251	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+18563	2023-03-05 22:08:42.391	85.138.43.251	GET_NEW_VERSION     	Anonymous User	processed[1]				
+18564	2023-03-05 22:08:43.351	85.138.43.251	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 10 procs 32,0 / 3,3 gb			
+18646	2023-03-05 22:28:27.174	85.138.43.251	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+18647	2023-03-05 22:28:27.175	85.138.43.251	GET_NEW_VERSION     	Anonymous User	processed[1]				
+18648	2023-03-05 22:28:27.949	85.138.43.251	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 10 procs 32,0 / 3,0 gb			
+18750	2023-03-05 23:34:17.898	85.138.43.251	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+18751	2023-03-05 23:34:17.899	85.138.43.251	GET_NEW_VERSION     	Anonymous User	processed[1]				
+18752	2023-03-05 23:34:18.867	85.138.43.251	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 10 procs 32,0 / 1,6 gb			
+18766	2023-03-05 23:36:34.096	85.138.43.251	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+18767	2023-03-05 23:36:34.097	85.138.43.251	GET_NEW_VERSION     	Anonymous User	processed[1]				
+18768	2023-03-05 23:36:34.973	85.138.43.251	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 10 procs 32,0 / 1,6 gb			
+19833	2023-03-06 12:49:12.131	62.28.111.183	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+19834	2023-03-06 12:49:12.132	62.28.111.183	GET_NEW_VERSION     	Anonymous User	processed[3]				
+19835	2023-03-06 12:49:14.127	62.28.111.183	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 4 procs 11,9 / 2,8 gb			
+19905	2023-03-06 13:27:22.625	109.49.168.106	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+19906	2023-03-06 13:27:22.626	109.49.168.106	GET_NEW_VERSION     	Anonymous User	processed[3]				
+19907	2023-03-06 13:27:26.680	109.49.168.106	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 4,0 / 0,0 gb			
+19917	2023-03-06 13:29:32.048	109.49.168.106	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+19918	2023-03-06 13:29:32.048	109.49.168.106	GET_NEW_VERSION     	Anonymous User	processed[3]				
+19919	2023-03-06 13:29:34.984	109.49.168.106	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 4,0 / 0,0 gb			
+19945	2023-03-06 13:44:28.171	109.49.168.106	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+19946	2023-03-06 13:44:28.172	109.49.168.106	GET_NEW_VERSION     	Anonymous User	processed[3]				
+19947	2023-03-06 13:44:30.293	109.49.168.106	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 4,0 / 0,0 gb			
+19957	2023-03-06 13:48:19.349	109.49.168.106	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+19958	2023-03-06 13:48:19.349	109.49.168.106	GET_NEW_VERSION     	Anonymous User	processed[3]				
+19959	2023-03-06 13:48:21.164	109.49.168.106	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 4,0 / 0,0 gb			
+20018	2023-03-06 14:21:35.021	109.49.168.106	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+20019	2023-03-06 14:21:35.037	109.49.168.106	GET_NEW_VERSION     	Anonymous User	processed[3]				
+20020	2023-03-06 14:21:36.838	109.49.168.106	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 4,0 / 0,0 gb			
+20030	2023-03-06 14:21:58.760	109.49.168.106	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+20031	2023-03-06 14:21:58.761	109.49.168.106	GET_NEW_VERSION     	Anonymous User	processed[3]				
+20032	2023-03-06 14:22:01.220	109.49.168.106	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 4,0 / 0,0 gb			
+20060	2023-03-06 14:25:25.684	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+20061	2023-03-06 14:25:25.685	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[3]				
+20062	2023-03-06 14:25:26.701	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,5 gb			
+20916	2023-03-06 16:57:34.493	85.245.80.41	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+20917	2023-03-06 16:57:34.496	85.245.80.41	GET_NEW_VERSION     	Anonymous User	processed[3]				
+20918	2023-03-06 16:57:38.212	85.245.80.41	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 7,8 / 4,3 gb			
+22171	2023-03-06 21:11:24.237	85.247.200.45	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+22172	2023-03-06 21:11:24.238	85.247.200.45	GET_NEW_VERSION     	Anonymous User	processed[4]				
+22173	2023-03-06 21:11:24.355	85.247.200.45	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Linux 2 procs 14,8 / 1,3 gb			
+22183	2023-03-06 21:11:30.117	85.247.200.45	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+22184	2023-03-06 21:11:30.118	85.247.200.45	GET_NEW_VERSION     	Anonymous User	processed[4]				
+22185	2023-03-06 21:11:30.237	85.247.200.45	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Linux 2 procs 14,8 / 1,2 gb			
+22247	2023-03-06 21:30:37.599	161.230.218.37	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+22248	2023-03-06 21:30:37.599	161.230.218.37	GET_NEW_VERSION     	Anonymous User	processed[4]				
+22249	2023-03-06 21:30:39.943	161.230.218.37	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 12,0 / 5,8 gb			
+22263	2023-03-06 21:32:44.686	161.230.218.37	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+22264	2023-03-06 21:32:44.687	161.230.218.37	GET_NEW_VERSION     	Anonymous User	processed[4]				
+22269	2023-03-06 21:32:47.922	161.230.218.37	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 12,0 / 5,8 gb			
+22283	2023-03-06 21:35:38.978	161.230.218.37	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+22284	2023-03-06 21:35:38.979	161.230.218.37	GET_NEW_VERSION     	Anonymous User	processed[4]				
+22285	2023-03-06 21:35:44.680	161.230.218.37	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 12,0 / 5,8 gb			
+22483	2023-03-06 22:25:03.824	78.29.154.171	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+22484	2023-03-06 22:25:03.825	78.29.154.171	GET_NEW_VERSION     	Anonymous User	processed[4]				
+22485	2023-03-06 22:25:24.369	78.29.154.171	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 4 procs 7,9 / 4,5 gb			
+22747	2023-03-06 22:59:24.596	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+22748	2023-03-06 22:59:24.597	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[4]				
+22749	2023-03-06 22:59:25.541	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 1,0 gb			
+24905	2023-03-07 10:49:24.255	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+24906	2023-03-07 10:49:24.256	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[4]				
+24907	2023-03-07 10:49:25.805	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,1 gb			
+24921	2023-03-07 10:52:43.806	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+24922	2023-03-07 10:52:43.806	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[4]				
+24923	2023-03-07 10:52:45.497	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,7 gb			
+24949	2023-03-07 10:55:57.438	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+24950	2023-03-07 10:55:57.439	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[4]				
+24951	2023-03-07 10:55:58.728	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,2 gb			
+24987	2023-03-07 10:58:33.714	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+24988	2023-03-07 10:58:33.714	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[4]				
+24989	2023-03-07 10:58:35.394	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,2 gb			
+25004	2023-03-07 10:59:32.708	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+25005	2023-03-07 10:59:32.708	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[4]				
+25006	2023-03-07 10:59:34.549	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,2 gb			
+25080	2023-03-07 11:10:30.798	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+25081	2023-03-07 11:10:30.798	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[4]				
+25082	2023-03-07 11:10:32.414	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,5 gb			
+25124	2023-03-07 11:15:14.255	85.138.19.120	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+25125	2023-03-07 11:15:14.255	85.138.19.120	GET_NEW_VERSION     	Anonymous User	processed[4]				
+25126	2023-03-07 11:15:15.221	85.138.19.120	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 15,9 / 12,0 gb			
+26577	2023-03-07 17:12:01.826	185.128.9.182	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+26578	2023-03-07 17:12:01.826	185.128.9.182	GET_NEW_VERSION     	Anonymous User	processed[4]				
+26579	2023-03-07 17:12:02.052	185.128.9.182	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 16 procs 31,4 / 6,0 gb			
+27436	2023-03-07 23:49:52.566	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+27437	2023-03-07 23:49:52.567	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[4]				
+27438	2023-03-07 23:49:53.001	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.1 gb			
+27460	2023-03-08 00:07:49.824	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+27461	2023-03-08 00:07:49.824	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[4]				
+27462	2023-03-08 00:07:50.259	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.3 gb			
+27572	2023-03-08 00:46:42.365	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[4]	Algorithmi 23.2a			
+27573	2023-03-08 00:46:42.365	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[4]				
+27574	2023-03-08 00:46:42.852	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![4]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 1.0 gb			
+28714	2023-03-08 15:42:22.919	89.114.75.119	GET_NEW_VERSION     	Anonymous User	connected[5]	Algorithmi 23.2a			
+28715	2023-03-08 15:42:22.920	89.114.75.119	GET_NEW_VERSION     	Anonymous User	processed[5]				
+28716	2023-03-08 15:42:36.297	89.114.75.119	GET_NEW_VERSION     	Anonymous User	service done![5]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+28726	2023-03-08 15:43:07.971	89.114.75.119	GET_NEW_VERSION     	Anonymous User	connected[5]	Algorithmi 23.2a			
+28727	2023-03-08 15:43:07.971	89.114.75.119	GET_NEW_VERSION     	Anonymous User	processed[5]				
+28728	2023-03-08 15:43:16.662	89.114.75.119	GET_NEW_VERSION     	Anonymous User	service done![5]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,1 gb			
+28738	2023-03-08 15:44:52.054	89.114.75.119	GET_NEW_VERSION     	Anonymous User	connected[5]	Algorithmi 23.2a			
+28739	2023-03-08 15:44:52.055	89.114.75.119	GET_NEW_VERSION     	Anonymous User	processed[5]				
+28740	2023-03-08 15:45:03.417	89.114.75.119	GET_NEW_VERSION     	Anonymous User	service done![5]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+28759	2023-03-08 15:56:30.961	89.114.75.119	GET_NEW_VERSION     	Anonymous User	connected[6]	Algorithmi 23.2a			
+28760	2023-03-08 15:56:30.962	89.114.75.119	GET_NEW_VERSION     	Anonymous User	processed[6]				
+28761	2023-03-08 15:56:39.865	89.114.75.119	GET_NEW_VERSION     	Anonymous User	service done![6]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,1 gb			
+28829	2023-03-08 16:49:09.265	85.244.102.47	GET_NEW_VERSION     	Anonymous User	connected[6]	Algorithmi 23.2a			
+28830	2023-03-08 16:49:09.265	85.244.102.47	GET_NEW_VERSION     	Anonymous User	processed[6]				
+28831	2023-03-08 16:49:10.742	85.244.102.47	GET_NEW_VERSION     	Anonymous User	service done![6]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 15.7 / 7.7 gb			
+28861	2023-03-08 17:03:17.333	89.114.75.119	GET_NEW_VERSION     	Anonymous User	connected[6]	Algorithmi 23.2a			
+28862	2023-03-08 17:03:17.334	89.114.75.119	GET_NEW_VERSION     	Anonymous User	processed[6]				
+28863	2023-03-08 17:03:25.904	89.114.75.119	GET_NEW_VERSION     	Anonymous User	service done![6]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+28873	2023-03-08 17:05:37.767	89.114.75.119	GET_NEW_VERSION     	Anonymous User	connected[6]	Algorithmi 23.2a			
+28874	2023-03-08 17:05:37.767	89.114.75.119	GET_NEW_VERSION     	Anonymous User	processed[6]				
+28875	2023-03-08 17:05:44.682	89.114.75.119	GET_NEW_VERSION     	Anonymous User	service done![6]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+28885	2023-03-08 17:06:30.602	89.114.75.119	GET_NEW_VERSION     	Anonymous User	connected[6]	Algorithmi 23.2a			
+28886	2023-03-08 17:06:30.603	89.114.75.119	GET_NEW_VERSION     	Anonymous User	processed[6]				
+28887	2023-03-08 17:06:36.967	89.114.75.119	GET_NEW_VERSION     	Anonymous User	service done![6]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+29568	2023-03-08 19:07:31.786	82.155.122.76	GET_NEW_VERSION     	Anonymous User	connected[6]	Algorithmi 23.2a			
+29569	2023-03-08 19:07:31.786	82.155.122.76	GET_NEW_VERSION     	Anonymous User	processed[6]				
+29570	2023-03-08 19:07:33.677	82.155.122.76	GET_NEW_VERSION     	Anonymous User	service done![6]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 4 procs 3,9 / 0,6 gb			
+30727	2023-03-09 11:41:33.130	95.95.191.157	GET_NEW_VERSION     	Anonymous User	connected[8]	Algorithmi 23.2a			
+30728	2023-03-09 11:41:33.131	95.95.191.157	GET_NEW_VERSION     	Anonymous User	processed[8]				
+30729	2023-03-09 11:41:34.853	95.95.191.157	GET_NEW_VERSION     	Anonymous User	service done![8]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 5,9 / 2,5 gb			
+33850	2023-03-10 14:54:14.897	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[10]	Algorithmi 23.2a			
+33851	2023-03-10 14:54:14.898	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[10]				
+33852	2023-03-10 14:54:16.516	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![10]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 1.8 gb			
+33984	2023-03-10 15:07:19.710	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[10]	Algorithmi 23.2a			
+33985	2023-03-10 15:07:19.710	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[10]				
+33986	2023-03-10 15:07:27.173	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![10]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 1.5 gb			
+42217	2023-03-13 12:39:25.772	62.48.198.150	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+42218	2023-03-13 12:39:25.774	62.48.198.150	GET_NEW_VERSION     	Anonymous User	processed[1]				
+42219	2023-03-13 12:39:27.714	62.48.198.150	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 2 procs 3,8 / 0,7 gb			
+43638	2023-03-13 21:54:55.285	82.154.116.178	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+43639	2023-03-13 21:54:55.285	82.154.116.178	GET_NEW_VERSION     	Anonymous User	processed[1]				
+43644	2023-03-13 21:54:57.365	82.154.116.178	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 12 procs 15.8 / 3.5 gb			
+46828	2023-03-14 23:23:38.115	89.153.87.239	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+46829	2023-03-14 23:23:38.116	89.153.87.239	GET_NEW_VERSION     	Anonymous User	processed[2]				
+46830	2023-03-14 23:23:38.385	89.153.87.239	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,0 gb			
+46940	2023-03-14 23:54:36.634	89.153.87.239	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+46941	2023-03-14 23:54:36.635	89.153.87.239	GET_NEW_VERSION     	Anonymous User	processed[2]				
+46942	2023-03-14 23:54:37.646	89.153.87.239	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,2 gb			
+46956	2023-03-14 23:55:13.163	89.153.87.239	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+46957	2023-03-14 23:55:13.163	89.153.87.239	GET_NEW_VERSION     	Anonymous User	processed[2]				
+46958	2023-03-14 23:55:13.779	89.153.87.239	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,2 gb			
+50250	2023-03-16 17:15:01.720	194.210.59.166	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+50251	2023-03-16 17:15:01.721	194.210.59.166	GET_NEW_VERSION     	Anonymous User	processed[1]				
+50252	2023-03-16 17:15:02.065	194.210.59.166	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 12 procs 16.0 / 0.2 gb			
+53035	2023-03-17 21:34:41.100	188.250.12.147	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+53036	2023-03-17 21:34:41.100	188.250.12.147	GET_NEW_VERSION     	Anonymous User	processed[1]				
+53037	2023-03-17 21:34:41.672	188.250.12.147	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 7,9 / 4,1 gb			
+53137	2023-03-17 23:15:12.040	109.49.36.172	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+53138	2023-03-17 23:15:12.040	109.49.36.172	GET_NEW_VERSION     	Anonymous User	processed[1]				
+53139	2023-03-17 23:15:12.378	109.49.36.172	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 12 procs 16.0 / 0.1 gb			
+57329	2023-03-19 16:40:23.606	188.250.12.147	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+57330	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	processed[3]				
+57331	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+57332	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	processed[3]				
+57333	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	connected[3]	Algorithmi 23.2a			
+57334	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	processed[3]				
+57337	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	connected[5]	Algorithmi 23.2a			
+57338	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	processed[5]				
+57339	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	connected[5]	Algorithmi 23.2a			
+57340	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	processed[5]				
+57342	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	connected[6]	Algorithmi 23.2a			
+57343	2023-03-19 16:40:23.621	188.250.12.147	GET_NEW_VERSION     	Anonymous User	processed[6]				
+57344	2023-03-19 16:40:24.995	188.250.12.147	GET_NEW_VERSION     	Anonymous User	service done![3]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 7,9 / 2,1 gb			
+59392	2023-03-20 15:25:43.037	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+59393	2023-03-20 15:25:43.037	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+59394	2023-03-20 15:25:47.303	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 1,9 gb			
+59408	2023-03-20 15:31:16.864	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+59409	2023-03-20 15:31:16.864	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+59410	2023-03-20 15:31:17.933	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,2 gb			
+59648	2023-03-20 15:39:21.981	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+59649	2023-03-20 15:39:21.982	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+59650	2023-03-20 15:39:23.189	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 0,7 gb			
+59976	2023-03-20 17:18:41.941	82.155.122.76	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+59977	2023-03-20 17:18:41.941	82.155.122.76	GET_NEW_VERSION     	Anonymous User	processed[1]				
+59978	2023-03-20 17:18:42.404	82.155.122.76	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 4 procs 3,9 / 0,5 gb			
+60145	2023-03-20 18:13:20.697	2.80.117.70	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+60146	2023-03-20 18:13:20.698	2.80.117.70	GET_NEW_VERSION     	Anonymous User	processed[1]				
+60147	2023-03-20 18:13:21.865	2.80.117.70	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8,0 / 1,5 gb			
+62861	2023-03-21 15:23:59.905	85.246.183.95	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+62862	2023-03-21 15:23:59.905	85.246.183.95	GET_NEW_VERSION     	Anonymous User	processed[1]				
+62863	2023-03-21 15:24:01.205	85.246.183.95	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 2 procs 3,9 / 1,0 gb			
+62953	2023-03-21 15:42:26.937	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+62954	2023-03-21 15:42:26.938	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[1]				
+62955	2023-03-21 15:42:29.801	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.0 gb			
+62981	2023-03-21 15:44:57.878	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+62982	2023-03-21 15:44:57.879	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[1]				
+62983	2023-03-21 15:44:59.018	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.4 gb			
+62997	2023-03-21 15:45:27.331	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+62998	2023-03-21 15:45:27.331	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[1]				
+62999	2023-03-21 15:45:28.629	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.3 gb			
+63018	2023-03-21 15:47:03.139	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+63019	2023-03-21 15:47:03.140	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[1]				
+63020	2023-03-21 15:47:04.387	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.3 gb			
+63866	2023-03-22 09:32:26.662	188.250.12.147	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+63867	2023-03-22 09:32:26.662	188.250.12.147	GET_NEW_VERSION     	Anonymous User	processed[1]				
+63868	2023-03-22 09:32:29.800	188.250.12.147	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 7,9 / 3,4 gb			
+63960	2023-03-22 11:32:40.717	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+63961	2023-03-22 11:32:40.718	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[1]				
+63962	2023-03-22 11:32:41.187	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 1.7 gb			
+63984	2023-03-22 11:39:54.145	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+63985	2023-03-22 11:39:54.146	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[1]				
+63986	2023-03-22 11:39:54.711	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 1.5 gb			
+64237	2023-03-22 15:31:34.045	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+64238	2023-03-22 15:31:34.046	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[1]				
+64239	2023-03-22 15:31:35.563	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.9 gb			
+65110	2023-03-22 22:54:25.553	188.37.71.174	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+65111	2023-03-22 22:54:25.553	188.37.71.174	GET_NEW_VERSION     	Anonymous User	processed[1]				
+65112	2023-03-22 22:54:25.900	188.37.71.174	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,1 gb			
+65600	2023-03-23 12:48:29.325	94.62.66.84	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+65601	2023-03-23 12:48:29.326	94.62.66.84	GET_NEW_VERSION     	Anonymous User	processed[1]				
+65602	2023-03-23 12:48:30.704	94.62.66.84	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,1 gb			
+66099	2023-03-23 16:32:58.824	89.114.79.170	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+66100	2023-03-23 16:32:58.825	89.114.79.170	GET_NEW_VERSION     	Anonymous User	processed[1]				
+66101	2023-03-23 16:33:22.481	89.114.79.170	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,1 gb			
+66131	2023-03-23 17:24:27.995	89.114.79.170	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+66132	2023-03-23 17:24:27.996	89.114.79.170	GET_NEW_VERSION     	Anonymous User	processed[1]				
+66142	2023-03-23 17:25:10.558	89.114.79.170	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+66143	2023-03-23 17:25:10.558	89.114.79.170	GET_NEW_VERSION     	Anonymous User	processed[1]				
+66144	2023-03-23 17:25:32.404	89.114.79.170	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,1 gb			
+68399	2023-03-24 15:48:52.844	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+68400	2023-03-24 15:48:52.845	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[2]				
+68401	2023-03-24 15:48:55.414	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.5 gb			
+68411	2023-03-24 15:49:36.658	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+68412	2023-03-24 15:49:36.659	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[2]				
+68413	2023-03-24 15:49:49.090	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.4 gb			
+68459	2023-03-24 16:03:53.854	89.114.210.231	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+68460	2023-03-24 16:03:53.855	89.114.210.231	GET_NEW_VERSION     	Anonymous User	processed[2]				
+68461	2023-03-24 16:03:57.099	89.114.210.231	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 4 procs 8.0 / 0.3 gb			
+73372	2023-03-27 18:45:39.557	193.236.41.224	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+73373	2023-03-27 18:45:39.557	193.236.41.224	GET_NEW_VERSION     	Anonymous User	processed[1]				
+73374	2023-03-27 18:45:41.004	193.236.41.224	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 7,9 / 2,5 gb			
+73384	2023-03-27 18:51:40.773	193.236.41.224	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+73385	2023-03-27 18:51:40.773	193.236.41.224	GET_NEW_VERSION     	Anonymous User	processed[1]				
+73386	2023-03-27 18:51:42.589	193.236.41.224	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 8 procs 7,9 / 2,5 gb			
+113274	2023-04-12 14:58:53.413	88.214.184.99	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+113275	2023-04-12 14:58:53.413	88.214.184.99	GET_NEW_VERSION     	Anonymous User	processed[1]				
+113276	2023-04-12 14:59:10.089	88.214.184.99	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 4 procs 7,7 / 3,1 gb			
+115016	2023-04-12 18:19:00.186	148.69.172.126	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+115017	2023-04-12 18:19:00.186	148.69.172.126	GET_NEW_VERSION     	Anonymous User	processed[1]				
+115027	2023-04-12 18:19:01.704	148.69.172.126	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+115028	2023-04-12 18:19:01.706	148.69.172.126	GET_NEW_VERSION     	Anonymous User	processed[2]				
+115029	2023-04-12 18:19:04.295	148.69.172.126	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 4 procs 7,9 / 2,2 gb			
+115030	2023-04-12 18:19:06.353	148.69.172.126	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 4 procs 7,9 / 2,2 gb			
+125009	2023-04-16 07:29:59.816	94.62.66.84	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+125010	2023-04-16 07:29:59.817	94.62.66.84	GET_NEW_VERSION     	Anonymous User	processed[1]				
+125011	2023-04-16 07:30:03.343	94.62.66.84	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,2 gb			
+129289	2023-04-17 13:22:56.361	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+129290	2023-04-17 13:22:56.362	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[1]				
+129291	2023-04-17 13:22:57.915	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+129301	2023-04-17 13:23:26.609	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+129302	2023-04-17 13:23:26.610	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[1]				
+129307	2023-04-17 13:23:28.281	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,1 gb			
+129333	2023-04-17 13:27:21.279	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+129334	2023-04-17 13:27:21.279	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[1]				
+129335	2023-04-17 13:27:22.511	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,0 gb			
+129361	2023-04-17 13:30:14.596	86.5.117.249	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+129362	2023-04-17 13:30:14.597	86.5.117.249	GET_NEW_VERSION     	Anonymous User	processed[1]				
+129363	2023-04-17 13:30:16.135	86.5.117.249	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 8,0 / 0,3 gb			
+130788	2023-04-18 08:49:28.644	176.79.163.227	GET_NEW_VERSION     	Anonymous User	connected[1]	Algorithmi 23.2a			
+130789	2023-04-18 08:49:28.645	176.79.163.227	GET_NEW_VERSION     	Anonymous User	processed[1]				
+130790	2023-04-18 08:49:34.399	176.79.163.227	GET_NEW_VERSION     	Anonymous User	service done![1]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 11 8 procs 9,9 / 3,1 gb			
+148312	2023-04-25 02:32:46.201	149.90.149.49	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+148313	2023-04-25 02:32:46.202	149.90.149.49	GET_NEW_VERSION     	Anonymous User	processed[2]				
+148314	2023-04-25 02:32:46.368	149.90.149.49	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 16,0 / 0,1 gb			
+148336	2023-04-25 02:36:15.585	149.90.149.49	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+148337	2023-04-25 02:36:15.585	149.90.149.49	GET_NEW_VERSION     	Anonymous User	processed[2]				
+148338	2023-04-25 02:36:15.844	149.90.149.49	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 16,0 / 0,2 gb			
+148352	2023-04-25 02:37:09.118	149.90.149.49	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+148353	2023-04-25 02:37:09.118	149.90.149.49	GET_NEW_VERSION     	Anonymous User	processed[2]				
+148354	2023-04-25 02:37:09.309	149.90.149.49	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 16,0 / 0,3 gb			
+148364	2023-04-25 02:40:03.976	149.90.149.49	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+148365	2023-04-25 02:40:03.976	149.90.149.49	GET_NEW_VERSION     	Anonymous User	processed[2]				
+148366	2023-04-25 02:40:04.263	149.90.149.49	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 16,0 / 0,0 gb			
+148376	2023-04-25 02:44:50.364	149.90.149.49	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+148377	2023-04-25 02:44:50.365	149.90.149.49	GET_NEW_VERSION     	Anonymous User	processed[2]				
+148378	2023-04-25 02:44:50.615	149.90.149.49	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Mac OS X 8 procs 16,0 / 0,0 gb			
+150834	2023-05-01 18:38:58.691	89.114.64.155	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+150835	2023-05-01 18:38:58.692	89.114.64.155	GET_NEW_VERSION     	Anonymous User	processed[2]				
+150853	2023-05-01 18:41:01.099	89.114.64.155	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+150854	2023-05-01 18:41:01.100	89.114.64.155	GET_NEW_VERSION     	Anonymous User	processed[2]				
+150864	2023-05-01 18:41:20.992	89.114.64.155	GET_NEW_VERSION     	Anonymous User	connected[2]	Algorithmi 23.2a			
+150865	2023-05-01 18:41:20.993	89.114.64.155	GET_NEW_VERSION     	Anonymous User	processed[2]				
+150866	2023-05-01 18:41:25.267	89.114.64.155	GET_NEW_VERSION     	Anonymous User	service done![2]	new algorithmi version[21-02-2023 23:54:46 -> 21-02-2023 23:54:46] Windows 10 4 procs 11,9 / 7,6 gb			

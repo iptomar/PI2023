@@ -1,0 +1,1 @@
+Nao deixes o teu codigo assim no meio do repositorio que o teu index.php nao deixava, o resto da malta escolher logo a sua folder.

@@ -12,65 +12,39 @@
     <img id="main_icon" src="icon.png">
     <h1 id="title">PI2023</h1>
 
-  <form action="main.php" id="charts">
-    <button type="submit" id = "hideTable"> Gráficos</button>
+    
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Enter username">
+            <button type="button" onclick="searchByUsername()">Search</button>
+        </form>
+    
+
+
+  <form id="charts">
+    <button type="button" onclick = "location.href = 'days.php'" id = "hideTable"> Gráfico dos Dias</button>
+    <button type="button" onclick = "location.href = 'main.php'" id = "hideTable"> Gráficos dos Semanas</button>
+    <button type="button" onclick = "location.href = 'Month.php'" id = "hideTable"> Gráfico dos Meses</button>
   </form>
   </div>
 </body>
 
 <script>
-    function showANDhideTable() {
-        var table = document.getElementById("table");
-        var hideTable = document.getElementById("hideTable");
-        if (table.style.display === "none") {
-            table.style.display = "table";
-            hideTable.innerHTML = "Esconder tabela";
-        } else {
-            table.style.display = "none";
-            hideTable.innerHTML = "Mostrar tabela";
-        }
-    }
+    var buttonClicked = false;
 
-    function showGraph() {
-        var chartCanvas = document.getElementById("chart");
-        chartCanvas.style.display = "block";
-        drawChart();
-    }
+    function searchByUsername() {
+        buttonClicked = true;
 
-    function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn("string", "Semana");
-        data.addColumn("number", "Quantidade de Registros");
-        data.addRows([
-            <?php
-            foreach ($weeks as $week => $count) {
-                echo '["Semana ' . $week . '", ' . $count . '],';
-            }
-            ?>
-        ]);
+        // Get the input value
+        var username = document.getElementById("searchInput").value;
 
-        var options = {
-            title: "Estatísticas por Semana",
-            hAxis: { title: "Semana", titleTextStyle: { color: "#333" } },
-            vAxis: { minValue: 0 },
-            width: 800,
-            height: 600
-        };
+        // Get the table body element
+        var tableBody = document.querySelector("#table tbody");
 
-        var chart = new google.visualization.ColumnChart(document.getElementById("chart_div"));
-        chart.draw(data, options);
-    }
+        // Clear the table body
+        tableBody.innerHTML = "";
 
-    function isValidDateFormat(dateString) {
-        var pattern = /^\d{4}-\d{2}-\d{2}$/;
-        return pattern.test(dateString);
-    }
-
-    function getDataForDate(selectedDate) {
-        // Specify the path to your CSV file
-        var csvFile = "logIPRP.csv";
-
-        return fetch(csvFile)
+        // Fetch and parse the CSV data
+        fetch("logIPRP.csv")
             .then(function(response) {
                 if (!response.ok) {
                     throw new Error("Failed to fetch the CSV file.");
@@ -80,58 +54,95 @@
             .then(function(csvText) {
                 // Parse the CSV data
                 var rows = csvText.split("\n");
-                var ipAddresses = [];
 
-                // Process and filter the rows based on the selected date
+                // Loop through the CSV data and display rows matching the username
                 for (var i = 0; i < rows.length; i++) {
-                    var lineValues = rows[i].split(";");
-                    if (lineValues.length >= 3) {
-                        var date = lineValues[1].trim(); // Trim the date value
+                    var rowValues = rows[i].split(";");
+                    var emailName = rowValues[4] ?? "";
+                    var explodedEmailName = emailName.split(" ");
+                    var email = explodedEmailName[0] ?? "";
+                    var name = (explodedEmailName.length >= 2) ? explodedEmailName[1] : "No name";
 
-                        // Filter the rows based on the selected date
-                        if (date === selectedDate) {
-                            var ipAddress = lineValues[2].trim(); // Trim the IP address value
-                            ipAddresses.push(ipAddress);
-                        }
+                    // Check if the username matches and the name has more than one letter
+                    if (name.toLowerCase() === username.toLowerCase() && name.length > 1) {
+                        // Create a new table row
+                        var newRow = document.createElement("tr");
+
+                        // Create table cells for each data column
+                        var dateCell = document.createElement("td");
+                        dateCell.textContent = rowValues[1];
+                        newRow.appendChild(dateCell);
+
+                        var emailCell = document.createElement("td");
+                        emailCell.textContent = email;
+                        newRow.appendChild(emailCell);
+
+                        var nameCell = document.createElement("td");
+                        nameCell.textContent = name;
+                        newRow.appendChild(nameCell);
+
+                        // Append the new row to the table body
+                        tableBody.appendChild(newRow);
                     }
                 }
-
-                var count = Math.floor(ipAddresses.length / 3); // Divide the count by 3
-
-                // Prepare the chart data
-                var chartData = {
-                    labels: [selectedDate],
-                    datasets: [
-                        {
-                            label: "Unique IPs",
-                            data: [count],
-                            borderColor: "blue",
-                            fill: false,
-                        },
-                    ],
-                };
-
-                return chartData;
             })
             .catch(function(error) {
                 console.error(error);
-                return null;
             });
     }
 
-    function enviar() {
-        var selectedDate = document.getElementById("selectedDate").value;
+    function displayCompleteTable() {
+        // Get the table body element
+        var tableBody = document.querySelector("#table tbody");
 
-        // Ensure the selected date is in the correct format
-        if (!isValidDateFormat(selectedDate)) {
-            alert("Invalid date format. Please enter the date in yyyy-mm-dd format.");
-            return;
-        }
+        // Fetch and parse the CSV data
+        fetch("logIPRP.csv")
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error("Failed to fetch the CSV file.");
+                }
+                return response.text();
+            })
+            .then(function(csvText) {
+                // Parse the CSV data
+                var rows = csvText.split("\n");
 
-        // Display the graph for the selected date
-        showGraph();
+                // Loop through the CSV data and display all rows
+                for (var i = 0; i < rows.length; i++) {
+                    var rowValues = rows[i].split(";");
+                    var emailName = rowValues[4] ?? "";
+                    var explodedEmailName = emailName.split(" ");
+                    var email = explodedEmailName[0] ?? "";
+                    var name = (explodedEmailName.length >= 2) ? explodedEmailName[1] : "No name";
+
+                    // Create a new table row
+                    var newRow = document.createElement("tr");
+
+                    // Create table cells for each data column
+                    var dateCell = document.createElement("td");
+                    dateCell.textContent = rowValues[1];
+                    newRow.appendChild(dateCell);
+
+                    var emailCell = document.createElement("td");
+                    emailCell.textContent = email;
+                    newRow.appendChild(emailCell);
+
+                    var nameCell = document.createElement("td");
+                    nameCell.textContent = name;
+                    newRow.appendChild(nameCell);
+
+                    // Append the new row to the table body
+                    tableBody.appendChild(newRow);
+                }
+            })
+            .catch(function(error) {
+                console.error(error);
+            });
     }
+
+    displayCompleteTable();
 </script>
+
 
 <body>
     <!-- PHP code to read and process the CSV file -->
