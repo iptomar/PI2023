@@ -6,8 +6,11 @@ $weeks = array();
 //cria uma nova stdClass;
 $data = new stdClass();
 
-//$data->title = 'Volume of Sendings per Week';
+
+// Atribui o título e inicializa o conjunto de dados
+$data->title = 'Volume of Sendings per Week';
 $data->data = array();
+
 
 //cria as etiquetas
 $label = array();
