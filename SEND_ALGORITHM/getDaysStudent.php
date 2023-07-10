@@ -10,7 +10,7 @@
     $dataStudent = new stdClass();
 
     // Atribui o título e inicializa o conjunto de dados
-    $dataStudent->title = "Sendings per Day of the student " . $student;
+    $dataStudent->title = "Sendings per Day of the Student " . $student;
     $dataStudent->data = array();
 
     

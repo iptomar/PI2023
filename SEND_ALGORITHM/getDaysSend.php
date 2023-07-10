@@ -3,7 +3,7 @@
     $data = new stdClass();
 
     // Atribui o título e inicializa o conjunto de dados
-    $data->title = 'Volume of Sendings per day';
+    $data->title = 'Volume of Sendings per Day';
     $data->data = array();
 
     // Cria as etiquetas

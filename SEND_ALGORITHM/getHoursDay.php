@@ -10,7 +10,7 @@
     $dataDay = new stdClass();
 
     // Atribui o título e inicializa o conjunto de dados
-    $dataDay->title = "Sendings per hour of the day " . $day;
+    $dataDay->title = "Sendings per Hour of the Day " . $day;
     $dataDay->data = array();
 
     // Cria as etiquetas
