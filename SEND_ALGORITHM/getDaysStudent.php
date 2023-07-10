@@ -13,6 +13,7 @@
     $dataStudent->title = "Sendings per Day of the student " . $student;
     $dataStudent->data = array();
 
+    
     // Cria as etiquetas
     $label = array();
     array_push($label, 'Days');
@@ -53,6 +54,26 @@
     //apaga o conteudo deste array para criar um novo dado 
     $ls = [];
     }
+
+    // loop para verificar e adicionar os dias ausentes e inicia-los a zero 
+    foreach ($missingDays as $missDay) {
+        $found = false;
+        foreach ($dataStudent->data as $existingData) {
+            if ($existingData[0] == $missDay) {
+                $found = true;
+                break;
+            }
+        }
+        if (!$found) {
+            $missingDayData = [$missDay, 0];
+            array_push($dataStudent->data, $missingDayData);
+        }
+    }
+    
+    // odernar os dados de acordo com as datas
+    usort($dataStudent->data, function ($a, $b) {
+        return strtotime($a[0]) - strtotime($b[0]);
+    });
 
     // faz o encode do json para que os dados possam ser lidos
     // para que seja possivel criar o grafico
