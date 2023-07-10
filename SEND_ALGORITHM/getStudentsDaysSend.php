@@ -5,14 +5,6 @@
     //atribui o titulo e inicializa o conjunto dos dados
     $data->title = 'Sending per day of the student ...';
     $data->data = array();
-    
-    //cria as etiquetas
-    $label = array();
-    array_push($label,'Days');
-    array_push($label,'Sendings');
-
-    //adiciona as etiquetas ao conjunto de dados
-    array_push($data->data, $label);
 
     //acede ao ficheiro filtroSend.csv para fazer a leitura do conteudo, cujo cada linha 
     //desse ficheiro representa as datas em que os envios dos algoritmos foram realizados
@@ -97,10 +89,36 @@
 
     $sendStudentDays = $data->data;
 
+    //lista de todos os dias entre o primeiro dia registrado e o ultimo
     $allDays = $days;
-    $allDays = array_unique($allDays);
-    $allStudents = $students;
-    $allStudents = array_unique($allStudents)
 
-    
+    // remover duplicações dos dias
+    $allDays = array_unique($allDays);
+
+    // Obter o primeiro e o último dia
+    $firstDay = reset($allDays);
+    $lastDay = end($allDays);
+
+    // Criar o array para armazenar os dias ausentes
+    $missingDays = [];
+
+    // Inicializar a data atual com o primeiro dia
+    $currentDay = new DateTime($firstDay);
+
+    // Loop para verificar e adicionar os dias ausentes
+    while ($currentDay->format('Y-m-d') <= $lastDay) {
+        $currentDate = $currentDay->format('Y-m-d');
+        
+        if (!in_array($currentDate, $allDays)) {
+            $missingDays[] = $currentDate;
+        }
+        
+        $currentDay->modify('+1 day'); // Avançar para o próximo dia
+    }
+
+    // lista de todos os estudantes que foram registrados 
+    $allStudents = $students;
+
+    // remover duplicações dos estudantes
+    $allStudents = array_unique($allStudents)
 ?>

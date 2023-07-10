@@ -3,7 +3,7 @@
     $data = new stdClass();
 
     // Atribui o título e inicializa o conjunto de dados
-    $data->title = 'Mode Sendings per Hour';
+    $data->title = 'Frequency of Sendings per Hour';
     $data->data = array();
 
     // Cria as etiquetas
@@ -70,5 +70,7 @@
         $l = [];
     }
 
+    // faz o encode do json para que os dados possam ser lidos
+    // para que seja possivel criar o grafico
     echo json_encode($data);
 ?>

@@ -1,8 +1,16 @@
 <html>
   <head>
     <style>
-      div{height: 2000;}
-      #change-chart1, #change-chart2, #change-chart3, #change-chart4{border: none; display: inline-block; font-size: 19px; border-radius: 4px; background-color: #8093e0; color:#ffffff;}
+      h1{font: bold 30px Verdana; color: #030374}
+      input{font: 14px Arial;}
+      p{text-align: center; font: 12px;}
+
+      .data{border: none; display: inline-block; font-size: 19px; border-radius: 4px; background-color: #8093e0; color:#ffffff;}
+      .filter{margin: 3px;}
+
+      #scrollBottom{position: fixed; right: 20px;}
+      #change-label1, #change-label2{font: 16px Arial;}
+      #change-chart5, #change-Chart6{ font: 14px Arial;}
     </style>
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -31,18 +39,21 @@
             var button2 = document.getElementById('change-chart2');
             var button3 = document.getElementById('change-chart3');
             var button4 = document.getElementById('change-chart4');
+
             var label1 = document.getElementById('change-label1');
             var dateInput = document.getElementById('date-input'); 
             var button5 = document.getElementById('change-chart5');
+
             var label2 = document.getElementById('change-label2');
             var userInput = document.getElementById('user-input'); 
             var button6 = document.getElementById('change-chart6');
+
             var chartDiv = document.getElementById('chart_div');
 
             // caracteristicas do grafico de envios por dia
             var daysOptions = {
               title: chartData.title,
-              chartArea: {width: '50%'},
+              chartArea: {width: '50%', height: '90%'},
               colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
@@ -55,8 +66,8 @@
 
             // caracteristicas do grafico de envios por semana
             var weeksOptions = {
-              title: 'Volume of Sendings per Week',
-              chartArea: {width: '50%'},
+              title: chartData.title,
+              chartArea: {width: '50%', height: '90%'},
               colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
@@ -69,7 +80,7 @@
 
             // caracteristicas do grafico de envios por mês
             var monthsOptions = {
-              title: 'Volume of Sendings per Month',
+              title: chartData.title,
               chartArea: {width: '50%'},
               colors: ['#8093e0'],
               hAxis: {
@@ -83,8 +94,8 @@
 
             // caracteristicas do grafico da moda de envios por hora
             var hoursOptions = {
-              title: 'frequency of Sendings per Hour',
-              chartArea: {width: '50%'},
+              title: chartData.title,
+              chartArea: {width: '50%', height: '90%'},
               colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
@@ -95,10 +106,10 @@
               }
             };
 
-            // caracteristicas do grafico da moda de envios por hora
+            // caracteristicas do grafico dos envios por hora de um dia selecionado
             var hoursDayOptions = {
-              title: 'Sendings per Hour of the selected day',
-              chartArea: {width: '50%'},
+              title: chartData.title,
+              chartArea: {width: '50%', height: '90%'},
               colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
@@ -109,12 +120,30 @@
               }
             };
 
+            // caracteristicas do grafico de envios por dia de um aluno selecionado
+            var daysStudentOptions = {
+              title: chartData.title,
+              chartArea: {width: '50%', height: '90%'},
+              colors: ['#8093e0'],
+              hAxis: {
+                title: 'Sendings',
+                minValue: 0
+              },
+              vAxis: {
+                title: 'Hours'
+              }
+            };
+            
             function loadDataAndDrawChart(url, options, button) {
               var xmlhttp = new XMLHttpRequest();
               xmlhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                   var newData = JSON.parse(this.responseText);
                   data = google.visualization.arrayToDataTable(newData.data);
+
+                  // Atualiza o título do gráfico com o novo título dos dados
+                  options.title = newData.title;
+
                   var chart = new google.visualization.BarChart(chartDiv);
                   chart.draw(data, google.charts.Bar.convertOptions(options));
                   button.disabled = false;
@@ -132,6 +161,7 @@
               button3.onclick = drawMonthsChart;
               button4.onclick = drawHoursChart;
               button5.onclick = drawHDChart;
+              button6.onclick = drawDSChart;
               chartDiv.style.height = '3500px';
               
               button1.style.display = "none";
@@ -142,6 +172,10 @@
               label1.style.display = "inline-block";
               dateInput.style.display = "inline-block";
               button5.style.display = "inline-block";
+
+              label2.style.display = "inline-block";
+              userInput.style.display = "inline-block";
+              button6.style.display = "inline-block";
             }
 
             // ao clica neste butão, ele irá mostrar o grafico de envios por semana
@@ -161,6 +195,10 @@
               label1.style.display = "none";
               dateInput.style.display = "none";
               button5.style.display = "none";
+
+              label2.style.display = "none";
+              userInput.style.display = "none";
+              button6.style.display = "none";
             }
 
             // ao clica neste butão, ele irá mostrar o grafico de envios por mês
@@ -180,6 +218,10 @@
               label1.style.display = "none";
               dateInput.style.display = "none";
               button5.style.display = "none";
+
+              label2.style.display = "none";
+              userInput.style.display = "none";
+              button6.style.display = "none";
             }
 
             // ao clica neste butão, ele irá mostrar o grafico da moda de envios por hora
@@ -199,6 +241,10 @@
               label1.style.display = "none";
               dateInput.style.display = "none";
               button5.style.display = "none";
+
+              label2.style.display = "none";
+              userInput.style.display = "none";
+              button6.style.display = "none";
             }
 
             // inicializa o grafico de envios por hora de um dia selecionado
@@ -211,18 +257,32 @@
               
               loadDataAndDrawChart(urlDay, hoursDayOptions, button5);
               chartDiv.style.height = '1000px';
+
+              button1.onclick = drawDaysChart;
+              button1.style.display = "inline-block";
+
+              label2.style.display = "none";
+              userInput.style.display = "none";
+              button6.style.display = "none";
             }
 
             // inicializa o grafico de envios por dia de um estudante selecionado
-            function drawHDChart() {
+            function drawDSChart() {
               // obtem o valor do 'user-input'
               var selectedUser = userInput.value;
 
               // cria a url dos dados do respectivo dia
               var urlStudent = "getDaysStudent.php?student=" + selectedUser;
               
-              loadDataAndDrawChart(urlStudent, hoursDayOptions, button6);
-              chartDiv.style.height = '1000px';
+              loadDataAndDrawChart(urlStudent, daysStudentOptions, button6);
+              chartDiv.style.height = '3500px';
+
+              button1.onclick = drawDaysChart;
+              button1.style.display = "inline-block";
+
+              label1.style.display = "none";
+              dateInput.style.display = "none";
+              button5.style.display = "none";
             }
 
             // inicializa o grafico de envios por dia
@@ -232,21 +292,38 @@
   </head>
 
   <body>
-    <button id="change-chart1">Change to Days</button>
-    <button id="change-chart2">Change to Weeks</button>
-    <button id="change-chart3">Change to Months</button>
-    <button id="change-chart4">Change to Hours</button>
+    <div id="top"></div>
+    <h1 >SEND ALGORITHM</h1>
+    <button class="data" id="change-chart1">Change to Days</button>
+    <button class="data" id="change-chart2">Change to Weeks</button>
+    <button class="data" id="change-chart3">Change to Months</button>
+    <button class="data" id="change-chart4">Change to Hours</button>
+    <button id="scrollBottom"><a href="#bottom" id="btn-scroll">Go to the Bottom</a></button>
     <br>
 
-    <label id="change-label1" for="date">Selecione uma data:</label>
-    <input type="date" id="date-input">
-    <button id="change-chart5">Create Chart</button>
+    <label class="filter" id="change-label1" for="date">Select a Day:</label>
+    <input class="filter" type="date" id="date-input">
+    <button class="filter" id="change-chart5">Create Chart</button>
+    <br>
 
-    <label id="change-label2" for="date">Selecione um aluno:</label>
-    <input type="text" id="user-input">
-    <button id="change-chart6">Create Chart</button>
+    <label class="filter" id="change-label2" for="date">Select a Student:</label>
+    <input class="filter" type="text" size="12" maxlength="10" id="user-input" value="aluno">
+    <button class="filter" id="change-chart6">Create Chart</button>
     <br><br>
+
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
+
+    <button><a href="#top" id="btn-scroll">Go to the Top</a></button>
+
+    <hr>
+
+    <!-- Marcador para o final da página -->
+    <div id="bottom">
+      <p>Desenvenvoldedor do Algorithmi: Antonio Manso</p>
+      <p>Contactos: manso@ipt.pt</p>
+      <p>Instituto: Instituto Politecnico de Tomar</p>
+      <p>Site do Algorithmi: algorithmi.ipt.pt</p>
+    </div>
   </body>
 </html>

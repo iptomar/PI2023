@@ -10,7 +10,7 @@
     $dataDay = new stdClass();
 
     // Atribui o título e inicializa o conjunto de dados
-    $dataDay->title = "Sendings per hour of the day " . $day;
+    $dataDay->title = "Sendings per Hour of the Day " . $day;
     $dataDay->data = array();
 
     // Cria as etiquetas
@@ -54,6 +54,8 @@
 
     $sendStudentHours = $dataDay->data;
 
+    // faz o encode do json para que os dados possam ser lidos
+    // para que seja possivel criar o grafico
     echo json_encode($dataDay);
     
     //Função para encontrar o envio de uma determinada hora no conjunto de dados.
