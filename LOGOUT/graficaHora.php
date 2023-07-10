@@ -1,4 +1,22 @@
 <?php
+// Função para obter o email com base nos campos do CSV
+function getEmailFromFields($fields)
+{
+    if (isset($fields[4])) {
+        $emailParts = explode(" ", $fields[4]);
+        return $emailParts[0];
+    } else {
+        return '';
+    }
+}
+
+// Verificar se foi enviado um usuário através do parâmetro GET
+if (isset($_GET['user'])) {
+    $selectedUser = $_GET['user'];
+} else {
+    $selectedUser = ''; // Define o usuário como vazio se nenhum foi fornecido
+}
+
 // Abrir o arquivo CSV para leitura
 $file = fopen("logout_amostra.csv", "r");
 
@@ -6,23 +24,34 @@ $file = fopen("logout_amostra.csv", "r");
 $header = fgetcsv($file, 0, ";");
 
 // Criar um array vazio para armazenar as contagens
-$counts = array(); // Armazena as contagens
+$counts = array_fill(0, 24, 0); // Armazena as contagens para cada hora
+$totalLogouts = 0; // Armazena o valor total de logouts
 
 // Ler cada linha do arquivo
 while (($line = fgetcsv($file, 0, ";")) !== false) {
+    // Obter o email com base nos campos do CSV
+    $email = getEmailFromFields($line);
+
+    // Verificar se o usuário está selecionado e filtrar os dados com base no email
+    if ($selectedUser !== '' && $email !== $selectedUser) {
+        continue;
+    }
+
     // Separar a data em ano, mês, dia e hora
     $dateTime = new DateTime($line[1]);
     $hora = $dateTime->format('H');
 
     // Incrementar a contagem correspondente
-    if (!isset($counts[$hora])) {
-        $counts[$hora] =ceil( 1 /3);
-    } else {
-        $counts[$hora]+= ceil( 1/3);
-    }
-}
+    $counts[(int)$hora]++;
 
-ksort($counts); // Ordenar o array $counts pelas chaves
+    // Incrementar o valor total de logouts
+    $totalLogouts++;
+}
+$totalLogouts = ceil($totalLogouts / 3);
+// Dividir por 3 o número de logouts de cada hora
+foreach ($counts as &$count) {
+    $count = ceil($count / 3);
+}
 
 fclose($file);
 ?>
@@ -37,13 +66,19 @@ fclose($file);
 </head>
 <body>
     <div id='selecionados'>
-        <a href="Inicio.html"><button>Retornar ao inicio</button></a>
+        <a href="Inicio.html"><button>Retornar ao início</button></a>
+        <form method="GET">
+            <input type="text" name="user" placeholder="Insira o usuário">
+            <button type="submit">Filtrar</button>
+        </form>
+        <p><?php echo "Total de Logouts: " . $totalLogouts; ?></p>
         <canvas id="logoutChart"></canvas>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var labels = []; // Armazena os rótulos (horas)
             var data = <?php echo json_encode(array_values($counts)); ?>; // Usar apenas os valores do array $counts
+            var user = "<?php echo $selectedUser; ?>"; // Obter o usuário selecionado
 
             // Preencher os rótulos com as horas de 00 a 23
             for (var i = 0; i < 24; i++) {
@@ -57,7 +92,7 @@ fclose($file);
                 data: {
                     labels: labels, // Definir os rótulos no eixo x
                     datasets: [{
-                        label: 'Número de Logouts por Hora',
+                        label: 'Número de Logouts por Hora' + (user ? ' - Usuário: ' + user : ''),
                         data: data, // Definir os dados no eixo y
                         backgroundColor: 'rgba(0, 123, 255, 0.7)',
                         borderColor: 'rgba(0, 123, 255, 1)',
