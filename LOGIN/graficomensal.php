@@ -35,14 +35,14 @@ $dataJson = json_encode($dataArray);
 <html>
 <head>
 <link rel="stylesheet" href="css.css">
-
+<title>Grafico por meses</title>
 
 <div id="nav_bar">
-    <form class = "formu">
+    <form class = "formu" method="POST" action="diasmes.php">
         <button type="button" class="buttons" onclick="location.href='main.php'">Voltar</button>
         <label for="month">Selecione um mês:</label>
         <input type="month" id="month" name="month">
-        <button type="button" class="buttons" onclick="location.href='diasmes.php'">Gerar Gráfico</button>
+        <button type="submit" class="buttons">Gerar Gráfico</button>
     </form>
 </div>
 

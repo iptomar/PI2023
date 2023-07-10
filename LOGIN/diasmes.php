@@ -40,6 +40,7 @@ $dataJson = json_encode($dataArray);
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Grafico mensal por dias</title>
 <link rel="stylesheet" href="css.css">
 <form action="graficomensal.php"><button class="buttons">Voltar</button></form>
     <script type="text/javascript" class="scripts" src="https://www.gstatic.com/charts/loader.js"></script>

@@ -37,13 +37,13 @@ $dataJson = json_encode($dataArray);
 <html>
 <head>
 <link rel="stylesheet" href="css.css">
-
+<title>Grafico por semanas</title>
 <div id="nav_bar">
-    <form class = "formu">
+    <form class = "formu" action="diassemana.php" method="POST">
         <button type="button" class="buttons" onclick="location.href='main.php'">Voltar</button>
         <label for="week">Selecione uma semana:     </label>
         <input type="week" id="week" name="week">
-        <button type="button" class="buttons" onclick="location.href='diassemanas.php'">Gerar Gráfico</button>
+        <button type="submit" class="buttons">Gerar Gráfico</button>
     </form>
 </div>
     <script class="scripts" type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>

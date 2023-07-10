@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <link rel="stylesheet" href="css.css">
-    
+    <title>Grafico diario</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
@@ -159,13 +159,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div id="chart_div" ></div>
     <div id="nav_bar">
-    <form  class = "formu">
+    <form  class = "formu" action = "graficohoras.php" method="POST"> 
         <button type="button" class="buttons" onclick="location.href='main.php'">Voltar</button>
-        
         <input  id="searchInput" name="username" placeholder="Enter username">
         <button class="buttons" type="button" onclick="searchByUsername()">Search</button>
-        </form>
-        <form action = "graficohoras.php" method="POST">
         <label  for="date">Selecione uma data:    </label>
         <input type="date" id="date" name="date">
         <button class = "buttons" id="botao2" type="submit" >Gerar Gráfico</button>
