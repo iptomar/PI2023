@@ -58,7 +58,7 @@
 
             // caracteristicas do grafico de envios por semana
             var weeksOptions = {
-              title: 'Volume of Sendings per Week',
+              title: chartData.title,
               chartArea: {width: '50%'},
               colors: ['#8093e0'],
               hAxis: {
@@ -72,7 +72,7 @@
 
             // caracteristicas do grafico de envios por mês
             var monthsOptions = {
-              title: 'Volume of Sendings per Month',
+              title: chartData.title,
               chartArea: {width: '50%'},
               colors: ['#8093e0'],
               hAxis: {
@@ -86,7 +86,7 @@
 
             // caracteristicas do grafico da moda de envios por hora
             var hoursOptions = {
-              title: 'frequency of Sendings per Hour',
+              title: chartData.title,
               chartArea: {width: '50%'},
               colors: ['#8093e0'],
               hAxis: {
@@ -100,7 +100,7 @@
 
             // caracteristicas do grafico dos envios por hora de um dia selecionado
             var hoursDayOptions = {
-              title: 'Sendings per Hour of the selected Day',
+              title: chartData.title,
               chartArea: {width: '50%'},
               colors: ['#8093e0'],
               hAxis: {
@@ -114,7 +114,7 @@
 
             // caracteristicas do grafico de envios por dia de um aluno selecionado
             var daysStudentOptions = {
-              title: 'Sendings per Day of the selected Student',
+              title: chartData.title,
               chartArea: {width: '50%'},
               colors: ['#8093e0'],
               hAxis: {
@@ -132,6 +132,10 @@
                 if (this.readyState == 4 && this.status == 200) {
                   var newData = JSON.parse(this.responseText);
                   data = google.visualization.arrayToDataTable(newData.data);
+
+                  // Atualiza o título do gráfico com o novo título dos dados
+                  options.title = newData.title;
+
                   var chart = new google.visualization.BarChart(chartDiv);
                   chart.draw(data, google.charts.Bar.convertOptions(options));
                   button.disabled = false;
