@@ -31,12 +31,15 @@
             var button2 = document.getElementById('change-chart2');
             var button3 = document.getElementById('change-chart3');
             var button4 = document.getElementById('change-chart4');
+
             var label1 = document.getElementById('change-label1');
             var dateInput = document.getElementById('date-input'); 
             var button5 = document.getElementById('change-chart5');
+
             var label2 = document.getElementById('change-label2');
             var userInput = document.getElementById('user-input'); 
             var button6 = document.getElementById('change-chart6');
+
             var chartDiv = document.getElementById('chart_div');
 
             // caracteristicas do grafico de envios por dia
@@ -95,7 +98,7 @@
               }
             };
 
-            // caracteristicas do grafico da moda de envios por hora
+            // caracteristicas do grafico dos envios por hora de um dia selecionado
             var hoursDayOptions = {
               title: 'Sendings per Hour of the selected Day',
               chartArea: {width: '50%'},
@@ -109,7 +112,7 @@
               }
             };
 
-            // caracteristicas do grafico da moda de envios por hora
+            // caracteristicas do grafico de envios por dia de um aluno selecionado
             var daysStudentOptions = {
               title: 'Sendings per Day of the selected Student',
               chartArea: {width: '50%'},
