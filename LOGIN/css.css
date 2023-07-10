@@ -25,21 +25,9 @@ table{
 }
 
 .buttons{
-    position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #721c1c;
-  border: none;
-  border-radius: 4px;
-  overflow: hidden;
-  transition: background-color 0.3s ease;
-  display: inline;
-  margin-inline: 10px;
+    
+ 
+ 
 }
 
 
@@ -55,13 +43,65 @@ table{
 }
 
 #chart_div{
-    width: 1300px; 
-    height: 770px;
-    width: 100%;
-    
+    width: 1960px;
+    height: 800px; 
+    float:left;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 
     label{
-        height:1000px;
+        height:20px;
+        width:150px;
+        justify-content: start;
+        display: grid;
     }
+
+
+    .formu{
+        width: 300px;
+        height: 330px; 
+        display: grid;
+        margin-inline: 160px;
+        
+    }
+
+    #date {
+        width: 180px;
+        
+    }
+
+    #data{
+        display: grid;
+        height: 120px;
+    }
+
+    
+    
+
+    #nav_bar{display: flex;
+        height:350px;
+        margin:20px 0px 0px 890px;
+        width: 150px;
+    }
+
+    
+
+    #nav_bar button{
+        margin-right: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #721c1c;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        writing-mode: horizontal-tb !important;
+        
+        
+    }
+    
