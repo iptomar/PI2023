@@ -6,6 +6,7 @@
     $data->title = 'Sending per day of the student ...';
     $data->data = array();
     
+    /*
     //cria as etiquetas
     $label = array();
     array_push($label,'Days');
@@ -13,6 +14,7 @@
 
     //adiciona as etiquetas ao conjunto de dados
     array_push($data->data, $label);
+    */
 
     //acede ao ficheiro filtroSend.csv para fazer a leitura do conteudo, cujo cada linha 
     //desse ficheiro representa as datas em que os envios dos algoritmos foram realizados
@@ -96,6 +98,8 @@
     }
 
     $sendStudentDays = $data->data;
+
+    //echo json_encode($sendStudentDays);
 
     $allDays = $days;
     $allDays = array_unique($allDays);

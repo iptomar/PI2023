@@ -97,7 +97,7 @@
 
             // caracteristicas do grafico da moda de envios por hora
             var hoursDayOptions = {
-              title: 'Sendings per Hour of the selected day',
+              title: 'Sendings per Hour of the selected Day',
               chartArea: {width: '50%'},
               colors: ['#8093e0'],
               hAxis: {
@@ -109,6 +109,20 @@
               }
             };
 
+            // caracteristicas do grafico da moda de envios por hora
+            var daysStudentOptions = {
+              title: 'Sendings per Day of the selected Student',
+              chartArea: {width: '50%'},
+              colors: ['#8093e0'],
+              hAxis: {
+                title: 'Sendings',
+                minValue: 0
+              },
+              vAxis: {
+                title: 'Hours'
+              }
+            };
+            
             function loadDataAndDrawChart(url, options, button) {
               var xmlhttp = new XMLHttpRequest();
               xmlhttp.onreadystatechange = function() {
@@ -132,6 +146,7 @@
               button3.onclick = drawMonthsChart;
               button4.onclick = drawHoursChart;
               button5.onclick = drawHDChart;
+              button6.onclick = drawDSChart;
               chartDiv.style.height = '3500px';
               
               button1.style.display = "none";
@@ -142,6 +157,10 @@
               label1.style.display = "inline-block";
               dateInput.style.display = "inline-block";
               button5.style.display = "inline-block";
+
+              label2.style.display = "inline-block";
+              userInput.style.display = "inline-block";
+              button6.style.display = "inline-block";
             }
 
             // ao clica neste butão, ele irá mostrar o grafico de envios por semana
@@ -161,6 +180,10 @@
               label1.style.display = "none";
               dateInput.style.display = "none";
               button5.style.display = "none";
+
+              label2.style.display = "none";
+              userInput.style.display = "none";
+              button6.style.display = "none";
             }
 
             // ao clica neste butão, ele irá mostrar o grafico de envios por mês
@@ -180,6 +203,10 @@
               label1.style.display = "none";
               dateInput.style.display = "none";
               button5.style.display = "none";
+
+              label2.style.display = "none";
+              userInput.style.display = "none";
+              button6.style.display = "none";
             }
 
             // ao clica neste butão, ele irá mostrar o grafico da moda de envios por hora
@@ -199,6 +226,10 @@
               label1.style.display = "none";
               dateInput.style.display = "none";
               button5.style.display = "none";
+
+              label2.style.display = "none";
+              userInput.style.display = "none";
+              button6.style.display = "none";
             }
 
             // inicializa o grafico de envios por hora de um dia selecionado
@@ -211,18 +242,24 @@
               
               loadDataAndDrawChart(urlDay, hoursDayOptions, button5);
               chartDiv.style.height = '1000px';
+
+              button1.onclick = drawDaysChart;
+              button1.style.display = "inline-block";
             }
 
             // inicializa o grafico de envios por dia de um estudante selecionado
-            function drawHDChart() {
+            function drawDSChart() {
               // obtem o valor do 'user-input'
               var selectedUser = userInput.value;
 
               // cria a url dos dados do respectivo dia
               var urlStudent = "getDaysStudent.php?student=" + selectedUser;
               
-              loadDataAndDrawChart(urlStudent, hoursDayOptions, button6);
-              chartDiv.style.height = '1000px';
+              loadDataAndDrawChart(urlStudent, daysStudentOptions, button6);
+              chartDiv.style.height = '3500px';
+
+              button1.onclick = drawDaysChart;
+              button1.style.display = "inline-block";
             }
 
             // inicializa o grafico de envios por dia
