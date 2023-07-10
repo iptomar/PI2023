@@ -21,6 +21,7 @@ table{
     margin-bottom: 20px;
     line-height: 50px;
     border-left: #333;
+    margin-top: 40px;
 }
 
 .buttons{
@@ -41,6 +42,7 @@ table{
   margin-inline: 10px;
 }
 
+
 .conteiner{
     display: flex;
     margin-bottom: 50px;
@@ -48,9 +50,18 @@ table{
 
 
 .scripts{
-    width:100%
+    width:100%;
+    
 }
 
 #chart_div{
-    width:100%;
+    width: 1300px; 
+    height: 770px;
+    width: 100%;
+    
 }
+
+
+    label{
+        height:1000px;
+    }

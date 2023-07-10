@@ -3,6 +3,7 @@
 $logFile = 'C:\xampp\htdocs\PI2023\LOGIN\logIPRP.csv';
 $logData = file_get_contents($logFile);
 
+
 // Extrair as datas das entradas de logins
 $pattern = '/\d{4}-\d{2}-\d{2}/';
 preg_match_all($pattern, $logData, $matches);
@@ -20,38 +21,49 @@ foreach ($dateCounts as $date => $count) {
 // Converter os dados para JSON
 $dataJson = json_encode($dataArray);
 
+$username = '';
+$tableHtml = '';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Get the username from the POST request
-    $username = $_POST['username'];
+    // Check if the 'username' key exists in the $_POST array
+    if (isset($_POST['username'])) {
+        // Get the username from the POST request
+        $username = $_POST['username'];
+        
+        // Read and parse the CSV data
+        $csvFile = 'logIPRP.csv';
+        $csvData = file_get_contents($csvFile);
+        $rows = array_map('str_getcsv', explode("\n", $csvData));
 
-    // Read and parse the CSV data
-    $csvFile = 'logIPRP.csv';
-    $csvData = file_get_contents($csvFile);
-    $rows = array_map('str_getcsv', explode("\n", $csvData));
+        // Filter and retrieve rows matching the username
+        $matchingRows = array_filter($rows, function ($row) use ($username) {
+            $emailName = $row[4] ?? '';
+            $explodedEmailName = explode(' ', $emailName);
+            $name = $explodedEmailName[0] ?? '';
 
-    // Filter and retrieve rows matching the username
-    $matchingRows = array_filter($rows, function ($row) use ($username) {
-        $emailName = $row[4] ?? '';
-        $explodedEmailName = explode(' ', $emailName);
-        $name = $explodedEmailName[0] ?? '';
+            return strtolower($name) === strtolower($username) && strlen($name) > 1;
+        });
 
-        return strtolower($name) === strtolower($username) && strlen($name) > 1;
-    });
+        // Prepare the table HTML
+        $tableHtml = '';
+        foreach ($matchingRows as $row) {
+            $date = $row[1];
+            $emailName = $row[4] ?? '';
+            $explodedEmailName = explode(' ', $emailName);
+            $email = $explodedEmailName[0] ?? '';
+            $name = (count($explodedEmailName) >= 2) ? $explodedEmailName[1] : 'No name';
 
-    // Prepare the table HTML
-    $tableHtml = '';
-    foreach ($matchingRows as $row) {
-        $date = $row[1];
-        $emailName = $row[4] ?? '';
-        $explodedEmailName = explode(' ', $emailName);
-        $email = $explodedEmailName[0] ?? '';
-        $name = (count($explodedEmailName) >= 2) ? $explodedEmailName[1] : 'No name';
-
-        $tableHtml .= '<tr>';
-        $tableHtml .= "<td>{$date}</td>";
-        $tableHtml .= "<td>{$email}</td>";
-        $tableHtml .= "<td>{$name}</td>";
-        $tableHtml .= '</tr>';
+            $tableHtml .= '<tr>';
+            $tableHtml .= "<td>{$date}</td>";
+            $tableHtml .= "<td>{$email}</td>";
+            $tableHtml .= "<td>{$name}</td>";
+            $tableHtml .= '</tr>';
+        }
+    } else {
+        // 'username' key is not set in $_POST, handle the case as needed
+        // For example, you can display an error message or redirect the user
+        // header("Location: error.php");
+        // exit;
     }
 }
 ?>
@@ -60,12 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <link rel="stylesheet" href="css.css">
-    <form action="main.php"><button class="buttons">Voltar</button></form>
-    <form method="POST" action="graficohoras.php">
-        <label for="date">Selecione uma data:</label>
-        <input type="date" id="date" name="date">
-        <button type="submit">Gerar Gráfico</button>
-    </form>
+    
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
@@ -86,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
             };
 
-            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
             chart.draw(data, options);
         }
         
@@ -150,11 +157,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </script>
 </head>
 <body>
-    <div id="chart_div" style="width: 1300px; height: 770px;"></div>
+    <div id="chart_div" style="width: 1960px; height: 800px; float:left; margin-top: 0px;"></div>
+    <form  action="main.php" style="width: 700px;height: 500px; display: inline;margin-inline: 160px;">
+        <button class="buttons">Voltar</button></form>
+    <form method="POST" action="graficohoras.php" style=";width: 700px;height: 500px; display: inline;margin-inline: 160px;">
+        <label style="height:800px ; width:400px;" for="date">Selecione uma data:    
+        </label>
+        <input type="date" id="date" name="date">
+        <button class = "buttons" type="submit">Gerar Gráfico
+        </button>
+    </form>
 
-    <form id="searchForm" method="POST">
+    <form id="searchForm" style="width: 400px;height: 300px; display: inline;margin-inline: 160px;" method="POST" action="grafico.php ">
         <input type="text" id="searchInput" name="username" placeholder="Enter username">
-        <button type="button" onclick="searchByUsername()">Search</button>
+        <button class="buttons" type="button" onclick="searchByUsername()">Search</button>
     </form>
 
     <table id="table">
