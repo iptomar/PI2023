@@ -1,8 +1,8 @@
 <html>
   <head>
     <style>
-      div{height: 2000;}
-      #change-chart1, #change-chart2, #change-chart3, #change-chart4{border: none; display: inline-block; font-size: 19px; border-radius: 4px; background-color: #8093e0; color:#ffffff;}
+      .data{border: none; display: inline-block; font-size: 19px; border-radius: 4px; background-color: #8093e0; color:#ffffff;}
+      .filter{margin: 3px;}
     </style>
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -269,19 +269,20 @@
   </head>
 
   <body>
-    <button id="change-chart1">Change to Days</button>
-    <button id="change-chart2">Change to Weeks</button>
-    <button id="change-chart3">Change to Months</button>
-    <button id="change-chart4">Change to Hours</button>
+    <button class="data" id="change-chart1">Change to Days</button>
+    <button class="data" id="change-chart2">Change to Weeks</button>
+    <button class="data" id="change-chart3">Change to Months</button>
+    <button class="data" id="change-chart4">Change to Hours</button>
     <br>
 
-    <label id="change-label1" for="date">Selecione uma data:</label>
-    <input type="date" id="date-input">
-    <button id="change-chart5">Create Chart</button>
+    <label class="filter" id="change-label1" for="date">Selecione uma data:</label>
+    <input class="filter" type="date" id="date-input">
+    <button class="filter" id="change-chart5">Create Chart</button>
+    <br>
 
-    <label id="change-label2" for="date">Selecione um aluno:</label>
-    <input type="text" id="user-input">
-    <button id="change-chart6">Create Chart</button>
+    <label class="filter" id="change-label2" for="date">Selecione um aluno:</label>
+    <input class="filter" type="text" id="user-input">
+    <button class="filter" id="change-chart6">Create Chart</button>
     <br><br>
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
