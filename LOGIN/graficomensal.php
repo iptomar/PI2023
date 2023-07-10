@@ -35,12 +35,17 @@ $dataJson = json_encode($dataArray);
 <html>
 <head>
 <link rel="stylesheet" href="css.css">
-<form action="main.php"><button class="buttons">Voltar</button></form>
-<form method="POST" action="diasmes.php">
+
+
+<div id="nav_bar">
+    <form class = "formu">
+        <button type="button" class="buttons" onclick="location.href='main.php'">Voltar</button>
         <label for="month">Selecione um mês:</label>
         <input type="month" id="month" name="month">
-        <button type="submit">Gerar Gráfico</button>
+        <button type="button" class="buttons" onclick="location.href='diasmes.php'">Gerar Gráfico</button>
     </form>
+</div>
+
     <script type="text/javascript" class="scripts" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" class="scripts">
         google.charts.load('current', {'packages':['corechart']});

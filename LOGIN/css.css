@@ -24,12 +24,24 @@ table{
     margin-top: 40px;
 }
 
-.buttons{
-    
- 
- 
-}
 
+.buttons{
+    position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #721c1c;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  display: inline;
+  margin-inline: 10px;
+}
 
 .conteiner{
     display: flex;
@@ -45,7 +57,7 @@ table{
 #chart_div{
     width: 1960px;
     height: 800px; 
-    float:left;
+    float:right;
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -56,19 +68,25 @@ table{
         width:150px;
         justify-content: start;
         display: grid;
+        font-size: large;
+        margin-bottom: 20px;
+        margin-left: 3px;
     }
 
 
     .formu{
-        width: 300px;
+        width: 1300px;
         height: 330px; 
-        display: grid;
-        margin-inline: 160px;
-        
+        display: flex;
+        margin-inline: 360px;
+        font-size: medium;
     }
 
-    #date {
+    #date, #week, #month{
         width: 180px;
+        height: 30px;
+        margin-right: 5px;
+        margin-bottom: 19px;
         
     }
 
@@ -77,30 +95,40 @@ table{
         height: 120px;
     }
 
+    #searchInput {
+        width: 180px;
+        height: 30px;
+        margin-right: 5px;
+        margin-bottom: 19px;
+        margin-left: 3px;
+    }
+
     
     
 
-    #nav_bar{display: flex;
-        height:350px;
-        margin:20px 0px 0px 890px;
-        width: 150px;
+    #nav_bar{
+        align-items: center;
+        margin-top: 20px;
     }
+
+    #nav_bar .formu{
+        display: flex;
+        align-items: center;
+    }
+    
 
     
 
     #nav_bar button{
-        margin-right: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        color: #fff;
         background-color: #721c1c;
+        color: white;
+        padding: 10px 20px;
         border: none;
+        cursor: pointer;
+        font-size: 16px;
         border-radius: 4px;
-        transition: background-color 0.3s ease;
-        writing-mode: horizontal-tb !important;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom : 20px ;
         
         
     }

@@ -161,14 +161,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div id="nav_bar">
     <form  class = "formu">
         <button type="button" class="buttons" onclick="location.href='main.php'">Voltar</button>
-        <label  for="date">Selecione uma data:    
-        </label>
-        <input type="date" id="date" name="date">
-        <button class = "buttons" id="botao2" type="button" onclick="location.href='graficohoras.php'">Gerar Gráfico
-        </button>
+        
         <input  id="searchInput" name="username" placeholder="Enter username">
         <button class="buttons" type="button" onclick="searchByUsername()">Search</button>
         </form>
+        <form action = "graficohoras.php" method="POST">
+        <label  for="date">Selecione uma data:    </label>
+        <input type="date" id="date" name="date">
+        <button class = "buttons" id="botao2" type="submit" >Gerar Gráfico</button>
+    </form>
     </div>
     <table id="table">
         <thead>
