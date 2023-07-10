@@ -10,7 +10,7 @@
     $dataDay = new stdClass();
 
     // Atribui o título e inicializa o conjunto de dados
-    $dataDay->title = "Sendings per Hour of the Day " . $day;
+    $dataDay->title = "Sendings per hour of the day " . $day;
     $dataDay->data = array();
 
     // Cria as etiquetas
@@ -24,7 +24,7 @@
     // Cria um array com todas as horas do dia
     $allHours = range(0, 23);
 
-    //inicia um array que servirá para cirar os atributos
+     //inicia um array que servirá para cirar os atributos
     $ld = array();
 
     // Percorre todas as horas do dia

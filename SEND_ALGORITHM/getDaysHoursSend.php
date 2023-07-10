@@ -96,6 +96,4 @@
     }
 
     $sendDayHours = $data->data;
-    
-    //echo json_encode($data);
 ?>
