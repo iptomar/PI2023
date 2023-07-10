@@ -3,10 +3,12 @@
     <style>
       h1{font: bold 30px Verdana; color: #030374}
       input{font: 14px Arial;}
+      p{text-align: center; font: 12px;}
 
       .data{border: none; display: inline-block; font-size: 19px; border-radius: 4px; background-color: #8093e0; color:#ffffff;}
       .filter{margin: 3px;}
 
+      #scrollBottom{position: fixed; right: 20px;}
       #change-label1, #change-label2{font: 16px Arial;}
       #change-chart5, #change-Chart6{ font: 14px Arial;}
     </style>
@@ -290,11 +292,13 @@
   </head>
 
   <body>
-    <h1>SEND ALGORITHM</h1>
+    <div id="top"></div>
+    <h1 >SEND ALGORITHM</h1>
     <button class="data" id="change-chart1">Change to Days</button>
     <button class="data" id="change-chart2">Change to Weeks</button>
     <button class="data" id="change-chart3">Change to Months</button>
     <button class="data" id="change-chart4">Change to Hours</button>
+    <button id="scrollBottom"><a href="#bottom" id="btn-scroll">Go to Bottom</a></button>
     <br>
 
     <label class="filter" id="change-label1" for="date">Selecione uma data:</label>
@@ -306,7 +310,20 @@
     <input class="filter" type="text" size="12" maxlength="10" id="user-input" value="aluno">
     <button class="filter" id="change-chart6">Create Chart</button>
     <br><br>
+
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
+
+    <button><a href="#top" id="btn-scroll">Go to Top</a></button>
+
+    <hr>
+
+    <!-- Marcador para o final da página -->
+    <div id="bottom">
+      <p>Desenvenvoldedor do Algorithmi: Antonio Manso</p>
+      <p>Contactos: manso@ipt.pt</p>
+      <p>Instituto: Instituto Politecnico de Tomar</p>
+      <p>Site do Algorithmi: algorithmi.ipt.pt</p>
+    </div>
   </body>
 </html>
