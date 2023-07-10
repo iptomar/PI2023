@@ -30,19 +30,19 @@
         $countersDay[$day] = 0; // Inicializa o contador com 0 para cada dia
     }
 
-    	// Inicializa um array que servirá para criar os atributos
+    // Inicializa um array que servirá para criar os atributos
     $ls = array();
 
     // Conta os envios por dia
     foreach ($allDays as $day) {
     $sendDS = findSendStudent($sendStudentDays, $day, $student);
 
-    // Se houver envio, adiciona a hora e o número de envios ao conjunto de dados
+    // Se houver envio, adiciona dia e o número de envios ao conjunto de dados
     if ($sendDS !== null) {
         array_push($ls, $day);
         array_push($ls, $sendDS[1]);
     } else {
-        // Se não houver envio, atribui 0 para a hora não presente
+        // Se não houver envio, atribui 0 para ao dia não presente
         array_push($ls, $day);
         array_push($ls, 0);
     }
@@ -52,32 +52,23 @@
 
     //apaga o conteudo deste array para criar um novo dado 
     $ls = [];
-}
-    /*
-    // Percorre pelos dias e contadores, adicionando-os ao conjunto de dados
-    foreach ($countersDay as $day => $sendings) {
-        $ls = array();
-        array_push($ls, $day);
-        array_push($ls, $sendings);
-        array_push($dataStudent->data, $ls);
-        $ls = [];
     }
-    */
 
+    // faz o encode do json para que os dados possam ser lidos
+    // para que seja possivel criar o grafico
     echo json_encode($dataStudent);
 
     //Função para encontrar o envio de uma determinada hora no conjunto de dados.
-        //Retorna o envio encontrado ou null se não for encontrado.
-        function findSendStudent($sendStudentDays, $day, $student)
-        {
-            foreach ($sendStudentDays as $sendDS) {
-                $sendDay = substr($sendDS[0], 0, 10);
-                $sendStudent = substr($sendDS[0], 11);
-                if ($sendDay == $day && $sendStudent == $student) {
-                    return $sendDS;
-                }
+    //Retorna o envio encontrado ou null se não for encontrado.
+    function findSendStudent($sendStudentDays, $day, $student){
+        foreach ($sendStudentDays as $sendDS) {
+            $sendDay = substr($sendDS[0], 0, 10);
+            $sendStudent = substr($sendDS[0], 11);
+            if ($sendDay == $day && $sendStudent == $student) {
+                return $sendDS;
             }
-
-            return null;
         }
+
+        return null;
+    }
 ?>

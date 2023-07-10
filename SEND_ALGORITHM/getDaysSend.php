@@ -95,5 +95,7 @@
         $l = [];
     }
 
+    // faz o encode do json para que os dados possam ser lidos
+    // para que seja possivel criar o grafico
     echo json_encode($data);
 ?>
