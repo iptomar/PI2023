@@ -1,8 +1,14 @@
 <html>
   <head>
     <style>
+      h1{font: bold 30px Verdana; color: #030374}
+      input{font: 14px Arial;}
+
       .data{border: none; display: inline-block; font-size: 19px; border-radius: 4px; background-color: #8093e0; color:#ffffff;}
       .filter{margin: 3px;}
+
+      #change-label1, #change-label2{font: 16px Arial;}
+      #change-chart5, #change-Chart6{ font: 14px Arial;}
     </style>
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -45,7 +51,7 @@
             // caracteristicas do grafico de envios por dia
             var daysOptions = {
               title: chartData.title,
-              chartArea: {width: '50%'},
+              chartArea: {width: '50%', height: '90%'},
               colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
@@ -59,7 +65,7 @@
             // caracteristicas do grafico de envios por semana
             var weeksOptions = {
               title: chartData.title,
-              chartArea: {width: '50%'},
+              chartArea: {width: '50%', height: '90%'},
               colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
@@ -87,7 +93,7 @@
             // caracteristicas do grafico da moda de envios por hora
             var hoursOptions = {
               title: chartData.title,
-              chartArea: {width: '50%'},
+              chartArea: {width: '50%', height: '90%'},
               colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
@@ -101,7 +107,7 @@
             // caracteristicas do grafico dos envios por hora de um dia selecionado
             var hoursDayOptions = {
               title: chartData.title,
-              chartArea: {width: '50%'},
+              chartArea: {width: '50%', height: '90%'},
               colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
@@ -115,7 +121,7 @@
             // caracteristicas do grafico de envios por dia de um aluno selecionado
             var daysStudentOptions = {
               title: chartData.title,
-              chartArea: {width: '50%'},
+              chartArea: {width: '50%', height: '90%'},
               colors: ['#8093e0'],
               hAxis: {
                 title: 'Sendings',
@@ -284,7 +290,7 @@
   </head>
 
   <body>
-    <h1>SEND_ALGORTHM</h1>
+    <h1>SEND ALGORITHM</h1>
     <button class="data" id="change-chart1">Change to Days</button>
     <button class="data" id="change-chart2">Change to Weeks</button>
     <button class="data" id="change-chart3">Change to Months</button>
@@ -297,7 +303,7 @@
     <br>
 
     <label class="filter" id="change-label2" for="date">Selecione um aluno:</label>
-    <input class="filter" type="text" id="user-input">
+    <input class="filter" type="text" size="12" maxlength="10" id="user-input" value="aluno">
     <button class="filter" id="change-chart6">Create Chart</button>
     <br><br>
     <!--Div that will hold the pie chart-->
