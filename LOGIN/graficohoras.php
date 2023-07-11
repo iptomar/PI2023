@@ -39,6 +39,7 @@ $dataJson = json_encode($dataArray);
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Grafico das Horas</title>
 <link rel="stylesheet" href="css.css">
     <form action="grafico.php"><button class="buttons">Voltar</button></form>
     <script type="text/javascript" class="scripts" src="https://www.gstatic.com/charts/loader.js"></script>

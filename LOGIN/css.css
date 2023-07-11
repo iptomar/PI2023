@@ -24,6 +24,7 @@ table{
     margin-top: 40px;
 }
 
+
 .buttons{
     position: relative;
   display: inline-block;
@@ -42,7 +43,6 @@ table{
   margin-inline: 10px;
 }
 
-
 .conteiner{
     display: flex;
     margin-bottom: 50px;
@@ -55,13 +55,81 @@ table{
 }
 
 #chart_div{
-    width: 1300px; 
-    height: 770px;
-    width: 100%;
-    
+    width: 1960px;
+    height: 800px; 
+    float:right;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 
     label{
-        height:1000px;
+        height:20px;
+        width:150px;
+        justify-content: start;
+        display: grid;
+        font-size: large;
+        margin-bottom: 20px;
+        margin-left: 3px;
     }
+
+
+    .formu{
+        width: 1300px;
+        height: 330px; 
+        display: flex;
+        margin-inline: 360px;
+        font-size: medium;
+    }
+
+    #date, #week, #month{
+        width: 180px;
+        height: 30px;
+        margin-right: 5px;
+        margin-bottom: 19px;
+        
+    }
+
+    #data{
+        display: grid;
+        height: 120px;
+    }
+
+    #searchInput {
+        width: 180px;
+        height: 30px;
+        margin-right: 5px;
+        margin-bottom: 19px;
+        margin-left: 3px;
+    }
+
+    
+    
+
+    #nav_bar{
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #nav_bar .formu{
+        display: flex;
+        align-items: center;
+    }
+    
+
+    
+
+    #nav_bar button{
+        background-color: #721c1c;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom : 20px ;
+        
+        
+    }
+    

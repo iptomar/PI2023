@@ -2,6 +2,7 @@
 <html>
     <div class = "conteiner">
 <head>
+<title>Pagina Principal</title>
     <form action="grafico.php" method="post">
         <button type="submit" name="submit" value="verify" class="buttons">Grafico diario</button></form>
     
