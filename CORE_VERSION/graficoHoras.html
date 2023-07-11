@@ -2,7 +2,7 @@
   <head>
     <!--Load the AJAX API-->
     <style>
-      #chart_div{height:4000px;}
+      #chart_div{height:1000px;}
     </style>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -18,7 +18,7 @@ xmlhttp = new XMLHttpRequest();
            google.charts.setOnLoadCallback(function(){ drawBarColors(chartData) });;
         }
       };
-      xmlhttp.open("GET", "getData.php", true);
+      xmlhttp.open("GET", "getDataHora.php", true);
       xmlhttp.send();
 
 function drawBarColors(chartData) {
